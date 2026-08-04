@@ -46,12 +46,18 @@
     return index;
   }
 
+  // Ícones por tema de saga (linha fina, herdam a cor do botão via currentColor)
+  const SAGA_ICONS = {
+    warm: '<svg class="saga-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18.5" y1="3.5" x2="7" y2="15"/><line x1="9" y1="12.5" x2="12" y2="15.5"/><line x1="4.5" y1="19.5" x2="9" y2="15"/><line x1="3.5" y1="20.5" x2="5.5" y2="18.5"/></svg>',
+    cold: '<svg class="saga-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="12" y1="3" x2="12" y2="21"/><line x1="4.9" y1="7.5" x2="19.1" y2="16.5"/><line x1="19.1" y1="7.5" x2="4.9" y2="16.5"/><line x1="12" y1="3" x2="9.7" y2="5.3"/><line x1="12" y1="3" x2="14.3" y2="5.3"/><line x1="12" y1="21" x2="9.7" y2="18.7"/><line x1="12" y1="21" x2="14.3" y2="18.7"/></svg>'
+  };
+
   // ---- Saga ativa ----
   sagaToggle.innerHTML = "";
   SAGAS.forEach((saga) => {
     const btn = document.createElement("button");
     btn.dataset.saga = saga.id;
-    btn.innerHTML = `<span>${saga.meta.icone}</span><span class="saga-name">${saga.meta.nome[currentLang]}</span>`;
+    btn.innerHTML = `${SAGA_ICONS[saga.meta.tema] || ""}<span class="saga-name">${saga.meta.nome[currentLang]}</span>`;
     btn.addEventListener("click", () => applySaga(saga.id));
     sagaToggle.appendChild(btn);
   });

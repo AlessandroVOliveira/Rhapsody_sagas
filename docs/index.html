@@ -20,9 +20,18 @@
 </header>
 
 <nav class="section-tabs" id="section-tabs">
-  <button class="tab-btn active" data-view="map" data-i18n="tabMap">🗺️ Mapa Interativo</button>
-  <button class="tab-btn" data-view="history" data-i18n="tabHistory">📖 História Completa</button>
-  <button class="tab-btn" data-view="discography" data-i18n="tabDiscography">💿 Discografia</button>
+  <button class="tab-btn active" data-view="map">
+    <svg class="tab-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9l-3.5 3.5L9 15l3.5-3.5z" fill="currentColor" stroke="none"/></svg>
+    <span data-i18n="tabMap">Mapa Interativo</span>
+  </button>
+  <button class="tab-btn" data-view="history">
+    <svg class="tab-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5c2.2-1 5-1 8 .5v13c-3-1.5-5.8-1.5-8-.5z"/><path d="M20 5.5c-2.2-1-5-1-8 .5v13c3-1.5 5.8-1.5 8-.5z"/></svg>
+    <span data-i18n="tabHistory">História Completa</span>
+  </button>
+  <button class="tab-btn" data-view="discography">
+    <svg class="tab-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="0.9" fill="currentColor" stroke="none"/></svg>
+    <span data-i18n="tabDiscography">Discografia</span>
+  </button>
 </nav>
 
 <section class="view" id="view-map">

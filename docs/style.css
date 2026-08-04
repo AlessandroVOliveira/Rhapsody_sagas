@@ -136,6 +136,9 @@ body {
   flex-wrap: wrap;
 }
 .tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
   background: transparent;
   border: 1px solid var(--border);
   color: var(--text-dim);
@@ -144,6 +147,11 @@ body {
   cursor: pointer;
   font-size: 0.95rem;
   font-family: inherit;
+}
+.tab-btn .tab-icon,
+.saga-toggle .saga-icon {
+  display: block;
+  flex-shrink: 0;
 }
 .tab-btn:hover { color: var(--text); border-color: var(--ember); }
 .tab-btn.active {
