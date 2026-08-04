@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Saga da Espada Esmeralda — Rhapsody of Fire</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lang-toggle" id="lang-toggle">
+  <button data-lang="pt" class="active">PT</button>
+  <button data-lang="en">EN</button>
+</div>
+
+<header class="topbar">
+  <h1 data-i18n="siteTitle">A Saga da Espada Esmeralda</h1>
+  <p class="subtitle" data-i18n="subtitle">Rhapsody of Fire — mapa interativo dos 5 álbuns</p>
+</header>
+
+<nav class="section-tabs" id="section-tabs">
+  <button class="tab-btn active" data-view="map" data-i18n="tabMap">🗺️ Mapa Interativo</button>
+  <button class="tab-btn" data-view="history" data-i18n="tabHistory">📖 História Completa</button>
+  <button class="tab-btn" data-view="discography" data-i18n="tabDiscography">💿 Discografia</button>
+</nav>
+
+<section class="view" id="view-map">
+  <nav class="album-filter" id="album-filter">
+    <button class="filter-btn active" data-album="all" data-i18n="filterAll">Todos</button>
+    <!-- botões dos álbuns inseridos via JS -->
+  </nav>
+
+  <main class="map-wrap">
+    <div class="map-container" id="map-container">
+      <img src="assets/map.png" alt="Mapa das Terras Encantadas" class="map-img" id="map-img">
+      <!-- marcadores inseridos via JS -->
+    </div>
+  </main>
+
+  <section class="offmap" id="offmap">
+    <h3 data-i18n="offmapTitle">Faixas sem localização definida no mapa</h3>
+    <p class="offmap-desc" data-i18n="offmapDesc">Aberturas instrumentais, interlúdios e momentos de transição/reflexão que as letras não amarram a um ponto específico do mapa.</p>
+    <div id="offmap-songs" class="panel-songs offmap-songs"></div>
+  </section>
+</section>
+
+<aside class="panel" id="panel">
+  <button class="panel-close" id="panel-close" aria-label="Fechar">&times;</button>
+  <h2 id="panel-title" data-i18n="panelDefaultTitle">Selecione uma localização</h2>
+  <p id="panel-hint" class="panel-hint" data-i18n="panelDefaultHint">Clique em um marcador no mapa para ver quais músicas se passam ali.</p>
+  <div id="panel-songs" class="panel-songs"></div>
+</aside>
+
+<section class="view hidden" id="view-history">
+  <div class="history-intro">
+    <h2 data-i18n="historyTitle">A História da Saga da Espada Esmeralda</h2>
+    <p data-i18n="historyDesc">A jornada do Guerreiro de Gelo através dos 5 álbuns, capítulo a capítulo. Clique nas faixas de cada capítulo para ver o resumo, a letra e o link do Spotify.</p>
+  </div>
+  <ol class="timeline" id="timeline"></ol>
+</section>
+
+<section class="view hidden" id="view-discography">
+  <div class="history-intro">
+    <h2 data-i18n="discographyTitle">Discografia completa</h2>
+    <p data-i18n="discographyDesc">Os 5 álbuns da Saga da Espada Esmeralda, em ordem de lançamento, com todas as faixas.</p>
+  </div>
+  <div id="discography" class="discography"></div>
+</section>
+
+<footer class="footer">
+  <p data-i18n="footer">Site pessoal de fã — sem afiliação com Rhapsody of Fire. Letras completas disponíveis via link externo (Letras.com); resumos de localização são paráfrases próprias.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
