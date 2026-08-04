@@ -6,7 +6,7 @@ Inclui um site estático com um mapa interativo das Terras Encantadas, a histór
 
 ## 🔗 Site
 
-[https://SEU_USUARIO.github.io/NOME_DO_REPO/](#) — *(link atualizado após a publicação)*
+**https://alessandrovoliveira.github.io/Rhapsody_sagas/**
 
 ## 🗺️ O que tem no site
 
