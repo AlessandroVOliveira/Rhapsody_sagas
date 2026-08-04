@@ -3,9 +3,9 @@
 
 const UI_STRINGS = {
   pt: {
-    tabMap: "🗺️ Mapa Interativo",
-    tabHistory: "📖 História Completa",
-    tabDiscography: "💿 Discografia",
+    tabMap: "Mapa Interativo",
+    tabHistory: "História Completa",
+    tabDiscography: "Discografia",
     filterAll: "Todos",
     panelDefaultTitle: "Selecione uma localização",
     panelDefaultHint: "Clique em um marcador no mapa para ver quais músicas se passam ali.",
@@ -24,9 +24,9 @@ const UI_STRINGS = {
     footer: "Site pessoal de fã — sem afiliação com Rhapsody of Fire. Letras completas disponíveis via link externo (Letras.com); resumos de localização são paráfrases próprias."
   },
   en: {
-    tabMap: "🗺️ Interactive Map",
-    tabHistory: "📖 Full Story",
-    tabDiscography: "💿 Discography",
+    tabMap: "Interactive Map",
+    tabHistory: "Full Story",
+    tabDiscography: "Discography",
     filterAll: "All",
     panelDefaultTitle: "Select a location",
     panelDefaultHint: "Click a marker on the map to see which songs take place there.",
