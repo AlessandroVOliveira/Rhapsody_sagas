@@ -11,10 +11,20 @@
   const timelineEl = document.getElementById("timeline");
   const discographyEl = document.getElementById("discography");
   const langToggle = document.getElementById("lang-toggle");
+  const sagaToggle = document.getElementById("saga-toggle");
+  const siteTitleEl = document.getElementById("site-title");
+  const siteSubtitleEl = document.getElementById("site-subtitle");
+  const allFilterBtn = albumFilter.querySelector('[data-album="all"]');
+
+  let currentLang = "pt";
+  let currentSaga = null;
+  let ALBUMS = {};
+  let SONGS = [];
+  let STORY = [];
+  let songsByLocation = {};
 
   let activeAlbum = "all";
   let activeLocation = null;
-  let currentLang = "pt";
 
   function t(key) {
     return UI_STRINGS[currentLang][key] || UI_STRINGS.pt[key] || key;
@@ -23,15 +33,62 @@
   const LOCATIONS_BY_ID = {};
   LOCATIONS.forEach((l) => (LOCATIONS_BY_ID[l.id] = l));
 
-  // Índice: locationId -> [songs]
-  const songsByLocation = {};
-  SONGS.forEach((s) => {
-    if (!s.local) return;
-    (songsByLocation[s.local] = songsByLocation[s.local] || []).push(s);
-  });
-
   function findSong(albumId, faixa) {
     return SONGS.find((s) => s.album === albumId && s.faixa === faixa);
+  }
+
+  function buildLocationIndex(songs) {
+    const index = {};
+    songs.forEach((s) => {
+      if (!s.local) return;
+      (index[s.local] = index[s.local] || []).push(s);
+    });
+    return index;
+  }
+
+  // ---- Saga ativa ----
+  sagaToggle.innerHTML = "";
+  SAGAS.forEach((saga) => {
+    const btn = document.createElement("button");
+    btn.dataset.saga = saga.id;
+    btn.innerHTML = `<span>${saga.meta.icone}</span><span class="saga-name">${saga.meta.nome[currentLang]}</span>`;
+    btn.addEventListener("click", () => applySaga(saga.id));
+    sagaToggle.appendChild(btn);
+  });
+
+  function applySaga(id) {
+    if (currentSaga && currentSaga.id === id) return;
+    currentSaga = SAGAS.find((s) => s.id === id) || SAGAS[0];
+    ALBUMS = currentSaga.ALBUMS;
+    SONGS = currentSaga.SONGS;
+    STORY = currentSaga.STORY;
+    songsByLocation = buildLocationIndex(SONGS);
+
+    document.documentElement.dataset.sagaTheme = currentSaga.meta.tema;
+    sagaToggle.querySelectorAll("button").forEach((b) => {
+      b.classList.toggle("active", b.dataset.saga === currentSaga.id);
+      b.querySelector(".saga-name").textContent = SAGAS.find((s) => s.id === b.dataset.saga).meta.nome[currentLang];
+    });
+
+    activeAlbum = "all";
+    renderHeader();
+    renderAlbumFilter();
+    renderMarkers();
+    updateMarkerVisibility();
+    closePanel();
+    renderOffmap();
+    renderTimeline();
+    renderDiscography();
+
+    try { localStorage.setItem("rhapsodySaga", currentSaga.id); } catch (e) {}
+  }
+
+  function renderHeader() {
+    const nome = currentSaga.meta.nome[currentLang];
+    const subtitulo = currentSaga.meta.subtitulo[currentLang].replace("{n}", Object.keys(ALBUMS).length);
+    siteTitleEl.textContent = nome;
+    siteSubtitleEl.textContent = subtitulo;
+    document.title = nome + " — Rhapsody of Fire";
   }
 
   // ---- Idioma ----
@@ -44,15 +101,22 @@
     currentLang = lang;
     document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";
     langToggle.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b.dataset.lang === lang));
+    sagaToggle.querySelectorAll("button").forEach((b) => {
+      b.querySelector(".saga-name").textContent = SAGAS.find((s) => s.id === b.dataset.saga).meta.nome[currentLang];
+    });
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       el.textContent = t(el.dataset.i18n);
     });
 
+    renderHeader();
     closePanel();
+    renderAlbumFilter();
     renderOffmap();
     renderTimeline();
     renderDiscography();
+
+    try { localStorage.setItem("rhapsodyLang", lang); } catch (e) {}
   }
 
   // ---- Abas de seção (Mapa / História / Discografia) ----
@@ -66,15 +130,21 @@
   });
 
   // ---- Filtro de álbuns ----
-  Object.values(ALBUMS).forEach((album) => {
-    const btn = document.createElement("button");
-    btn.className = "filter-btn";
-    btn.dataset.album = album.id;
-    btn.innerHTML = `<img src="${album.cover}" alt=""><span>${album.nome}</span>`;
-    btn.addEventListener("click", () => setActiveAlbum(album.id));
-    albumFilter.appendChild(btn);
-  });
-  albumFilter.querySelector('[data-album="all"]').addEventListener("click", () => setActiveAlbum("all"));
+  function renderAlbumFilter() {
+    albumFilter.querySelectorAll(".filter-btn:not([data-album='all'])").forEach((b) => b.remove());
+    Object.values(ALBUMS).forEach((album) => {
+      const btn = document.createElement("button");
+      btn.className = "filter-btn";
+      btn.dataset.album = album.id;
+      btn.innerHTML = `<img src="${album.cover}" alt=""><span>${album.nome}</span>`;
+      btn.addEventListener("click", () => setActiveAlbum(album.id));
+      albumFilter.appendChild(btn);
+    });
+    albumFilter.querySelectorAll(".filter-btn").forEach((b) => {
+      b.classList.toggle("active", b.dataset.album === activeAlbum);
+    });
+  }
+  allFilterBtn.addEventListener("click", () => setActiveAlbum("all"));
 
   function setActiveAlbum(albumId) {
     activeAlbum = albumId;
@@ -92,32 +162,39 @@
 
   // ---- Marcadores no mapa ----
   // Ponto ancorado na coordenada da cidade; nome e contador se estendem à direita dele.
-  const markerEls = {};
-  const markerCountEls = {};
-  LOCATIONS.forEach((loc) => {
-    const songs = songsByLocation[loc.id] || [];
-    if (songs.length === 0) return;
+  let markerEls = {};
+  let markerCountEls = {};
 
-    const marker = document.createElement("button");
-    marker.className = "marker";
-    marker.style.left = loc.x + "%";
-    marker.style.top = loc.y + "%";
-    marker.setAttribute("aria-label", loc.nome);
-    marker.innerHTML = `
-      <span class="marker-dot"></span>
-      <span class="marker-count">${songs.length}</span>
-    `;
-    marker.addEventListener("click", () => {
-      activeLocation = loc.id;
-      renderPanel(loc.id);
-      markerEls_updateSelected(loc.id);
-      openPanel();
+  function renderMarkers() {
+    mapContainer.querySelectorAll(".marker").forEach((el) => el.remove());
+    markerEls = {};
+    markerCountEls = {};
+
+    LOCATIONS.forEach((loc) => {
+      const songs = songsByLocation[loc.id] || [];
+      if (songs.length === 0) return;
+
+      const marker = document.createElement("button");
+      marker.className = "marker";
+      marker.style.left = loc.x + "%";
+      marker.style.top = loc.y + "%";
+      marker.setAttribute("aria-label", loc.nome);
+      marker.innerHTML = `
+        <span class="marker-dot"></span>
+        <span class="marker-count">${songs.length}</span>
+      `;
+      marker.addEventListener("click", () => {
+        activeLocation = loc.id;
+        renderPanel(loc.id);
+        markerEls_updateSelected(loc.id);
+        openPanel();
+      });
+
+      mapContainer.appendChild(marker);
+      markerEls[loc.id] = marker;
+      markerCountEls[loc.id] = marker.querySelector(".marker-count");
     });
-
-    mapContainer.appendChild(marker);
-    markerEls[loc.id] = marker;
-    markerCountEls[loc.id] = marker.querySelector(".marker-count");
-  });
+  }
 
   function markerEls_updateSelected(selectedId) {
     Object.entries(markerEls).forEach(([id, el]) => {
@@ -280,9 +357,19 @@
       });
   }
 
-  updateMarkerVisibility();
-  closePanel();
-  renderOffmap();
-  renderTimeline();
-  renderDiscography();
+  // ---- Inicialização ----
+  let initialLang = "pt";
+  let initialSaga = SAGAS[0].id;
+  try {
+    initialLang = localStorage.getItem("rhapsodyLang") || initialLang;
+    initialSaga = localStorage.getItem("rhapsodySaga") || initialSaga;
+  } catch (e) {}
+
+  currentLang = initialLang;
+  document.documentElement.lang = initialLang === "pt" ? "pt-BR" : "en";
+  langToggle.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b.dataset.lang === initialLang));
+  document.querySelectorAll("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
+
+  if (!SAGAS.some((s) => s.id === initialSaga)) initialSaga = SAGAS[0].id;
+  applySaga(initialSaga);
 })();

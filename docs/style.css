@@ -1,4 +1,5 @@
 :root {
+  /* Tema "warm" (Emerald Sword Saga) — fogo/âmbar */
   --bg: #0e0a08;
   --bg-alt: #17110d;
   --panel-bg: #1c140f;
@@ -8,16 +9,43 @@
   --text: #ecdfc8;
   --text-dim: #b3a488;
   --border: #3a2a1c;
+  --bg-glow: #241a12;
+  --glow-strong: rgba(255,122,61,0.85);
+  --glow-medium: rgba(255,122,61,0.6);
+  --glow-soft: rgba(224,90,43,0.08);
+  --glow-title: rgba(224,90,43,0.35);
+  --glow-gold: rgba(255,220,120,0.85);
   font-family: "Georgia", "Iowan Old Style", serif;
+  transition: background 0.4s ease;
+}
+
+:root[data-saga-theme="cold"] {
+  /* Tema "cold" (The Dark Secret Saga) — gelo/sombra */
+  --bg: #060b12;
+  --bg-alt: #0c1622;
+  --panel-bg: #0f1a28;
+  --ember: #3f8fb0;
+  --ember-bright: #6fd6f0;
+  --gold: #aec6d8;
+  --text: #dbe8f0;
+  --text-dim: #8ea3b5;
+  --border: #1c3040;
+  --bg-glow: #0d1c2b;
+  --glow-strong: rgba(111,214,240,0.85);
+  --glow-medium: rgba(111,214,240,0.6);
+  --glow-soft: rgba(63,143,176,0.12);
+  --glow-title: rgba(111,214,240,0.35);
+  --glow-gold: rgba(174,198,216,0.85);
 }
 
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
-  background: radial-gradient(ellipse at top, #241a12 0%, var(--bg) 60%);
+  background: radial-gradient(ellipse at top, var(--bg-glow) 0%, var(--bg) 60%);
   color: var(--text);
   min-height: 100vh;
+  transition: background 0.4s ease;
 }
 
 .lang-toggle {
@@ -52,20 +80,52 @@ body {
   text-align: center;
   padding: 1.6rem 1rem 1rem;
   border-bottom: 1px solid var(--border);
-  background: linear-gradient(180deg, rgba(224,90,43,0.08), transparent);
+  background: linear-gradient(180deg, var(--glow-soft), transparent);
+  transition: background 0.4s ease, border-color 0.4s ease;
 }
 .topbar h1 {
   margin: 0;
   font-size: clamp(1.4rem, 4vw, 2.4rem);
   letter-spacing: 0.03em;
   color: var(--gold);
-  text-shadow: 0 0 18px rgba(224,90,43,0.35);
+  text-shadow: 0 0 18px var(--glow-title);
+  transition: color 0.4s ease;
 }
 .subtitle {
   margin: 0.35rem 0 0;
   color: var(--text-dim);
   font-size: 0.95rem;
   font-style: italic;
+}
+
+.saga-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.saga-toggle button {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-family: inherit;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+.saga-toggle button:hover { color: var(--text); border-color: var(--ember); }
+.saga-toggle button.active {
+  background: var(--ember);
+  border-color: var(--ember-bright);
+  color: #060606;
+  box-shadow: 0 0 14px var(--glow-medium);
 }
 
 .section-tabs {
@@ -193,7 +253,7 @@ body {
   gap: 1rem;
   padding: 1rem 1.2rem;
   border-bottom: 1px solid var(--border);
-  background: linear-gradient(90deg, rgba(224,90,43,0.08), transparent);
+  background: linear-gradient(90deg, var(--glow-soft), transparent);
 }
 .disco-header img {
   width: 64px;
@@ -301,9 +361,10 @@ body {
   height: 14px;
   border-radius: 50%;
   flex-shrink: 0;
-  background: radial-gradient(circle at 35% 35%, var(--ember-bright), var(--ember) 60%, #7a2b0f 100%);
+  background: radial-gradient(circle at 35% 35%, var(--ember-bright), var(--ember) 60%, var(--bg-glow) 100%);
   border: 2px solid rgba(255,235,205,0.85);
-  box-shadow: 0 0 8px rgba(255,122,61,0.85);
+  box-shadow: 0 0 8px var(--glow-strong);
+  transition: background 0.4s ease;
 }
 .marker-count {
   background: var(--gold);
@@ -321,7 +382,7 @@ body {
 }
 .marker:hover {
   transform: translateY(-50%) scale(1.08);
-  box-shadow: 0 0 14px rgba(255,122,61,0.6);
+  box-shadow: 0 0 14px var(--glow-medium);
   border-color: var(--ember);
 }
 .marker.dim {
@@ -330,7 +391,7 @@ body {
 }
 .marker.selected {
   transform: translateY(-50%) scale(1.12);
-  box-shadow: 0 0 18px rgba(255,220,120,0.8);
+  box-shadow: 0 0 18px var(--glow-gold);
   border-color: var(--gold);
 }
 

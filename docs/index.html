@@ -14,8 +14,9 @@
 </div>
 
 <header class="topbar">
-  <h1 data-i18n="siteTitle">A Saga da Espada Esmeralda</h1>
-  <p class="subtitle" data-i18n="subtitle">Rhapsody of Fire — mapa interativo dos 5 álbuns</p>
+  <nav class="saga-toggle" id="saga-toggle"></nav>
+  <h1 id="site-title">A Saga da Espada Esmeralda</h1>
+  <p class="subtitle" id="site-subtitle">Rhapsody of Fire — mapa interativo dos álbuns</p>
 </header>
 
 <nav class="section-tabs" id="section-tabs">
@@ -53,8 +54,8 @@
 
 <section class="view hidden" id="view-history">
   <div class="history-intro">
-    <h2 data-i18n="historyTitle">A História da Saga da Espada Esmeralda</h2>
-    <p data-i18n="historyDesc">A jornada do Guerreiro de Gelo através dos 5 álbuns, capítulo a capítulo. Clique nas faixas de cada capítulo para ver o resumo, a letra e o link do Spotify.</p>
+    <h2 data-i18n="historyTitle">A História Completa</h2>
+    <p data-i18n="historyDesc">A jornada narrada através dos álbuns, capítulo a capítulo. Clique nas faixas de cada capítulo para ver o resumo, a letra e o link do Spotify.</p>
   </div>
   <ol class="timeline" id="timeline"></ol>
 </section>
@@ -62,7 +63,7 @@
 <section class="view hidden" id="view-discography">
   <div class="history-intro">
     <h2 data-i18n="discographyTitle">Discografia completa</h2>
-    <p data-i18n="discographyDesc">Os 5 álbuns da Saga da Espada Esmeralda, em ordem de lançamento, com todas as faixas.</p>
+    <p data-i18n="discographyDesc">Os álbuns em ordem de lançamento, com todas as faixas.</p>
   </div>
   <div id="discography" class="discography"></div>
 </section>
@@ -71,7 +72,10 @@
   <p data-i18n="footer">Site pessoal de fã — sem afiliação com Rhapsody of Fire. Letras completas disponíveis via link externo (Letras.com); resumos de localização são paráfrases próprias.</p>
 </footer>
 
-<script src="data.js"></script>
+<script src="data-common.js"></script>
+<script src="data-emerald-sword.js"></script>
+<script src="data-dark-secret.js"></script>
+<script src="sagas.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
