@@ -5,10 +5,45 @@
 
 ## Letra
 
-Letra completa (fonte externa, direitos dos autores originais): [Dar-Kunor — Letras.com](https://www.letras.com/rhapsody/dar-kunor/)
+[Part I: Echoes From The Elvish Woods]
+
+Eahren (Eahren, Eahren, Eahren)
+Eilah (Eilah, Eilah, Eilah)
+Tieri (Tieri, Tieri, Tieri)
+Lótar (Lótar, Lótar, Lótar)
+Nairi
+Eilen
+Sólren
+Ámónier
+
+[Part II: Fear of the Dungeons]
+
+Tam! Mox! Tot! Late!
+Oh, oh, oh, oh, oh
+
+Domo inferna
+Temat mortem!
+Cruenta ita lacrimarum
+Oh, oh, oh, oh, oh
+
+Tegens seu limbus turrim!
+Sanguis est hac multum
+
+Tam! Mox! Tot! Late!
+Oh, oh, oh, oh, oh
+
+Domo inferna
+Temat mortem!
+Cruenta ita lacrimarum
+Oh, oh, oh, oh, oh
+Domo inferna
+(Domo dosis inferna)
+Temat mortem!
+Cruenta ita lacrimarum
+Oh, oh, oh, oh, oh
+
+Tam! Mox!
 
 ## Localização na saga
 
-A Ordem do Dragão Branco finalmente alcança as cavernas de Dar-Kunor, em Hargor, onde o sétimo Livro Negro está escondido — só Dargor conhece o caminho.
-
-*Nota: resumo preliminar, baseado em pesquisa sobre a Dark Secret Saga (sinopses de fãs, Wikipedia) — ainda sem a letra oficial da faixa. Será refinado quando a letra for adicionada.*
+Instrumental/cântico com nomes élficos e invocações em latim — o grupo entra nas cavernas geladas e retorcidas de Dar-Kunor, a "casa do inferno".

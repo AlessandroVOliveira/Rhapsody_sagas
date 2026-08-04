@@ -5,10 +5,160 @@
 
 ## Letra
 
-Letra completa (fonte externa, direitos dos autores originais): [Act III - The Ancient Fires of Har-Kuun — Letras.com](https://www.letras.com/rhapsody/1767301/)
+Brivido amaro or piega il fiero volto
+Tersa paura al suo levar l'occhio si' stanco
+Fredda visione dal mondo dimenticata
+Antica porta ch'al morto sol al vero mal conduce
+
+Har-Kuun!
+
+Seven black towers tearing the skies
+Seven the guardians of the underworld's night
+Archways of dark stone, mad gothic maze
+Unholy fortress built on anger and hate
+
+Over majestic peaks
+We hail the fallen kings
+Great warriors born to win
+Celestial blazing steel
+
+Millions of swords and shields
+Flaming the coldest wind
+Dark gate, primordial sin
+Black legends now revealed
+
+[Solo]
+
+Transcending vision
+Ancestral madness
+Chaos and oblivion
+Gateway to hell
+
+Transcending vision
+Ancestral madness
+Chaos and oblivion
+Gateway to hell
+
+All'ignoto va il lor sguardo
+Piange il cuore il negato
+Nell'oblio di un rimpianto
+Sferza l'ombra il suo passato
+
+Ruins of mighty evil
+Asking for new splendor
+Cosmic hell's dominion
+Nekron's resurrection
+
+Ruins of mighty evil
+Asking for new splendor
+Cosmic hell's dominion
+Nekron's resurrection
+
+Burn the skies of gods and angels
+Flames of force divine
+The great call of shining Heavens
+Storms the walls of Kron
+
+The ancient fires of Har-Kuun
+The ancient fires of Har-Kuun
+Har-Kuun, Har-Kuun
+
+ILLUMINATI SUMUS
+ADHUS DIVINITUS
+PRAEDITIO MALEDICTUM
+INFERNUS REX FOEDUS
+HIBERNUS TEMPUS ANNI
+VENTORUM FURIA
+OBSCURITAS NATURAE
+AETERNA TENEBRA
+
+ILLUMINATI SUMUS
+ADHUS DIVINITUS
+PRAEDITIO MALEDICTUM
+INFERNUS REX FOEDUS
+HIBERNUS TEMPUS ANNI
+VENTORUM FURIA
+OBSCURITAS NATURAE
+AETERNA TENEBRA
+
+Eterno fuoco ancor vivo ed or pulsante
+Pietra opaca di ruvido spento riflesso
+Morte, tormento, rovina di sangue ed odio
+Pena, dolore, o gotico cuor di lamento e pianto
+
+Har-Kuun!
+
+Sad tales forgotten, mysterious for most
+Now are revealing all their dangerous words
+Another dark entrance, another dark gate
+True Gothic nightmare, an infernal descent
+
+Over majestic peaks
+We hail the fallen kings
+Great warriors born to win
+Celestial blazing steel
+
+Millions of swords and shields
+Flaming the coldest wind
+Dark gate, primordial sin
+Black legends now revealed
+
+[Solo]
+
+Infinite shadows
+Cosmic damnation
+Dark reign of terror
+Evil reborn
+
+Infinite shadows
+Cosmic damnation
+Dark reign of terror
+Evil reborn
+
+Nel suo infido lamento
+Un segreto ferma il passo
+Se nel calice e' versato
+Rima el sangue del dannato
+
+Ruins of mighty evil
+Asking for new splendor
+Cosmic hell's dominion
+Nekron's resurrection
+
+Ruins of mighty evil
+Asking for new splendor
+Cosmic hell's dominion
+Nekron's resurrection
+
+Burn the skies of gods and angels
+Flames of force divine
+The great call of shining Heavens
+Storms the walls of Kron
+
+The ancient fires of Har-Kuun
+The ancient fires of Har-Kuun
+Har-Kuun, Har-Kuun
+
+ILLUMINATI SUMUS
+ADHUS DIVINITUS
+PRAEDITIO MALEDICTUM
+INFERNUS REX FOEDUS
+HIBERNUS TEMPUS ANNI
+VENTORUM FURIA
+OBSCURITAS NATURAE
+AETERNA TENEBRA
+
+ILLUMINATI SUMUS
+ADHUS DIVINITUS
+PRAEDITIO MALEDICTUM
+INFERNUS REX FOEDUS
+HIBERNUS TEMPUS ANNI
+VENTORUM FURIA
+OBSCURITAS NATURAE
+AETERNA TENEBRA
+
+[Solo]
 
 ## Localização na saga
 
-Os heróis alcançam a fortaleza de Har-Kuun, onde os fogos antigos guardam a estátua petrificada do dragão Thanor.
-
-*Nota: resumo preliminar, baseado em pesquisa sobre a Dark Secret Saga (sinopses de fãs, Wikipedia) — ainda sem a letra oficial da faixa. Será refinado quando a letra for adicionada.*
+O grupo alcança Har-Kuun, uma fortaleza de sete torres negras guardada por sete sentinelas, erguida sobre ruínas de um mal antigo, onde a ressurreição de Nekron está profetizada para se desenrolar.

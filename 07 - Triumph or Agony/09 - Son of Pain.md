@@ -5,10 +5,47 @@
 
 ## Letra
 
-Letra completa (fonte externa, direitos dos autores originais): [Son of Pain — Letras.com](https://www.letras.com/rhapsody/802695/)
+[Dargor:]
+While I crossed the mountains' side
+I recalled a memory
+Days of anguish nights of pain
+Your voice lives on trapped inside my mind
+Eternally
+
+Those wise last words fade in my soul
+You had the choice, you chose the light
+Find your way darklands' son
+Spread your wings then your heart will fly
+
+Thank you, angels
+I am now reborn
+This may be my last breath
+And my final day
+
+I'm the son of pain
+Welcome my new fate
+
+Hell's lost flame was life for me
+In that moment I felt free
+I was under an evil spell
+So now I want just to live again
+To live again
+
+I am proud, proud to lead my soul
+To new horizons, to the golden sky
+Find your way my brave darklands' son
+Wizards, kings, elves and trolls
+
+Thank you, angels
+I am now reborn
+This may be my last breath
+And my final day
+
+I'm the son of pain
+Welcome my new fate
+Thunder gods I pray
+I deny hell's flames
 
 ## Localização na saga
 
-Dargor confronta sua própria natureza — filho da dor, dividido entre sua herança sombria e a redenção que busca.
-
-*Nota: resumo preliminar, baseado em pesquisa sobre a Dark Secret Saga (sinopses de fãs, Wikipedia) — ainda sem a letra oficial da faixa. Será refinado quando a letra for adicionada.*
+Dargor relembra uma voz que um dia lhe disse que ele escolheu a luz; livre de um "feitiço maligno", ele se declara "filho da dor", renascido e disposto a negar as chamas do inferno.

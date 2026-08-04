@@ -5,10 +5,45 @@
 
 ## Letra
 
-Letra completa (fonte externa, direitos dos autores originais): [The Magic of the Wizard's Dream — Letras.com](https://www.letras.com/rhapsody/109873/)
+In those silent shades of grey
+I will find a place
+To escape the endless night
+To find a new Sun
+
+I know which is my fate
+Bond to Erian's old tale
+I'll be always there
+Fighting the ancient sin
+Moon shine in this eternal night
+
+Angels are calling
+From divine lost Crystal Realms
+Riding from heaven
+For the magic of the wizard's dream
+
+In the misty lights of dawn
+Between heart and soul
+Elgard's calling for new hope
+To avoid our fall
+
+I know which is my fate
+Bond to Erian's old tale
+I'll be always there
+Fighting the ancient sin
+Moon shine in this eternal night
+
+Angels are calling
+From divine lost Crystal Realms
+Riding from heaven
+For the magic of the wizard's dream
+The wizard's dream
+
+Angels are calling
+From divine lost Crystal Realms
+Riding from heaven
+For the magic of the wizard's dream
+The wizard's dream
 
 ## Localização na saga
 
-Um mago revela em sonho pistas sobre a ameaça de Nekron.
-
-*Nota: resumo preliminar, baseado em pesquisa sobre a Dark Secret Saga (sinopses de fãs, Wikipedia) — ainda sem a letra oficial da faixa. Será refinado quando a letra for adicionada.*
+Em um sonho ligado à antiga história de Erian, anjos chamam dos perdidos Reinos de Cristal; a própria Elgard clama por uma nova esperança para evitar sua queda.

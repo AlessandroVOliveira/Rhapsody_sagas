@@ -5,10 +5,50 @@
 
 ## Letra
 
-Letra completa (fonte externa, direitos dos autores originais): [Act IV - The Betrayal — Letras.com](https://www.letras.com/rhapsody/1767302/)
+[Iras:]
+What many believed was only a legend
+Was now lying in front of me
+There it was... Erian's book of the holy angels
+The testament of all the Heavens... Beckoning to me
+A black dragon made of stone stood guard over it
+Threatening with outstretched wings
+As I drew closer my heart pounded
+But I cast off my fear and in the next instant
+I opened the book
+
+[King Uriel:]
+What Erian had written 5.000 years before
+Was now finally before their eyes
+
+[Dargor:] Elf of the caves!
+[Khaas:] Tarish, what in God's name are you doing?
+[Iras:] You insane fool!
+[Tarish:] I do what must be done!
+[Dargor:] Let him go!
+[Tarish:] Give me the book and I will spare the life of this old wizard!
+[Lothen:] Traitor
+[Iras:] He knows not what he's doing!
+[Tarish:] I know very well what I am doing! Hand it to me!
+Give it to me or he will die!
+[Khaas:] All right, take the book but let Iras go!
+[Iras:] No!
+
+[Iras:] Take it from him!
+[Tarish:] Fools! This belongs to the Black Order!
+[Dargor:] Leave it, leave it!
+[Khaas:] Ah I'm bleeding!
+[Lothen:] Help him!
+[Iras:] Do not let him escape! Go after him! We must have the book
+[Dargor:] I will return with it!
+
+[Iras:]
+As I lay wounded
+An incredible pain shooting through my head
+I saw Dargor struggling with Tarish. He won!
+But before dying, the elf king was able
+To tear some pages out of Erian's book
+Then everything turned to black
 
 ## Localização na saga
 
-A Ordem Negra ataca em um momento de traição, tentando impedir a reconstituição das pedras dos olhos de Thanor.
-
-*Nota: resumo preliminar, baseado em pesquisa sobre a Dark Secret Saga (sinopses de fãs, Wikipedia) — ainda sem a letra oficial da faixa. Será refinado quando a letra for adicionada.*
+Iras encontra o livro de Erian guardado por um dragão de pedra negra (Thanor, petrificado). Tarish — secretamente leal à Ordem Negra — trai o grupo, fazendo Iras refém para roubar o livro. Dargor mata Tarish na luta, mas não antes de o traidor arrancar algumas páginas do livro.

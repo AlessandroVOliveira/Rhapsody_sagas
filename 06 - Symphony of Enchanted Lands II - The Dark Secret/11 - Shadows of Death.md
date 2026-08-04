@@ -5,10 +5,71 @@
 
 ## Letra
 
-Letra completa (fonte externa, direitos dos autores originais): [Shadows of Death — Letras.com](https://www.letras.com/rhapsody/149607/)
+The old elf king Tharish knows well the way
+Through the caverns
+To Dar-Kunor's forgotten entrance
+For two days they walked in the wild
+On the pathway to darkness
+The reason they survived it was Dargor
+
+Finally they saw in the black and evil marsh
+There lied the passageway
+Between snakes and hellish mud
+
+Shadows of death
+Follow behind into Dar-Kunor caves
+Shadows of death
+The holy mission of Iras' new friends
+Five heroes ready to die
+Die for the whole world
+Die to protect
+The green of the earth
+The green of the earth
+
+Black waters moving are signs
+Dar-Kunor's river
+(The water is cold)
+The water is cold there
+Tharish dived into the marshes
+He soon disappeared
+(Into the black icy water)
+Black icy water
+
+Then, when he appeared
+They welcome him as heroes do
+He found the caves of the ancient brother elves
+
+Shadows of death
+Follow behind into Dar-Kunor caves
+Shadows of death
+The holy mission of Iras' new friends
+Five heroes ready to die
+Die for the whole world
+Die to protect
+The green of the earth
+The green of the earth
+The green and the wonderful beloved
+Our mother earth
+Yeah!
+
+[King Uriel]
+Now is the time to face
+The underworld of Dar-Kunor
+Perhaps never to return alive
+
+Shadows of death
+Follow behind into Dar-Kunor caves
+Shadows of death
+The holy mission of Iras' new friends
+Five heroes ready to die
+Die for the whole world
+Die to protect
+The green of the earth
+The green of the earth
+The green and the wonderful beloved
+Our mother earth
+Yeah!
 
 ## Localização na saga
 
-Primeiro confronto direto com as sombras a serviço de Nekron.
-
-*Nota: resumo preliminar, baseado em pesquisa sobre a Dark Secret Saga (sinopses de fãs, Wikipedia) — ainda sem a letra oficial da faixa. Será refinado quando a letra for adicionada.*
+O velho rei élfico Tharish conhece a entrada oculta de Dar-Kunor pelas cavernas; após dois dias na natureza selvagem, o grupo alcança um pântano negro — Tharish mergulha no rio gelado e encontra as cavernas de seus ancestrais élficos. O rei Uriel avisa que talvez não voltem vivos.

@@ -9,6 +9,4 @@ Letra completa (fonte externa, direitos dos autores originais): [Labyrinth of Ma
 
 ## Localização na saga
 
-Encerramento instrumental que mergulha num labirinto de loucura, prenunciando as provações finais da saga.
-
-*Nota: resumo preliminar, baseado em pesquisa sobre a Dark Secret Saga (sinopses de fãs, Wikipedia) — ainda sem a letra oficial da faixa. Será refinado quando a letra for adicionada.*
+Encerramento instrumental que mergulha na loucura enquanto o grupo se aproxima de Har-Kuun.

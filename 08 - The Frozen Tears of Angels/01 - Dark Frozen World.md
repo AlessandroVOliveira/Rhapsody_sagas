@@ -5,10 +5,56 @@
 
 ## Letra
 
-Letra completa (fonte externa, direitos dos autores originais): [Dark Frozen World — Letras.com](https://www.letras.com/rhapsody/1679871/)
+[King Uriel]
+Nekron's dark pages proclaimed the worst
+Of all the known prophecies
+Erian's book, the only possible way to stop it
+Had to be found
+The hour had come to answer
+The angels' last desperate call
+
+Arcana mala dicta
+
+Ad gloriam
+Inflammatus
+Ad gloriam
+Inflammatus
+Ad gloriam
+Inflammatus
+Ad gloriam
+Inflammatus
+Ad gloriam
+Inflammatus
+Ad gloriam
+Inflammatus
+(Arcana mortifera)
+
+Sed ubi
+Ea sunt
+Comperta in regno
+Pars dole
+Dolere
+Vulnus mortiferum
+Sed ubi
+Ea sunt
+Pars dole
+Dolere
+Age quod
+Quod agis
+Tenebrae infernae
+
+Gelidus tremor (Vulnus)
+(Gelidus) vulnus mortiferum
+Mortiferum
+
+Arcana mala dicta
+Arcana mortifera
+Arcana mala dicta
+Arcana mortifera
+Arcana mala dicta
+Arcana mortifera
+Gelidus tremor
 
 ## Localização na saga
 
-Abertura instrumental que introduz o mundo gelado onde a próxima etapa da busca se passa — a fortaleza de Har-Kuun, onde repousa a estátua do dragão Thanor.
-
-*Nota: resumo preliminar, baseado em pesquisa sobre a Dark Secret Saga (sinopses de fãs, Wikipedia) — ainda sem a letra oficial da faixa. Será refinado quando a letra for adicionada.*
+O rei Uriel narra: as páginas negras de Nekron continham a pior de todas as profecias; só o livro de Erian pode detê-la, e chegou a hora de responder ao último e desesperado chamado dos anjos.

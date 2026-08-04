@@ -5,10 +5,57 @@
 
 ## Letra
 
-Letra completa (fonte externa, direitos dos autores originais): [Silent Dream — Letras.com](https://www.letras.com/rhapsody/802700/)
+The silent storm in my heartbeat
+Is raging at the questions of soul
+No way back, rising darkness
+Blind angel in a night without stars
+
+Lost in the silent dream
+Of a lonely broken love
+
+The fall of hope, of illusion
+Is hidden there behind the wild rocks
+To reach the Sun, warm my feelings
+I'll rise where only eagles can fly
+
+Lost in the silent dream
+Of a lonely broken love
+
+Fly, fly high
+Enlight my heart and my eyes
+Bring hope with your holy sunlight
+The angels' fire
+
+The silent storm in my heartbeat
+Is raging at the questions of soul
+No way back, rising darkness
+Blind angel in a night without stars
+
+Lost in the silent dream
+Of a lonely broken love
+
+Fly, fly high
+Enlight my heart and my eyes
+Bring hope with your holy sunlight
+The angels' fire
+
+Fly, fly high
+Enlight my heart and my eyes
+Bring hope with your holy sunlight
+The angels' fire
+I'll believe
+In what the wind brings to me
+In pure love and great emotion
+I will believe
+Fly, fly high
+Enlight my heart and my eyes
+Bring hope with your holy sunlight
+The angels' fire
+I'll believe
+In what the wind brings to me
+In pure love and great emotion
+I will believe
 
 ## Localização na saga
 
-Um sonho silencioso revela mais sobre o destino que aguarda os heróis — possivelmente uma visão de Dargor sobre seu próprio lado sombrio.
-
-*Nota: resumo preliminar, baseado em pesquisa sobre a Dark Secret Saga (sinopses de fãs, Wikipedia) — ainda sem a letra oficial da faixa. Será refinado quando a letra for adicionada.*
+Um sonho silencioso de esperança em meio à escuridão, do fogo de um anjo prometendo luz na tempestade.

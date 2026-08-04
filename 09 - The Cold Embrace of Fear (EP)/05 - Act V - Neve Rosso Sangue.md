@@ -5,10 +5,32 @@
 
 ## Letra
 
-Letra completa (fonte externa, direitos dos autores originais): [Act V - Neve Rosso Sangue — Letras.com](https://www.letras.com/rhapsody/1767303/)
+Cuore dal triste fato
+Difetto di lealta
+Ch'or la neve nasconde dia
+Sana la sua ferita
+L'ombra di un'entita
+Che a nuova luce convergera
+
+Neve scendi e sciogli al sol
+Il mio peccato nel tuo candor
+Neve scendi e sciogli al sol
+Il mio peccato nel tuo candor
+Nel tuo candor
+
+Candida vibrazione
+Lume d'eternita
+Arde nell'aere la tua unicita
+Scorgo nel tuo pallore
+Ultima verita
+Rea di sacra omerta
+
+Neve scendi e sciogli al sol
+Il mio peccato nel tuo candor
+Neve scendi e sciogli al sol
+Il mio peccato nel tuo candor
+Nel tuo candor
 
 ## Localização na saga
 
-A batalha tinge a neve de vermelho, num dos confrontos mais brutais da saga.
-
-*Nota: resumo preliminar, baseado em pesquisa sobre a Dark Secret Saga (sinopses de fãs, Wikipedia) — ainda sem a letra oficial da faixa. Será refinado quando a letra for adicionada.*
+Um lamento em italiano pela traição e morte de Tarish, com a neve lavando o pecado sob o sol.

@@ -5,10 +5,59 @@
 
 ## Letra
 
-Letra completa (fonte externa, direitos dos autores originais): [Sea of Fate — Letras.com](https://www.letras.com/rhapsody/1653264/)
+Mirrors reflecting
+The broken illusion of one lost
+And sinful (mind)
+Mind's eye protect me
+While caught in this dark world of fear
+And fading hope
+
+My soul is worn
+
+The sun lonely words
+Of innocence lost
+In the shades now revealed
+By a fate never told
+
+A sea of new hope
+Won't fear his reborn
+In its waters we'll wait for
+The great heavens' call
+
+Fragments of tortured
+Existence revealing cold whispers
+Of lonely (ghosts)
+
+Ghosts led by shadows
+Enlightning the source of all evil
+Of darkened faith
+
+And mortal pain
+
+The sun lonely words
+Of innocence lost
+In the shades now revealed
+By a fate never told
+
+A sea of new hope
+Won't fear his reborn
+In its waters we'll wait for
+The great heavens' call
+
+The call!
+
+The sun lonely words
+Of innocence lost
+In the shades now revealed
+By a fate never told
+
+A sea of new hope
+Won't fear his reborn
+In its waters we'll wait for
+The great heavens' call
+
+The call!
 
 ## Localização na saga
 
-Os heróis cruzam um mar gelado guiados pelo destino, rumo a Har-Kuun.
-
-*Nota: resumo preliminar, baseado em pesquisa sobre a Dark Secret Saga (sinopses de fãs, Wikipedia) — ainda sem a letra oficial da faixa. Será refinado quando a letra for adicionada.*
+O grupo atravessa um mar gelado, agarrado à esperança de um renascimento do mundo, aguardando o chamado dos céus.

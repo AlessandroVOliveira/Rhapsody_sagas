@@ -5,10 +5,98 @@
 
 ## Letra
 
-Letra completa (fonte externa, direitos dos autores originais): [Aeons of Raging Darkness — Letras.com](https://www.letras.com/rhapsody/1900731/)
+I won't forget that day
+I won't forget her name
+What has hell done to her
+Her pain's flowing in my blackened soul's veins
+
+Libera animas
+Omnium defunctorum
+De poenis inferni
+Ne cadant / ne cadant in obscurum
+
+Libera animas
+De poenis inferni
+
+Cold frozen night
+(Bleeding sins and lies)
+Nocturnal rhyme
+(Of unholy pride)
+
+Quake! (crack!) dare! (clash!)
+Storm the gates of hell!
+
+May you be the one
+The everlasting flame of hope
+Glorify the angels
+And fight their holy war
+Let me face the beast
+And every single devil's son
+I will free my mind
+And I will save her soul
+
+Many don't realize
+What it's capable of
+What "evil" really is
+Far beyond its meaning as a mere word
+
+Requiem aeternam
+Dona eis, domine
+Requiem aeternam
+Lux perpetua / lux luceat eis
+
+Requiem aeternam
+Dona eis, domine
+
+Her lovely smile
+(Brutalized and raped!)
+Her crystal eyes
+(She won't see anymore!)
+
+Quake! (crack!) dare! (clash!)
+Storm the gates of hell!
+
+May you be the one
+The everlasting flame of hope
+Glorify the angels
+And fight their holy war
+Let me face the beast
+And every single devil's son
+I will free my mind
+And I will save her soul
+
+Guitar solo: Luca turilli
+
+May you be the one
+The everlasting flame of hope
+Glorify the angels
+And fight their holy war
+Let me face the beast
+And every single devil's son
+I will free my mind
+And I will save her soul
+
+May you be the one
+The everlasting flame of hope
+Glorify the angels
+And fight their holy war
+Let me face the beast
+And every single devil's son
+I will free my mind
+And I will save her soul
+
+May you be the one
+The everlasting flame of hope
+Glorify the angels
+And fight their holy war
+Let me face the beast
+And every single devil's son
+I will free my mind
+And I will save her soul
+
+Why you, why?
+I will free you!
 
 ## Localização na saga
 
-Éons de trevas enfurecidas culminam no confronto final contra Nekron e sua Ordem Negra; é aqui que o mago Etherus se sacrifica lançando um feitiço proibido contra Koras, o mais poderoso dos sete demônios.
-
-*Nota: resumo preliminar, baseado em pesquisa sobre a Dark Secret Saga (sinopses de fãs, Wikipedia) — ainda sem a letra oficial da faixa. Será refinado quando a letra for adicionada.*
+Um grito de vingança e salvação contra as forças do inferno — o ápice emocional antes da batalha final no Reino das Cachoeiras Sagradas, onde Etherus se sacrificará contra Koras.

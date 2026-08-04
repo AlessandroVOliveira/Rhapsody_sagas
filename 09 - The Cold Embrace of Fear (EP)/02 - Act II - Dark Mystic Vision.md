@@ -5,10 +5,10 @@
 
 ## Letra
 
-Letra completa (fonte externa, direitos dos autores originais): [Act II - Dark Mystic Vision — Letras.com](https://www.letras.com/rhapsody/1767300/)
+[Dargor:] Iras?
+[Iras:] The lonely mountain, and behind it the secret place
+Prepare for what lies behind those icy rocks
 
 ## Localização na saga
 
-Uma visão mística sombria alerta sobre os perigos que os aguardam na fortaleza.
-
-*Nota: resumo preliminar, baseado em pesquisa sobre a Dark Secret Saga (sinopses de fãs, Wikipedia) — ainda sem a letra oficial da faixa. Será refinado quando a letra for adicionada.*
+Iras avista a montanha solitária que esconde Har-Kuun além das rochas geladas — o lugar secreto que buscam.
