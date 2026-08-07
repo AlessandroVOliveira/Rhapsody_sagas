@@ -8,8 +8,39 @@ const SAGA_EMERALD_SWORD = {
     nome: { pt: "A Saga da Espada Esmeralda", en: "The Saga of the Emerald Sword" },
     subtitulo: { pt: "Rhapsody of Fire — mapa interativo de {n} álbuns", en: "Rhapsody of Fire — interactive map of {n} albums" },
     tema: "warm",
-    icone: "⚔️"
+    icone: "⚔️",
+    mapa: "assets/map.png"
   },
+
+  // Localizações no mapa oficial pintado das Terras Encantadas (coordenadas em % da imagem).
+  // x foi calibrado para ficar logo à direita de onde o nome termina na arte do mapa.
+  LOCATIONS: [
+    { id: "nordic_plains",     nome: "Nordic Plains",      x: 51.4, y: 16.2 },
+    { id: "sea_of_trolls",     nome: "Sea of Trolls",      x: 28.75, y: 21.9 },
+    { id: "elves_hills",       nome: "The Elves Hills",    x: 80.0, y: 26.1 },
+    { id: "forest_of_trolls",  nome: "Forest of Trolls",   x: 61.3, y: 26.1 },
+    { id: "caltor",            nome: "Caltor",             x: 14.78, y: 33.4 },
+    { id: "dragonland",        nome: "Dragonland",         x: 55.3, y: 31.8 },
+    { id: "ancelot",           nome: "Ancelot",            x: 53.1, y: 39.5 },
+    { id: "hargor",            nome: "Hargor",             x: 20.7, y: 38.6 },
+    { id: "darklands",         nome: "Darklands",          x: 34.83, y: 37.1 },
+    { id: "forest_of_unicorns",nome: "Forest of Unicorns", x: 39.84, y: 42.8 },
+    { id: "grey_mountains",    nome: "Grey Mountains",     x: 14.78, y: 42.3 },
+    { id: "elgard",            nome: "Elgard",             x: 54.2, y: 49.1 },
+    { id: "kanor",             nome: "Kanor",              x: 95.0, y: 43.8 },
+    { id: "green_valleys",     nome: "Green Valleys",      x: 35.3, y: 51.7 },
+    { id: "lands_of_chaos",    nome: "Lands of Chaos",     x: 66.7, y: 54.3 },
+    { id: "desert_of_varg",    nome: "Desert of Varg",     x: 81.05, y: 49.1 },
+    { id: "enchanted_valleys", nome: "Enchanted Valleys",  x: 14.06, y: 55.3 },
+    { id: "algalord",          nome: "Algalord",           x: 35.9, y: 62.4 },
+    { id: "hills_of_loregard", nome: "Hills of Loregard",  x: 95.0, y: 55.8 },
+    { id: "loregard",          nome: "Loregard",           x: 86.4, y: 64.2 },
+    { id: "elnor",             nome: "Elnor",              x: 7.26, y: 68.4 },
+    { id: "trengard",          nome: "Trengard",           x: 63.5, y: 69.9 },
+    { id: "holy_lakes",        nome: "Holy Lakes",         x: 93.2, y: 72.0 },
+    { id: "thorald",           nome: "Thorald",            x: 13.0, y: 73.1 },
+    { id: "ragatorn",          nome: "Ragatorn",           x: 78.2, y: 83.5 }
+  ],
 
   ALBUMS: {
     legendary_tales: {
@@ -60,6 +91,7 @@ const SAGA_EMERALD_SWORD = {
     { album: "legendary_tales", faixa: 1, titulo: "Ira Tenax", local: null,
       resumo: { pt: "Abertura instrumental que invoca a fúria e a tensão do conflito que está por vir, dando o tom épico ao início da saga.",
         en: "An instrumental opening that summons the fury and tension of the conflict to come, setting the epic tone for the start of the saga." },
+      traducao: { idioma: "lat", pt: "“Ira Tenaz”", en: "“Tenacious Wrath”" },
       letraUrl: LETRAS_BASE + "/rhapsody/92171/" },
     { album: "legendary_tales", faixa: 2, titulo: "Warrior of Ice", local: "loregard",
       resumo: { pt: "Apresenta o protagonista, o Guerreiro de Gelo, rei da aldeia de Loregard, que decide partir em busca da espada de esmeralda para trazer paz às suas terras, dominadas pela guerra e pelas trevas.",
@@ -102,6 +134,7 @@ const SAGA_EMERALD_SWORD = {
     { album: "symphony", faixa: 1, titulo: "Epicus Furor", local: null,
       resumo: { pt: "Abertura instrumental que retoma a jornada do Guerreiro em busca das três chaves da sabedoria.",
         en: "An instrumental opening that resumes the Warrior's journey in search of the three keys of wisdom." },
+      traducao: { idioma: "lat", pt: "“Fúria Épica”", en: "“Epic Fury”" },
       letraUrl: LETRAS_BASE + "/rhapsody/123521/" },
     { album: "symphony", faixa: 2, titulo: "Emerald Sword", local: "elgard",
       resumo: { pt: "O Guerreiro enfrenta seus medos mais profundos no espelho das sombras e conquista a primeira chave da sabedoria.",
@@ -244,6 +277,8 @@ const SAGA_EMERALD_SWORD = {
     { album: "dragonflame", faixa: 7, titulo: "Lamento Eroico", local: "algalord",
       resumo: { pt: "Lamento poético em italiano: o Guerreiro reflete sobre destino e sacrifício, pedindo para se tornar um “guardião celeste” mesmo além da morte — um interlúdio introspectivo antes do clímax final.",
         en: "A poetic lament in Italian: the Warrior reflects on fate and sacrifice, asking to become a “celestial guardian” even beyond death — an introspective interlude before the final climax." },
+      traducao: { idioma: "it", pt: "“Lamento Heroico” — trecho: “O trovão ruge ao meu lamento heroico, destino... consome a realidade!”",
+        en: "“Heroic Lament” — excerpt: “The thunder roars at my heroic lament, fate... consume reality!”" },
       letraUrl: LETRAS_BASE + "/rhapsody/65102/" },
     { album: "dragonflame", faixa: 8, titulo: "Steelgods of the Last Apocalypse", local: "algalord",
       resumo: { pt: "O protagonista está preso — “desta cinzenta prisão eu olho para você, minha cidade perdida” — observando Algalord ser destruída, mas jura que seu espírito jamais cairá, mesmo que façam o que quiserem com seus ossos.",
@@ -370,5 +405,31 @@ const SAGA_EMERALD_SWORD = {
       texto: { pt: "Dargor golpeia mortalmente a Rainha dos Horizontes Sombrios e comanda as Gárgulas contra as legiões das trevas, empurrando Akron para as mãos do Guerreiro. Já moribundo pelas torturas sofridas, o Guerreiro segura Akron com a espada em punho e se atira deliberadamente nos pântanos profundos, sacrificando-se para que ambos sejam devorados pelas serpentes do abismo. Sob o comando de Dargor, o exército de Algalord derrota as forças do mal — e as terras finalmente estão em paz novamente.",
         en: "Dargor mortally strikes down the Queen of the Dark Horizons and commands the Gargoyles against the legions of darkness, pushing Akron into the Warrior's hands. Already dying from the torture he suffered, the Warrior grips Akron with sword in hand and deliberately throws himself into the deep marshes, sacrificing himself so that both are devoured by the serpents of the abyss. Under Dargor's command, the army of Algalord defeats the forces of evil — and the lands are finally at peace once more." },
       faixas: [{ album: "dragonflame", faixa: 11 }] }
+  ],
+
+  // Raridades e lados B ligados à saga, mas fora dos 5 álbuns principais.
+  // Fonte: Appendix B do compêndio (notas do próprio autor sobre onde cada uma se encaixaria).
+  EXTRAS: [
+    { titulo: "Rage of the Winter (Versão Sinfônica)",
+      origem: { pt: "Faixa bônus do single “Holy Thunderforce” (Dawn of Victory, 2000)",
+        en: "Bonus track from the “Holy Thunderforce” single (Dawn of Victory, 2000)" },
+      nota: { pt: "Regravação sinfônica de “Rage of the Winter” (Legendary Tales) — a mesma tempestade enfrentada pelo Guerreiro de Gelo antes do duelo com Akron, agora em arranjo orquestral.",
+        en: "A symphonic re-recording of “Rage of the Winter” (Legendary Tales) — the same storm faced by the Ice Warrior before the duel with Akron, now in an orchestral arrangement." } },
+    { titulo: "Where Dragons Fly",
+      origem: { pt: "Faixa bônus do single “Emerald Sword” (Symphony of Enchanted Lands, 1998)",
+        en: "Bonus track from the “Emerald Sword” single (Symphony of Enchanted Lands, 1998)" },
+      nota: { pt: "Não é oficialmente amarrada à história, mas o autor do compêndio sugere que se encaixaria entre “Wisdom of the Kings”, “Heroes of the Lost Valley” e “Eternal Glory” — descreve uma paisagem estranha além dos Portões de Marfim, com dragões, um longo caminho de rochas e um grande rio de montanha.",
+        en: "Not officially tied to the story, but the compendium's author suggests it fits somewhere between “Wisdom of the Kings”, “Heroes of the Lost Valley” and “Eternal Glory” — it describes a strange scenery beyond the Ivory Gates, with dragons, a long rocky path and a great mountain river." } },
+    { titulo: { pt: "Dargor, Shadowlord of the Black Mountain (Versão Estendida)",
+        en: "Dargor, Shadowlord of the Black Mountain (Extended Version)" },
+      origem: { pt: "Faixa bônus do single “Holy Thunderforce” (Dawn of Victory, 2000)",
+        en: "Bonus track from the “Holy Thunderforce” single (Dawn of Victory, 2000)" },
+      nota: { pt: "Versão alternativa e estendida da faixa 5 de Dawn of Victory, com um verso extra sobre o trono esculpido em sombra de Dargor e uma pergunta final gritada: “Por quê, Dargor... por quê?”",
+        en: "An alternate, extended version of Dawn of Victory's track 5, with an extra verse about Dargor's shadow-carved throne and a final shouted question: “Why, Dargor... why?”" } },
+    { titulo: "Rise from the Sea of Flames",
+      origem: { pt: "Faixa bônus das edições limitadas de Power of the Dragonflame (2006)",
+        en: "Bonus track on limited editions of Power of the Dragonflame (2006)" },
+      nota: { pt: "A luta interior de Dargor no momento de seu despertar — o batismo de sua alma. O autor do compêndio sugere que originalmente se encaixaria logo antes da faixa final do álbum, “Gargoyles, Angels of Darkness”, quando Dargor, já do lado do bem, clama pela ajuda das gárgulas na batalha de Algalord.",
+        en: "Dargor's inner struggle at the moment of his awakening — the baptism of his soul. The compendium's author suggests it was originally placed just before the album's closing track, “Gargoyles, Angels of Darkness”, when Dargor, already on the side of good, calls for the gargoyles' help in the battle of Algalord." } }
   ]
 };

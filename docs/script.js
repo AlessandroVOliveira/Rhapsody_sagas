@@ -1,5 +1,6 @@
 (function () {
   const mapContainer = document.getElementById("map-container");
+  const mapImg = document.getElementById("map-img");
   const panel = document.getElementById("panel");
   const panelTitle = document.getElementById("panel-title");
   const panelHint = document.getElementById("panel-hint");
@@ -10,6 +11,9 @@
   const sectionTabs = document.getElementById("section-tabs");
   const timelineEl = document.getElementById("timeline");
   const discographyEl = document.getElementById("discography");
+  const extrasSection = document.getElementById("extras");
+  const extrasListEl = document.getElementById("extras-list");
+  const chronologyEl = document.getElementById("chronology");
   const langToggle = document.getElementById("lang-toggle");
   const sagaToggle = document.getElementById("saga-toggle");
   const siteTitleEl = document.getElementById("site-title");
@@ -21,6 +25,8 @@
   let ALBUMS = {};
   let SONGS = [];
   let STORY = [];
+  let LOCATIONS = [];
+  let LOCATIONS_BY_ID = {};
   let songsByLocation = {};
 
   let activeAlbum = "all";
@@ -29,9 +35,6 @@
   function t(key) {
     return UI_STRINGS[currentLang][key] || UI_STRINGS.pt[key] || key;
   }
-
-  const LOCATIONS_BY_ID = {};
-  LOCATIONS.forEach((l) => (LOCATIONS_BY_ID[l.id] = l));
 
   function findSong(albumId, faixa) {
     return SONGS.find((s) => s.album === albumId && s.faixa === faixa);
@@ -68,7 +71,13 @@
     ALBUMS = currentSaga.ALBUMS;
     SONGS = currentSaga.SONGS;
     STORY = currentSaga.STORY;
+    LOCATIONS = currentSaga.LOCATIONS || [];
+    LOCATIONS_BY_ID = {};
+    LOCATIONS.forEach((l) => (LOCATIONS_BY_ID[l.id] = l));
     songsByLocation = buildLocationIndex(SONGS);
+
+    mapImg.src = currentSaga.meta.mapa;
+    mapImg.alt = currentSaga.meta.nome[currentLang];
 
     document.documentElement.dataset.sagaTheme = currentSaga.meta.tema;
     sagaToggle.querySelectorAll("button").forEach((b) => {
@@ -85,6 +94,7 @@
     renderOffmap();
     renderTimeline();
     renderDiscography();
+    renderExtras();
 
     try { localStorage.setItem("rhapsodySaga", currentSaga.id); } catch (e) {}
   }
@@ -121,6 +131,8 @@
     renderOffmap();
     renderTimeline();
     renderDiscography();
+    renderExtras();
+    renderChronology();
 
     try { localStorage.setItem("rhapsodyLang", lang); } catch (e) {}
   }
@@ -257,11 +269,15 @@
     const album = ALBUMS[song.album];
     const card = document.createElement("div");
     card.className = "song-card";
+    const traducaoHtml = song.traducao
+      ? `<p class="song-translation">${song.traducao[currentLang]}</p>`
+      : "";
     card.innerHTML = `
       <img src="${album.cover}" alt="${album.nome}">
       <div class="song-body">
         <div class="song-album">${album.nome} (${album.ano}) · ${t("trackWord")} ${song.faixa}</div>
         <h4>${song.titulo}</h4>
+        ${traducaoHtml}
         <p>${song.resumo[currentLang]}</p>
         <div class="song-links">
           <a href="${song.letraUrl}" target="_blank" rel="noopener">${t("lyricsLink")}</a>
@@ -302,10 +318,15 @@
         })
         .join("");
 
+      const citacaoHtml = chapter.citacao
+        ? `<blockquote class="chapter-quote">${chapter.citacao.texto[currentLang]}<cite>— ${chapter.citacao.autor[currentLang]}</cite></blockquote>`
+        : "";
+
       li.innerHTML = `
         <div class="chapter-album">${album.nome} (${album.ano})</div>
         <h3>${chapter.titulo[currentLang]}</h3>
         <p class="chapter-text">${chapter.texto[currentLang]}</p>
+        ${citacaoHtml}
         <div class="chapter-songs">${chipsHtml}</div>
       `;
       timelineEl.appendChild(li);
@@ -363,6 +384,50 @@
       });
   }
 
+  // ---- Raridades e faixas bônus ----
+  function renderExtras() {
+    const extras = currentSaga.EXTRAS || [];
+    extrasSection.style.display = extras.length ? "" : "none";
+    extrasListEl.innerHTML = "";
+    extras.forEach((extra) => {
+      const titulo = typeof extra.titulo === "string" ? extra.titulo : extra.titulo[currentLang];
+      const card = document.createElement("div");
+      card.className = "extra-card";
+      card.innerHTML = `
+        <div class="extra-header">
+          <h4>${titulo}</h4>
+          <span class="extra-origin">${extra.origem[currentLang]}</span>
+        </div>
+        <p>${extra.nota[currentLang]}</p>
+      `;
+      extrasListEl.appendChild(card);
+    });
+  }
+
+  // ---- Cronologia do Mundo Conhecido (independente da saga) ----
+  function renderChronology() {
+    chronologyEl.innerHTML = "";
+    TIMELINE.forEach((eraBlock) => {
+      const section = document.createElement("div");
+      section.className = "chronology-era";
+
+      const eventsHtml = eraBlock.eventos
+        .map((ev) => `
+          <li class="chronology-event">
+            <span class="chronology-year">${ev.ano[currentLang]}</span>
+            <p>${ev.texto[currentLang]}</p>
+          </li>
+        `)
+        .join("");
+
+      section.innerHTML = `
+        <h3>${eraBlock.era[currentLang]}</h3>
+        <ol class="chronology-list">${eventsHtml}</ol>
+      `;
+      chronologyEl.appendChild(section);
+    });
+  }
+
   // ---- Inicialização ----
   let initialLang = "pt";
   let initialSaga = SAGAS[0].id;
@@ -375,6 +440,8 @@
   document.documentElement.lang = initialLang === "pt" ? "pt-BR" : "en";
   langToggle.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b.dataset.lang === initialLang));
   document.querySelectorAll("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
+
+  renderChronology();
 
   if (!SAGAS.some((s) => s.id === initialSaga)) initialSaga = SAGAS[0].id;
   applySaga(initialSaga);

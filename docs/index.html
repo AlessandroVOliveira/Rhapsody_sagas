@@ -32,6 +32,10 @@
     <svg class="tab-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="0.9" fill="currentColor" stroke="none"/></svg>
     <span data-i18n="tabDiscography">Discografia</span>
   </button>
+  <button class="tab-btn" data-view="chronology">
+    <svg class="tab-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 3.5"/></svg>
+    <span data-i18n="tabChronology">Cronologia</span>
+  </button>
 </nav>
 
 <section class="view" id="view-map">
@@ -75,10 +79,25 @@
     <p data-i18n="discographyDesc">Os álbuns em ordem de lançamento, com todas as faixas.</p>
   </div>
   <div id="discography" class="discography"></div>
+
+  <section class="offmap extras" id="extras">
+    <h3 data-i18n="extrasTitle">Raridades e faixas bônus</h3>
+    <p class="offmap-desc" data-i18n="extrasDesc">Faixas fora dos álbuns principais — lados B, versões alternativas e bônus de edições especiais — que também se conectam à saga.</p>
+    <div id="extras-list" class="panel-songs extras-list"></div>
+  </section>
+</section>
+
+<section class="view hidden" id="view-chronology">
+  <div class="history-intro">
+    <h2 data-i18n="chronologyTitle">Cronologia do Mundo Conhecido</h2>
+    <p data-i18n="chronologyDesc">A história por trás das sagas, do choque primordial entre Kron e os deuses da Luz até a fundação da Ordem do Dragão Branco.</p>
+  </div>
+  <div id="chronology" class="chronology"></div>
 </section>
 
 <footer class="footer">
   <p data-i18n="footer">Site pessoal de fã — sem afiliação com Rhapsody of Fire. Letras completas disponíveis via link externo (Letras.com); resumos de localização são paráfrases próprias.</p>
+  <a class="donate-btn" href="https://www.paypal.com/donate/?hosted_button_id=WPL3U5XBTVDAA" target="_blank" rel="noopener" data-i18n="donateLink">Apoie este projeto ↗</a>
 </footer>
 
 <script src="data-common.js"></script>
