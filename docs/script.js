@@ -14,6 +14,8 @@
   const extrasSection = document.getElementById("extras");
   const extrasListEl = document.getElementById("extras-list");
   const chronologyEl = document.getElementById("chronology");
+  const codexGridEl = document.getElementById("codex-grid");
+  const codexFilterEl = document.getElementById("codex-filter");
   const langToggle = document.getElementById("lang-toggle");
   const sagaToggle = document.getElementById("saga-toggle");
   const siteTitleEl = document.getElementById("site-title");
@@ -31,6 +33,11 @@
 
   let activeAlbum = "all";
   let activeLocation = null;
+  let activeCodexCategoria = "all";
+
+  // Índice global de álbuns/faixas das duas sagas — usado pelo Codex, que independe da saga ativa.
+  const ALBUMS_ALL = Object.assign({}, ...SAGAS.map((s) => s.ALBUMS));
+  const SONGS_ALL = [].concat(...SAGAS.map((s) => s.SONGS));
 
   function t(key) {
     return UI_STRINGS[currentLang][key] || UI_STRINGS.pt[key] || key;
@@ -133,6 +140,7 @@
     renderDiscography();
     renderExtras();
     renderChronology();
+    renderCodex();
 
     try { localStorage.setItem("rhapsodyLang", lang); } catch (e) {}
   }
@@ -252,7 +260,8 @@
     openPanelWithSongs(loc.nome, songs, t("panelEmptyAlbum"));
   }
 
-  function openPanelWithSongs(title, songs, emptyHint) {
+  function openPanelWithSongs(title, songs, emptyHint, albumsOverride) {
+    const albums = albumsOverride || ALBUMS;
     panelTitle.textContent = title;
     panelHint.style.display = songs.length ? "none" : "block";
     panelHint.textContent = emptyHint || t("panelEmptyGeneric");
@@ -260,13 +269,13 @@
     panelSongs.innerHTML = "";
     songs
       .slice()
-      .sort((a, b) => ALBUMS[a.album].ano - ALBUMS[b.album].ano || a.faixa - b.faixa)
-      .forEach((song) => panelSongs.appendChild(renderSongCard(song)));
+      .sort((a, b) => albums[a.album].ano - albums[b.album].ano || a.faixa - b.faixa)
+      .forEach((song) => panelSongs.appendChild(renderSongCard(song, albums)));
     openPanel();
   }
 
-  function renderSongCard(song) {
-    const album = ALBUMS[song.album];
+  function renderSongCard(song, albumsOverride) {
+    const album = (albumsOverride || ALBUMS)[song.album];
     const card = document.createElement("div");
     card.className = "song-card";
     const traducaoHtml = song.traducao
@@ -428,6 +437,60 @@
     });
   }
 
+  // ---- Codex (personagens, lugares, artefatos — independente da saga ativa) ----
+  const CODEX_SAGA_LABEL = { warm: "codexSagaWarm", cold: "codexSagaCold", dual: "codexSagaDual" };
+
+  codexFilterEl.querySelectorAll(".filter-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      activeCodexCategoria = btn.dataset.categoria;
+      codexFilterEl.querySelectorAll(".filter-btn").forEach((b) => {
+        b.classList.toggle("active", b.dataset.categoria === activeCodexCategoria);
+      });
+      renderCodex();
+    });
+  });
+
+  function findGlobalSong(albumId, faixa) {
+    return SONGS_ALL.find((s) => s.album === albumId && s.faixa === faixa);
+  }
+
+  function renderCodex() {
+    codexGridEl.innerHTML = "";
+    CODEX
+      .filter((entry) => activeCodexCategoria === "all" || entry.categoria === activeCodexCategoria)
+      .forEach((entry) => {
+        const entrySongs = entry.faixas.map((ref) => findGlobalSong(ref.album, ref.faixa)).filter(Boolean);
+        const chipsHtml = entrySongs
+          .map((s) => {
+            const a = ALBUMS_ALL[s.album];
+            return `<button class="song-chip" data-album="${s.album}" data-faixa="${s.faixa}">
+              <img src="${a.cover}" alt="">${s.titulo}
+            </button>`;
+          })
+          .join("");
+
+        const card = document.createElement("div");
+        card.className = "codex-card";
+        card.innerHTML = `
+          <img class="codex-card-img" src="${entry.imagem}" alt="${entry.nome[currentLang]}" loading="lazy">
+          <div class="codex-card-body">
+            <span class="codex-saga-badge codex-saga-${entry.saga}">${t(CODEX_SAGA_LABEL[entry.saga])}</span>
+            <h3>${entry.nome[currentLang]}</h3>
+            <p>${entry.descricao[currentLang]}</p>
+            <div class="codex-appears-in">${t("codexAppearsIn")}</div>
+            <div class="chapter-songs">${chipsHtml}</div>
+          </div>
+        `;
+        codexGridEl.appendChild(card);
+
+        card.querySelectorAll(".song-chip").forEach((chip) => {
+          chip.addEventListener("click", () => {
+            openPanelWithSongs(entry.nome[currentLang], entrySongs, null, ALBUMS_ALL);
+          });
+        });
+      });
+  }
+
   // ---- Inicialização ----
   let initialLang = "pt";
   let initialSaga = SAGAS[0].id;
@@ -442,6 +505,7 @@
   document.querySelectorAll("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
 
   renderChronology();
+  renderCodex();
 
   if (!SAGAS.some((s) => s.id === initialSaga)) initialSaga = SAGAS[0].id;
   applySaga(initialSaga);
