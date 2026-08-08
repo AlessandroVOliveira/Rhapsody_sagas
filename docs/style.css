@@ -657,6 +657,70 @@ body {
   line-height: 1.55;
 }
 
+.codex-grid {
+  max-width: 1400px;
+  margin: 0.6rem auto 3rem;
+  padding: 0 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.4rem;
+}
+.codex-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.codex-card-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border);
+}
+.codex-card-body {
+  padding: 0.9rem 1.1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.codex-card-body h3 {
+  margin: 0;
+  color: var(--gold);
+  font-size: 1.05rem;
+}
+.codex-card-body p {
+  margin: 0;
+  color: var(--text-dim);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+.codex-saga-badge {
+  align-self: flex-start;
+  font-size: 0.66rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+}
+.codex-saga-warm { color: #e0973b; }
+.codex-saga-cold { color: #6fd6f0; }
+.codex-saga-dual {
+  color: #c9a4e0;
+  background: linear-gradient(90deg, rgba(224,151,59,0.12), rgba(111,214,240,0.12));
+}
+.codex-appears-in {
+  color: var(--text-dim);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-top: 0.2rem;
+}
+
 .footer {
   text-align: center;
   color: var(--text-dim);
