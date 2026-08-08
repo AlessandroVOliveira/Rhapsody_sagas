@@ -16,17 +16,19 @@
   const chronologyEl = document.getElementById("chronology");
   const langToggle = document.getElementById("lang-toggle");
   const sagaToggle = document.getElementById("saga-toggle");
+  const mapToggle = document.getElementById("map-toggle");
   const siteTitleEl = document.getElementById("site-title");
   const siteSubtitleEl = document.getElementById("site-subtitle");
   const allFilterBtn = albumFilter.querySelector('[data-album="all"]');
 
   let currentLang = "pt";
   let currentSaga = null;
+  let currentMapId = null;
   let ALBUMS = {};
   let SONGS = [];
   let STORY = [];
-  let LOCATIONS = [];
-  let LOCATIONS_BY_ID = {};
+  const LOCATIONS_BY_ID = {};
+  LOCATIONS.forEach((l) => (LOCATIONS_BY_ID[l.id] = l));
   let songsByLocation = {};
 
   let activeAlbum = "all";
@@ -71,13 +73,10 @@
     ALBUMS = currentSaga.ALBUMS;
     SONGS = currentSaga.SONGS;
     STORY = currentSaga.STORY;
-    LOCATIONS = currentSaga.LOCATIONS || [];
-    LOCATIONS_BY_ID = {};
-    LOCATIONS.forEach((l) => (LOCATIONS_BY_ID[l.id] = l));
     songsByLocation = buildLocationIndex(SONGS);
 
-    mapImg.src = currentSaga.meta.mapa;
-    mapImg.alt = currentSaga.meta.nome[currentLang];
+    if (!currentMapId) currentMapId = currentSaga.meta.mapaPadrao;
+    setMapImage(currentMapId);
 
     document.documentElement.dataset.sagaTheme = currentSaga.meta.tema;
     sagaToggle.querySelectorAll("button").forEach((b) => {
@@ -97,6 +96,36 @@
     renderExtras();
 
     try { localStorage.setItem("rhapsodySaga", currentSaga.id); } catch (e) {}
+  }
+
+  // ---- Mapa ativo ----
+  // Independente da saga: a Enchanted Lands pintada é só o centro do Known World ampliado, então
+  // dá pra ver os locais de qualquer saga em qualquer mapa (loc.pos.<mapa> é null onde o local
+  // ainda não foi localizado/calibrado naquele mapa).
+  mapToggle.innerHTML = "";
+  MAPS.forEach((map) => {
+    const btn = document.createElement("button");
+    btn.dataset.map = map.id;
+    btn.textContent = map.nome[currentLang];
+    btn.addEventListener("click", () => applyMap(map.id));
+    mapToggle.appendChild(btn);
+  });
+
+  function setMapImage(id) {
+    const map = MAPS.find((m) => m.id === id) || MAPS[0];
+    mapImg.src = map.img;
+    mapImg.alt = map.nome[currentLang];
+    mapToggle.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b.dataset.map === id));
+  }
+
+  function applyMap(id) {
+    if (currentMapId === id) return;
+    currentMapId = id;
+    setMapImage(id);
+    renderMarkers();
+    updateMarkerVisibility();
+    closePanel();
+    try { localStorage.setItem("rhapsodyMap", id); } catch (e) {}
   }
 
   function renderHeader() {
@@ -120,6 +149,10 @@
     sagaToggle.querySelectorAll("button").forEach((b) => {
       b.querySelector(".saga-name").textContent = SAGAS.find((s) => s.id === b.dataset.saga).meta.nome[currentLang];
     });
+    mapToggle.querySelectorAll("button").forEach((b) => {
+      b.textContent = MAPS.find((m) => m.id === b.dataset.map).nome[currentLang];
+    });
+    mapImg.alt = MAPS.find((m) => m.id === currentMapId).nome[currentLang];
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       el.textContent = t(el.dataset.i18n);
@@ -189,13 +222,15 @@
     markerCountEls = {};
 
     LOCATIONS.forEach((loc) => {
+      const pos = loc.pos[currentMapId];
+      if (!pos) return;
       const songs = songsByLocation[loc.id] || [];
       if (songs.length === 0) return;
 
       const marker = document.createElement("button");
       marker.className = "marker";
-      marker.style.left = loc.x + "%";
-      marker.style.top = loc.y + "%";
+      marker.style.left = pos.x + "%";
+      marker.style.top = pos.y + "%";
       marker.setAttribute("aria-label", loc.nome);
       marker.innerHTML = `
         <span class="marker-dot"></span>
@@ -431,10 +466,14 @@
   // ---- Inicialização ----
   let initialLang = "pt";
   let initialSaga = SAGAS[0].id;
+  let initialMap = null;
   try {
     initialLang = localStorage.getItem("rhapsodyLang") || initialLang;
     initialSaga = localStorage.getItem("rhapsodySaga") || initialSaga;
+    initialMap = localStorage.getItem("rhapsodyMap");
   } catch (e) {}
+  if (!MAPS.some((m) => m.id === initialMap)) initialMap = null;
+  currentMapId = initialMap;
 
   currentLang = initialLang;
   document.documentElement.lang = initialLang === "pt" ? "pt-BR" : "en";

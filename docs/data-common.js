@@ -62,12 +62,58 @@ const UI_STRINGS = {
 
 const LETRAS_BASE = "https://www.letras.com";
 
-// Localizações no mapa: cada saga define seu próprio array LOCATIONS (coordenadas em % da
-// imagem, x=esquerda->direita, y=topo->baixo), porque cada uma usa uma imagem de mapa diferente
-// (meta.mapa) — a Emerald Sword Saga usa a arte oficial pintada das Terras Encantadas; a Dark
-// Secret Saga usa o mapa-múndi "Known World" desenhado à mão, que cobre uma área bem maior
-// (inclusive as Terras do Norte). Ver LOCATIONS dentro de cada SAGA_* em data-emerald-sword.js e
-// data-dark-secret.js.
+// Mapas disponíveis no site. Independem da saga ativa — o usuário alterna entre eles livremente
+// (botão "map-toggle"), porque a Enchanted Lands da arte pintada nada mais é que o centro do
+// Known World desenhado grande. Cada saga só define qual mapa abre por padrão (meta.mapaPadrao).
+const MAPS = [
+  { id: "enchanted", nome: { pt: "Terras Encantadas", en: "Enchanted Lands" }, img: "assets/map.png" },
+  { id: "known_world", nome: { pt: "Known World", en: "Known World" }, img: "assets/map-known-world.jpg" }
+];
+
+// Localizações do Mundo Conhecido — registro único compartilhado pelas duas sagas (a geografia
+// não muda de saga pra saga, só as músicas que se passam em cada lugar). Cada local carrega
+// coordenadas (% da imagem, x=esquerda->direita, y=topo->baixo) para cada mapa em que aparece;
+// pos.<mapa> = null quando o local fica fora do recorte daquele mapa (as Terras do Norte e o
+// Reino das Cachoeiras Ancestrais não existem na arte pintada das Terras Encantadas).
+const LOCATIONS = [
+  { id: "nordic_plains", nome: "Nordic Plains", pos: { enchanted: { x: 51.4, y: 16.2 }, known_world: { x: 46.5, y: 32 } } },
+  { id: "sea_of_trolls", nome: "Sea of Trolls", pos: { enchanted: { x: 28.75, y: 21.9 }, known_world: { x: 32, y: 39 } } },
+  { id: "elves_hills", nome: "The Elves Hills", pos: { enchanted: { x: 80.0, y: 26.1 }, known_world: { x: 39, y: 47 } } },
+  { id: "forest_of_trolls", nome: "Forest of Trolls", pos: { enchanted: { x: 61.3, y: 26.1 }, known_world: { x: 44.5, y: 46.6 } } },
+  { id: "caltor", nome: "Caltor", pos: { enchanted: { x: 14.78, y: 33.4 }, known_world: { x: 31, y: 43 } } },
+  { id: "dragonland", nome: "Dragonland", pos: { enchanted: { x: 55.3, y: 31.8 }, known_world: { x: 41.5, y: 46.8 } } },
+  { id: "ancelot", nome: "Ancelot", pos: { enchanted: { x: 53.1, y: 39.5 }, known_world: { x: 43.2, y: 50.7 } } },
+  { id: "hargor", nome: "Hargor", pos: { enchanted: { x: 20.7, y: 38.6 }, known_world: { x: 40.5, y: 50 } } },
+  { id: "darklands", nome: "Darklands", pos: { enchanted: { x: 34.83, y: 37.1 }, known_world: { x: 38, y: 50 } } },
+  { id: "dar_kunor", nome: "Dar-Kunor", pos: { enchanted: { x: 27, y: 41 }, known_world: { x: 39.2, y: 52 } } },
+  { id: "forest_of_unicorns", nome: "Forest of Unicorns", pos: { enchanted: { x: 39.84, y: 42.8 }, known_world: { x: 43, y: 48 } } },
+  { id: "grey_mountains", nome: "Grey Mountains", pos: { enchanted: { x: 14.78, y: 42.3 }, known_world: { x: 32, y: 47.5 } } },
+  { id: "elgard", nome: "Elgard", pos: { enchanted: { x: 54.2, y: 49.1 }, known_world: { x: 43.7, y: 50.2 } } },
+  { id: "kanor", nome: "Kanor", pos: { enchanted: { x: 95.0, y: 43.8 }, known_world: { x: 59.4, y: 49.3 } } },
+  { id: "green_valleys", nome: "Green Valleys", pos: { enchanted: { x: 35.3, y: 51.7 }, known_world: { x: 44, y: 40 } } },
+  { id: "lands_of_chaos", nome: "Lands of Chaos", pos: { enchanted: { x: 66.7, y: 54.3 }, known_world: { x: 50.7, y: 48.5 } } },
+  { id: "desert_of_varg", nome: "Desert of Varg", pos: { enchanted: { x: 81.05, y: 49.1 }, known_world: { x: 41, y: 51.2 } } },
+  { id: "enchanted_valleys", nome: "Enchanted Valleys", pos: { enchanted: { x: 14.06, y: 55.3 }, known_world: { x: 37, y: 53 } } },
+  { id: "algalord", nome: "Algalord", pos: { enchanted: { x: 35.9, y: 62.4 }, known_world: { x: 45.5, y: 51.9 } } },
+  { id: "hills_of_loregard", nome: "Hills of Loregard", pos: { enchanted: { x: 95.0, y: 55.8 }, known_world: { x: 44.5, y: 51.3 } } },
+  { id: "loregard", nome: "Loregard", pos: { enchanted: { x: 86.4, y: 64.2 }, known_world: { x: 52.5, y: 51.7 } } },
+  { id: "elnor", nome: "Elnor", pos: { enchanted: { x: 7.26, y: 68.4 }, known_world: { x: 42.8, y: 51.8 } } },
+  { id: "trengard", nome: "Trengard", pos: { enchanted: { x: 63.5, y: 69.9 }, known_world: { x: 41.8, y: 51.6 } } },
+  { id: "holy_lakes", nome: "Holy Lakes", pos: { enchanted: { x: 93.2, y: 72.0 }, known_world: { x: 63, y: 55.3 } } },
+  { id: "thorald", nome: "Thorald", pos: { enchanted: { x: 13.0, y: 73.1 }, known_world: { x: 43.2, y: 52.6 } } },
+  { id: "ragatorn", nome: "Ragatorn", pos: { enchanted: { x: 78.2, y: 83.5 }, known_world: { x: 44.5, y: 54.5 } } },
+  { id: "ainor", nome: "Ainor", pos: { enchanted: null, known_world: { x: 44, y: 30 } } },
+  { id: "white_mountains", nome: "White Mountains", pos: { enchanted: null, known_world: { x: 47.5, y: 24 } } },
+  { id: "har_kuun", nome: "Har-Kuun", pos: { enchanted: null, known_world: { x: 46.5, y: 20 } } },
+  { id: "waterfalls_kingdom", nome: "Kingdom of the Ancient Waterfalls", pos: { enchanted: null, known_world: { x: 79, y: 24 } } },
+  // Locais citados nas letras mas sem rótulo em nenhum dos dois mapas oficiais — posicionados por
+  // referência ao texto (ver resumo das faixas que os citam) em vez de calibração visual direta.
+  { id: "urien", nome: "Urien", pos: { enchanted: { x: 35, y: 37 }, known_world: { x: 36.75, y: 47.15 } } },
+  { id: "erloria", nome: "Erloria", pos: { enchanted: { x: 23, y: 41.3 }, known_world: { x: 37.5, y: 50.5 } } },
+  { id: "nairin", nome: "Nairin", pos: { enchanted: null, known_world: { x: 52, y: 24 } } },
+  { id: "aranen", nome: "Aranen", pos: { enchanted: null, known_world: { x: 50, y: 26.5 } } },
+  { id: "hor_lad", nome: "Hor-Lad", pos: { enchanted: null, known_world: { x: 26.5, y: 50.5 } } }
+];
 
 // Cronologia do Mundo Conhecido — Apêndice A do encarte de Symphony of Enchanted
 // Lands II (originalmente parte do próprio booklet do álbum). Compartilhada por

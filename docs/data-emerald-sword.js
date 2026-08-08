@@ -9,38 +9,8 @@ const SAGA_EMERALD_SWORD = {
     subtitulo: { pt: "Rhapsody of Fire — mapa interativo de {n} álbuns", en: "Rhapsody of Fire — interactive map of {n} albums" },
     tema: "warm",
     icone: "⚔️",
-    mapa: "assets/map.png"
+    mapaPadrao: "enchanted"
   },
-
-  // Localizações no mapa oficial pintado das Terras Encantadas (coordenadas em % da imagem).
-  // x foi calibrado para ficar logo à direita de onde o nome termina na arte do mapa.
-  LOCATIONS: [
-    { id: "nordic_plains",     nome: "Nordic Plains",      x: 51.4, y: 16.2 },
-    { id: "sea_of_trolls",     nome: "Sea of Trolls",      x: 28.75, y: 21.9 },
-    { id: "elves_hills",       nome: "The Elves Hills",    x: 80.0, y: 26.1 },
-    { id: "forest_of_trolls",  nome: "Forest of Trolls",   x: 61.3, y: 26.1 },
-    { id: "caltor",            nome: "Caltor",             x: 14.78, y: 33.4 },
-    { id: "dragonland",        nome: "Dragonland",         x: 55.3, y: 31.8 },
-    { id: "ancelot",           nome: "Ancelot",            x: 53.1, y: 39.5 },
-    { id: "hargor",            nome: "Hargor",             x: 20.7, y: 38.6 },
-    { id: "darklands",         nome: "Darklands",          x: 34.83, y: 37.1 },
-    { id: "forest_of_unicorns",nome: "Forest of Unicorns", x: 39.84, y: 42.8 },
-    { id: "grey_mountains",    nome: "Grey Mountains",     x: 14.78, y: 42.3 },
-    { id: "elgard",            nome: "Elgard",             x: 54.2, y: 49.1 },
-    { id: "kanor",             nome: "Kanor",              x: 95.0, y: 43.8 },
-    { id: "green_valleys",     nome: "Green Valleys",      x: 35.3, y: 51.7 },
-    { id: "lands_of_chaos",    nome: "Lands of Chaos",     x: 66.7, y: 54.3 },
-    { id: "desert_of_varg",    nome: "Desert of Varg",     x: 81.05, y: 49.1 },
-    { id: "enchanted_valleys", nome: "Enchanted Valleys",  x: 14.06, y: 55.3 },
-    { id: "algalord",          nome: "Algalord",           x: 35.9, y: 62.4 },
-    { id: "hills_of_loregard", nome: "Hills of Loregard",  x: 95.0, y: 55.8 },
-    { id: "loregard",          nome: "Loregard",           x: 86.4, y: 64.2 },
-    { id: "elnor",             nome: "Elnor",              x: 7.26, y: 68.4 },
-    { id: "trengard",          nome: "Trengard",           x: 63.5, y: 69.9 },
-    { id: "holy_lakes",        nome: "Holy Lakes",         x: 93.2, y: 72.0 },
-    { id: "thorald",           nome: "Thorald",            x: 13.0, y: 73.1 },
-    { id: "ragatorn",          nome: "Ragatorn",           x: 78.2, y: 83.5 }
-  ],
 
   ALBUMS: {
     legendary_tales: {
@@ -97,7 +67,7 @@ const SAGA_EMERALD_SWORD = {
       resumo: { pt: "Apresenta o protagonista, o Guerreiro de Gelo, rei da aldeia de Loregard, que decide partir em busca da espada de esmeralda para trazer paz às suas terras, dominadas pela guerra e pelas trevas.",
         en: "Introduces the protagonist, the Ice Warrior, king of the village of Loregard, who decides to set out in search of the emerald sword to bring peace to his lands, dominated by war and darkness." },
       letraUrl: LETRAS_BASE + "/rhapsody/33753/" },
-    { album: "legendary_tales", faixa: 3, titulo: "Rage of the Winter", local: null,
+    { album: "legendary_tales", faixa: 3, titulo: "Rage of the Winter", local: "ancelot",
       resumo: { pt: "A jornada do Guerreiro através do inverno rigoroso, enfrentando as condições hostis do caminho rumo à cidade de Ancelot.",
         en: "The Warrior's journey through the harsh winter, facing the hostile conditions of the road toward the city of Ancelot." },
       letraUrl: LETRAS_BASE + "/rhapsody/92170/" },

@@ -345,6 +345,33 @@ body {
   font-weight: bold;
 }
 
+.map-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0 1rem 0.9rem;
+  flex-wrap: wrap;
+}
+.map-toggle button {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: inherit;
+  letter-spacing: 0.02em;
+  transition: all 0.15s ease;
+}
+.map-toggle button:hover { color: var(--text); border-color: var(--ember); }
+.map-toggle button.active {
+  background: var(--panel-bg);
+  border-color: var(--gold);
+  color: var(--gold);
+  font-weight: bold;
+}
+
 .map-wrap {
   padding: 0 1rem 2rem;
   display: flex;
