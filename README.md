@@ -15,7 +15,8 @@ Inclui um site estático com mapa interativo, a história completa capítulo a c
 
 - **Seletor de saga** — alterna entre a Espada Esmeralda (tema quente) e o Segredo Sombrio (tema frio); cada saga tem sua própria paleta, ícone e conjunto de dados
 - **Mapa Interativo** — clique em uma localidade pra ver quais músicas se passam ali, de qual álbum, com link pra letra completa e pra ouvir no Spotify. Cada saga usa um mapa diferente: a Espada Esmeralda usa a arte oficial pintada das Terras Encantadas; o Segredo Sombrio usa um mapa-múndi do "Known World", que cobre uma área bem maior (inclusive as Terras do Norte, onde parte da saga se passa)
-- **História Completa** — a saga narrada capítulo a capítulo, cada um ligado às faixas correspondentes; capítulos-chave trazem também uma citação em 1ª pessoa de um personagem
+- **História Completa** — a saga narrada capítulo a capítulo, cada um ligado às faixas correspondentes e ilustrado com uma imagem gerada por IA da cena; capítulos-chave trazem também uma citação em 1ª pessoa de um personagem
+- **Codex** — personagens, lugares e artefatos das duas sagas, com arte gerada por IA, descrição bilíngue e as faixas que os mencionam
 - **Discografia** — os álbuns em ordem de lançamento com todas as faixas, e uma seção de **Raridades** no rodapé com faixas bônus/lados B que não entraram nos álbuns principais mas se conectam à história
 - **Cronologia do Mundo Conhecido** — linha do tempo histórica compartilhada pelas duas sagas, do choque primordial entre Kron e os deuses da Luz até a fundação da Ordem do Dragão Branco
 - Faixas com trechos em latim/italiano trazem a tradução ao lado do resumo
@@ -43,7 +44,9 @@ Inclui um site estático com mapa interativo, a história completa capítulo a c
 │   └── mapas/
 │       ├── resize.png / mapa_mundo.jpeg  # mapa oficial pintado das Terras Encantadas
 │       └── Known_World.png               # mapa-múndi usado pela Dark Secret Saga no site
-├── Prompts de IA - Personagens, Lugares e Artefatos.md  # ainda não usado
+├── Prompts de IA - Historia Completa.md  # prompts de imagem por capítulo da História Completa (com referências do Codex)
+├── scripts/
+│   └── resize_story_images.py            # redimensiona/comprime as imagens dos capítulos antes de entrar em docs/assets
 └── docs/                                 # o site (publicado via GitHub Pages)
     ├── index.html
     ├── style.css
@@ -51,8 +54,12 @@ Inclui um site estático com mapa interativo, a história completa capítulo a c
     ├── data-common.js                    # textos de interface (PT/EN) e cronologia do Mundo Conhecido
     ├── data-emerald-sword.js             # álbuns, faixas, localizações e história da Espada Esmeralda
     ├── data-dark-secret.js               # álbuns, faixas, localizações e história do Segredo Sombrio
+    ├── data-codex.js                     # personagens, lugares e artefatos das duas sagas
     ├── sagas.js                          # registro das sagas disponíveis, na ordem do seletor
     └── assets/
+        ├── codex/                        # arte gerada por IA de cada entrada do Codex
+        ├── story-emerald/                # arte gerada por IA de cada capítulo da Espada Esmeralda
+        └── story-dark-secret/            # arte gerada por IA de cada capítulo do Segredo Sombrio
 ```
 
 ## 💻 Rodando localmente

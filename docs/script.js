@@ -366,9 +366,14 @@
         ? `<blockquote class="chapter-quote">${chapter.citacao.texto[currentLang]}<cite>— ${chapter.citacao.autor[currentLang]}</cite></blockquote>`
         : "";
 
+      const imagemHtml = chapter.imagem
+        ? `<img class="chapter-img" src="${chapter.imagem}" alt="${chapter.titulo[currentLang]}" loading="lazy">`
+        : "";
+
       li.innerHTML = `
         <div class="chapter-album">${album.nome} (${album.ano})</div>
         <h3>${chapter.titulo[currentLang]}</h3>
+        ${imagemHtml}
         <p class="chapter-text">${chapter.texto[currentLang]}</p>
         ${citacaoHtml}
         <div class="chapter-songs">${chipsHtml}</div>

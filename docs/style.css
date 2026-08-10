@@ -215,6 +215,16 @@ body {
   color: var(--text);
   font-size: 1.15rem;
 }
+.chapter-img {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin: 0 0 0.8rem;
+}
 .chapter p.chapter-text {
   margin: 0 0 0.7rem;
   color: var(--text-dim);
