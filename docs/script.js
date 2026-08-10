@@ -148,11 +148,10 @@
     btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
   });
 
-  function setLanguage(lang) {
-    if (lang === currentLang) return;
-    currentLang = lang;
-    document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";
-    langToggle.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b.dataset.lang === lang));
+  // Atualiza rótulos que dependem do idioma mas não passam por data-i18n
+  // (logos da saga e nomes dos mapas) — usado tanto ao trocar de idioma
+  // quanto na carga inicial, quando o idioma vem do localStorage.
+  function refreshLangLabels() {
     sagaToggle.querySelectorAll("button").forEach((b) => {
       const saga = SAGAS.find((s) => s.id === b.dataset.saga);
       const nome = saga.meta.nome[currentLang];
@@ -164,7 +163,15 @@
     mapToggle.querySelectorAll("button").forEach((b) => {
       b.textContent = MAPS.find((m) => m.id === b.dataset.map).nome[currentLang];
     });
-    mapImg.alt = MAPS.find((m) => m.id === currentMapId).nome[currentLang];
+    if (currentMapId) mapImg.alt = MAPS.find((m) => m.id === currentMapId).nome[currentLang];
+  }
+
+  function setLanguage(lang) {
+    if (lang === currentLang) return;
+    currentLang = lang;
+    document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";
+    langToggle.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b.dataset.lang === lang));
+    refreshLangLabels();
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       el.textContent = t(el.dataset.i18n);
@@ -552,6 +559,7 @@
   document.documentElement.lang = initialLang === "pt" ? "pt-BR" : "en";
   langToggle.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b.dataset.lang === initialLang));
   document.querySelectorAll("[data-i18n]").forEach((el) => { el.textContent = t(el.dataset.i18n); });
+  refreshLangLabels();
 
   renderChronology();
   renderCodex();
