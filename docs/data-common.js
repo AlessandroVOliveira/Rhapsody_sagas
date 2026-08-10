@@ -86,7 +86,7 @@ const LETRAS_BASE = "https://www.letras.com";
 // (botão "map-toggle"), porque a Enchanted Lands da arte pintada nada mais é que o centro do
 // Known World desenhado grande. Cada saga só define qual mapa abre por padrão (meta.mapaPadrao).
 const MAPS = [
-  { id: "enchanted", nome: { pt: "Terras Encantadas", en: "Enchanted Lands" }, img: "assets/map.png" },
+  { id: "enchanted", nome: { pt: "Terras Encantadas", en: "Enchanted Lands" }, img: "assets/map.jpg" },
   { id: "known_world", nome: { pt: "Known World", en: "Known World" }, img: "assets/map-known-world.jpg" }
 ];
 
