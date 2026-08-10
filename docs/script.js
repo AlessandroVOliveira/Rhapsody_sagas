@@ -19,7 +19,6 @@
   const langToggle = document.getElementById("lang-toggle");
   const sagaToggle = document.getElementById("saga-toggle");
   const mapToggle = document.getElementById("map-toggle");
-  const siteTitleEl = document.getElementById("site-title");
   const siteSubtitleEl = document.getElementById("site-subtitle");
   const allFilterBtn = albumFilter.querySelector('[data-album="all"]');
 
@@ -58,18 +57,21 @@
     return index;
   }
 
-  // Ícones por tema de saga (linha fina, herdam a cor do botão via currentColor)
-  const SAGA_ICONS = {
-    warm: '<svg class="saga-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18.5" y1="3.5" x2="7" y2="15"/><line x1="9" y1="12.5" x2="12" y2="15.5"/><line x1="4.5" y1="19.5" x2="9" y2="15"/><line x1="3.5" y1="20.5" x2="5.5" y2="18.5"/></svg>',
-    cold: '<svg class="saga-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="12" y1="3" x2="12" y2="21"/><line x1="4.9" y1="7.5" x2="19.1" y2="16.5"/><line x1="19.1" y1="7.5" x2="4.9" y2="16.5"/><line x1="12" y1="3" x2="9.7" y2="5.3"/><line x1="12" y1="3" x2="14.3" y2="5.3"/><line x1="12" y1="21" x2="9.7" y2="18.7"/><line x1="12" y1="21" x2="14.3" y2="18.7"/></svg>'
-  };
+  // Cada saga tem um logo ilustrado próprio (assets/logos/logo{lang}-{chave}.webp),
+  // usado como botão de seleção — substitui o antigo título grande em texto.
+  const SAGA_LOGO_KEY = { emerald_sword: "emerald", dark_secret: "dark" };
+  function sagaLogoSrc(saga, lang) {
+    return `assets/logos/logo${lang}-${SAGA_LOGO_KEY[saga.id] || saga.id}.webp`;
+  }
 
   // ---- Saga ativa ----
   sagaToggle.innerHTML = "";
   SAGAS.forEach((saga) => {
     const btn = document.createElement("button");
+    btn.className = "saga-logo-btn";
     btn.dataset.saga = saga.id;
-    btn.innerHTML = `${SAGA_ICONS[saga.meta.tema] || ""}<span class="saga-name">${saga.meta.nome[currentLang]}</span>`;
+    btn.setAttribute("aria-label", saga.meta.nome[currentLang]);
+    btn.innerHTML = `<img class="saga-logo-img" src="${sagaLogoSrc(saga, currentLang)}" alt="${saga.meta.nome[currentLang]}">`;
     btn.addEventListener("click", () => applySaga(saga.id));
     sagaToggle.appendChild(btn);
   });
@@ -88,7 +90,6 @@
     document.documentElement.dataset.sagaTheme = currentSaga.meta.tema;
     sagaToggle.querySelectorAll("button").forEach((b) => {
       b.classList.toggle("active", b.dataset.saga === currentSaga.id);
-      b.querySelector(".saga-name").textContent = SAGAS.find((s) => s.id === b.dataset.saga).meta.nome[currentLang];
     });
 
     activeAlbum = "all";
@@ -138,7 +139,6 @@
   function renderHeader() {
     const nome = currentSaga.meta.nome[currentLang];
     const subtitulo = currentSaga.meta.subtitulo[currentLang].replace("{n}", Object.keys(ALBUMS).length);
-    siteTitleEl.textContent = nome;
     siteSubtitleEl.textContent = subtitulo;
     document.title = nome + " — Rhapsody of Fire";
   }
@@ -154,7 +154,12 @@
     document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";
     langToggle.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b.dataset.lang === lang));
     sagaToggle.querySelectorAll("button").forEach((b) => {
-      b.querySelector(".saga-name").textContent = SAGAS.find((s) => s.id === b.dataset.saga).meta.nome[currentLang];
+      const saga = SAGAS.find((s) => s.id === b.dataset.saga);
+      const nome = saga.meta.nome[currentLang];
+      b.setAttribute("aria-label", nome);
+      const img = b.querySelector(".saga-logo-img");
+      img.src = sagaLogoSrc(saga, currentLang);
+      img.alt = nome;
     });
     mapToggle.querySelectorAll("button").forEach((b) => {
       b.textContent = MAPS.find((m) => m.id === b.dataset.map).nome[currentLang];

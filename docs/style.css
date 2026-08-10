@@ -147,30 +147,13 @@ h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: 0.01em; }
 .topbar {
   position: relative;
   text-align: center;
-  padding: 3.2rem 1rem 1.8rem;
+  padding: 2.6rem 1rem 1.8rem;
   border-bottom: 1px solid var(--border);
   background: linear-gradient(180deg, var(--glow-soft), transparent 80%);
   transition: background 0.5s ease, border-color 0.5s ease;
 }
-.topbar h1 {
-  margin: 0;
-  font-size: clamp(1.7rem, 5vw, 3rem);
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--gold);
-  text-shadow: 0 0 30px var(--glow-title);
-}
-.topbar h1::after {
-  content: "";
-  display: block;
-  width: 140px;
-  height: 1px;
-  margin: 0.85rem auto 0;
-  background: linear-gradient(90deg, transparent, var(--border-strong), transparent);
-}
 .subtitle {
-  margin: 0.7rem 0 0;
+  margin: 0.9rem 0 0;
   color: var(--text-dim);
   font-size: 0.95rem;
   font-style: italic;
@@ -180,37 +163,36 @@ h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: 0.01em; }
 .saga-toggle {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 1.4rem;
+  align-items: center;
+  gap: clamp(0.8rem, 3vw, 2.2rem);
   flex-wrap: wrap;
 }
-.saga-toggle button {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  color: var(--text-dim);
-  padding: 0.5rem 1.15rem;
-  border-radius: 999px;
+.saga-logo-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
   cursor: pointer;
-  font-size: 0.78rem;
-  font-family: var(--font-ui);
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  transition: color 0.25s ease, border-color 0.25s ease, background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  line-height: 0;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.saga-toggle button:hover {
-  color: var(--text);
-  border-color: var(--border-strong);
-  transform: translateY(-1px);
+.saga-logo-img {
+  display: block;
+  height: clamp(76px, 10.5vw, 140px);
+  width: auto;
+  filter: grayscale(0.85) brightness(0.75);
+  opacity: 0.55;
+  transition: filter 0.35s ease, opacity 0.35s ease, transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.saga-toggle button.active {
-  background: linear-gradient(180deg, var(--ember-bright), var(--ember));
-  border-color: transparent;
-  color: var(--on-accent);
-  box-shadow: 0 0 20px var(--glow-medium);
+.saga-logo-btn:hover .saga-logo-img {
+  opacity: 0.85;
+  filter: grayscale(0.3) brightness(0.95);
+}
+.saga-logo-btn.active {
+  transform: scale(1.06);
+}
+.saga-logo-btn.active .saga-logo-img {
+  opacity: 1;
+  filter: grayscale(0) brightness(1) drop-shadow(0 0 22px var(--glow-medium));
 }
 
 /* ===================== Abas ===================== */
@@ -244,8 +226,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: 0.01em; }
   letter-spacing: 0.03em;
   transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
-.tab-btn .tab-icon,
-.saga-toggle .saga-icon { display: block; flex-shrink: 0; }
+.tab-btn .tab-icon { display: block; flex-shrink: 0; }
 .tab-btn:hover { color: var(--text); background: var(--surface); }
 .tab-btn.active {
   background: var(--surface-strong);
