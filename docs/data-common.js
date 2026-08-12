@@ -118,7 +118,7 @@ const LOCATIONS = [
   { id: "hills_of_loregard", nome: "Hills of Loregard", pos: { enchanted: { x: 95.0, y: 55.8 }, known_world: { x: 44.5, y: 51.3 } } },
   { id: "loregard", nome: "Loregard", pos: { enchanted: { x: 80.4, y: 64.2 }, known_world: { x: 52.5, y: 51.7 } } },
   { id: "elnor", nome: "Elnor", pos: { enchanted: { x: 8.26, y: 68.4 }, known_world: { x: 42.8, y: 51.8 } } },
-  { id: "trengard", nome: "Trengard", pos: { enchanted: { x: 63.5, y: 69.9 }, known_world: { x: 41.8, y: 51.6 } } },
+  { id: "irengard", nome: "Irengard", pos: { enchanted: { x: 63.5, y: 69.9 }, known_world: { x: 41.8, y: 51.6 } } },
   { id: "holy_lakes", nome: "Holy Lakes", pos: { enchanted: { x: 93.2, y: 72.0 }, known_world: { x: 63, y: 55.3 } } },
   { id: "thorald", nome: "Thorald", pos: { enchanted: { x: 13.0, y: 74.1 }, known_world: { x: 43.2, y: 52.6 } } },
   { id: "ragatorn", nome: "Ragatorn", pos: { enchanted: { x: 78.2, y: 83.5 }, known_world: { x: 44.5, y: 54.5 } } },

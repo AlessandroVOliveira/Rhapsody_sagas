@@ -375,7 +375,7 @@
         .join("");
 
       const citacaoHtml = chapter.citacao
-        ? `<blockquote class="chapter-quote">${chapter.citacao.texto[currentLang]}<cite>— ${chapter.citacao.autor[currentLang]}</cite></blockquote>`
+        ? `<blockquote class="chapter-quote">${linkifyCodexMentions(chapter.citacao.texto[currentLang], currentLang)}<cite>— ${linkifyCodexMentions(chapter.citacao.autor[currentLang], currentLang)}</cite></blockquote>`
         : "";
 
       const imagemHtml = chapter.imagem
@@ -386,7 +386,7 @@
         <div class="chapter-album">${album.nome} (${album.ano})</div>
         <h3>${chapter.titulo[currentLang]}</h3>
         ${imagemHtml}
-        <p class="chapter-text">${chapter.texto[currentLang]}</p>
+        <p class="chapter-text">${linkifyCodexMentions(chapter.texto[currentLang], currentLang)}</p>
         ${citacaoHtml}
         <div class="chapter-songs">${chipsHtml}</div>
       `;
@@ -395,6 +395,13 @@
       li.querySelectorAll(".song-chip").forEach((chip) => {
         chip.addEventListener("click", () => {
           openPanelWithSongs(chapter.titulo[currentLang], chapterSongs);
+        });
+      });
+
+      li.querySelectorAll(".codex-mention").forEach((span) => {
+        span.addEventListener("click", () => {
+          const entry = CODEX.find((e) => e.id === span.dataset.codexId);
+          if (entry) openPanelWithCodexEntry(entry);
         });
       });
     });
@@ -541,6 +548,82 @@
           });
         });
       });
+  }
+
+  // ---- Menções a itens do Codex no texto da História Completa ----
+  // Constrói, por idioma, a lista de termos (do mais longo para o mais curto, para que
+  // frases mais específicas "ganhem" de substrings menores) que devem virar links clicáveis.
+  const CODEX_MENTIONS = { pt: [], en: [] };
+  CODEX.forEach((entry) => {
+    ["pt", "en"].forEach((lang) => {
+      ((entry.mencoes && entry.mencoes[lang]) || []).forEach((phrase) => {
+        CODEX_MENTIONS[lang].push({ phrase, id: entry.id });
+      });
+    });
+  });
+  ["pt", "en"].forEach((lang) => {
+    CODEX_MENTIONS[lang].sort((a, b) => b.phrase.length - a.phrase.length);
+  });
+
+  function escapeRegExp(s) {
+    return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  const CODEX_MENTION_REGEX = {};
+  ["pt", "en"].forEach((lang) => {
+    const mentions = CODEX_MENTIONS[lang];
+    if (!mentions.length) return;
+    const pattern = mentions.map((m) => escapeRegExp(m.phrase)).join("|");
+    CODEX_MENTION_REGEX[lang] = new RegExp(`(?<![\\p{L}\\p{N}])(${pattern})(?![\\p{L}\\p{N}])`, "gu");
+  });
+  const CODEX_MENTION_BY_PHRASE = { pt: new Map(), en: new Map() };
+  ["pt", "en"].forEach((lang) => {
+    CODEX_MENTIONS[lang].forEach((m) => CODEX_MENTION_BY_PHRASE[lang].set(m.phrase, m.id));
+  });
+
+  function linkifyCodexMentions(text, lang) {
+    const re = CODEX_MENTION_REGEX[lang];
+    if (!re || !text) return text;
+    return text.replace(re, (match) => {
+      const id = CODEX_MENTION_BY_PHRASE[lang].get(match);
+      return `<span class="codex-mention" data-codex-id="${id}">${match}</span>`;
+    });
+  }
+
+  function openPanelWithCodexEntry(entry) {
+    const entrySongs = entry.faixas.map((ref) => findGlobalSong(ref.album, ref.faixa)).filter(Boolean);
+    panelTitle.textContent = entry.nome[currentLang];
+    panelHint.style.display = "none";
+    panelSongs.innerHTML = "";
+    panelSongs.appendChild(renderCodexDetail(entry, entrySongs));
+    openPanel();
+  }
+
+  function renderCodexDetail(entry, entrySongs) {
+    const chipsHtml = entrySongs
+      .map((s) => {
+        const a = ALBUMS_ALL[s.album];
+        return `<button class="song-chip" data-album="${s.album}" data-faixa="${s.faixa}">
+          <img src="${a.cover}" alt="">${s.titulo}
+        </button>`;
+      })
+      .join("");
+
+    const wrap = document.createElement("div");
+    wrap.className = "codex-detail";
+    wrap.innerHTML = `
+      <img class="codex-detail-img" src="${entry.imagem}" alt="${entry.nome[currentLang]}">
+      <span class="codex-saga-badge codex-saga-${entry.saga}">${t(CODEX_SAGA_LABEL[entry.saga])}</span>
+      <p class="codex-detail-desc">${entry.descricao[currentLang]}</p>
+      <div class="codex-appears-in">${t("codexAppearsIn")}</div>
+      <div class="chapter-songs">${chipsHtml}</div>
+    `;
+    wrap.querySelectorAll(".song-chip").forEach((chip) => {
+      chip.addEventListener("click", () => {
+        openPanelWithSongs(entry.nome[currentLang], entrySongs, null, ALBUMS_ALL);
+      });
+    });
+    return wrap;
   }
 
   // ---- Inicialização ----
