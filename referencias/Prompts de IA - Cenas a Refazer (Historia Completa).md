@@ -1,10 +1,14 @@
 # Prompts de IA — Cenas da História Completa a Refazer
 
-Este arquivo lista **só os capítulos afetados** pelas 19 novas entradas do Codex adicionadas depois
-que "Prompts de IA - Historia Completa.md" foi escrito. Nesses capítulos, a cena descrevia o
-personagem/lugar de forma genérica ("an old wizard", "an elf guide", "a prince and princess"...)
-porque na época não havia retrato no Codex para anexar como referência. Agora há — e nesses casos
-vale regerar a imagem para manter a cena consistente com o retrato.
+Este arquivo lista **só os capítulos afetados**, por dois motivos:
+
+1. As 19 novas entradas do Codex adicionadas depois que "Prompts de IA - Historia Completa.md" foi
+   escrito — nesses capítulos a cena descrevia o personagem/lugar de forma genérica ("an old wizard",
+   "an elf guide"...) porque na época não havia retrato no Codex para anexar como referência.
+2. Uma revisão de precisão contra `RhapsodySagas.md` (a fonte de verdade — ver
+   `Resumo da saga.txt`/`Resumo da saga - The Dark Secret.txt`, que **não** devem ser usados como
+   referência) que encontrou pontos onde o texto do site — e por consequência os prompts de imagem
+   originais — descreviam a cena errado. Esses casos estão marcados **(correção de história)**.
 
 Os capítulos que **não** aparecem aqui já estavam corretos e não precisam ser refeitos.
 
@@ -14,14 +18,28 @@ Os capítulos que **não** aparecem aqui já estavam corretos e não precisam se
 ---
 
 ## Prioridade alta
-*A figura/lugar novo é o foco visual da cena — vale regerar a imagem.*
+*A figura/lugar novo é o foco visual da cena, ou a cena antiga descrevia o evento errado — vale regerar a imagem.*
 
 ### ch3 — Ancelot em ruínas / Ancelot in Ruins
 *Álbum: Legendary Tales*
-**Anexar do Codex:** O Guerreiro de Gelo (`assets/codex/guerreiro_de_gelo.jpg`), Akron (`assets/codex/akron.jpg`), Arwald (`assets/codex/arwald.jpg`), Airin (`assets/codex/airin.jpg`)
-**O que mudou:** os "prince and princess" capturados são Arwald e Airin, hoje com retrato próprio.
+**Anexar do Codex:** O Guerreiro de Gelo (`assets/codex/guerreiro_de_gelo.jpg`), Akron (`assets/codex/akron.jpg`, referência de estilo pros soldados dele), Airin (`assets/codex/airin.jpg`)
+**O que mudou (correção de história):** o texto antigo dizia que Arwald e Airin foram capturados juntos aqui. A Crônica de Algalord Parte III (`RhapsodySagas.md`) deixa claro que só **Airin** é capturada no cerco a Ancelot, junto com uma dúzia de cavaleiros — Arwald fica livre e ajuda a organizar o resgate (ele só é capturado depois, em ch11). Arwald também nunca é chamado de "príncipe" na fonte — só Airin é "princesa".
 **Prompt:**
-> The warrior standing amid the smoking ruins of a once-grand city, broken towers and burning banners around him, kneeling by fallen townsfolk. In the distance, dark armored soldiers marked with a black king's sigil drag away two bound royal captives — the prince Arwald and princess Airin — toward the horizon. The warrior's fists are clenched in fury, sword drawn. epic fantasy oil painting, warm amber and gold lighting, dramatic chiaroscuro, detailed plate armor and linework, painterly rendering in the style of 1990s-2000s symphonic power metal album art, dramatic sky, highly detailed, cinematic composition
+> The warrior standing amid the smoking ruins of a once-grand city, broken towers and burning banners around him, kneeling by fallen townsfolk. In the distance, dark armored soldiers marked with a black king's sigil drag away Airin, princess of Ancelot, bound alongside a dozen captured knights, toward the horizon. The warrior's fists are clenched in fury, sword drawn. epic fantasy oil painting, warm amber and gold lighting, dramatic chiaroscuro, detailed plate armor and linework, painterly rendering in the style of 1990s-2000s symphonic power metal album art, dramatic sky, highly detailed, cinematic composition
+
+### ch11 — A armadilha de Akron / Akron's Trap
+*Álbum: Dawn of Victory*
+**Anexar do Codex:** O Guerreiro de Gelo (`assets/codex/guerreiro_de_gelo.jpg`), Arwald (`assets/codex/arwald.jpg`), Akron (`assets/codex/akron.jpg`), Hargor (`assets/codex/hargor.jpg`), A Espada Esmeralda (`assets/codex/espada_esmeralda.jpg`)
+**O que mudou (correção de história):** a cena mostrava só "the warrior" oferecendo a espada sozinho. Na fonte, é o Guerreiro **e Arwald juntos** que vão negociar a troca da espada por Airin e os cavaleiros — e são os dois que caem na armadilha.
+**Prompt:**
+> At the black iron gates of a mountain fortress built of bone, the warrior and his companion Arwald kneel together, offering the emerald sword across their open palms toward a shadowed throne where a dark king watches with a cruel smile. Around them, disguised soldiers close in from every side — the instant the trap springs shut. epic fantasy oil painting, warm amber and gold lighting, dramatic chiaroscuro, detailed plate armor and linework, painterly rendering in the style of 1990s-2000s symphonic power metal album art, dramatic sky, highly detailed, cinematic composition
+
+### ch16 — O herói de Algalord / The Hero of Algalord
+*Álbum: Power of the Dragonflame*
+**Anexar do Codex:** O Guerreiro de Gelo (`assets/codex/guerreiro_de_gelo.jpg`), Elgard (`assets/codex/elgard.jpg`), Aresius (`assets/codex/aresius.jpg`), Algalord (`assets/codex/algalord.jpg`)
+**O que mudou (correção de história):** a cena antiga mostrava o Guerreiro chegando direto e triunfante a Algalord. A Crônica de Algalord Parte IV mostra que, depois de Hargor, ele chega primeiro — abalado, "at the limit of his physical and mental condition" — a **Elgard**, onde é recebido como herói e Aresius cura sua mente. Só meses depois, já com Elnor e Thorald destruídas, é que **o conselho de Algalord** lhe dá o comando do exército.
+**Prompt:**
+> Split composition: on one side, the warrior arriving at the green hills of Elgard, gaunt and hollow-eyed, welcomed by townsfolk as the wizard Aresius lays healing hands on his head, chasing away ghostly visions; on the other side, months later, the warrior stands before the grand council of Algalord in a white-towered hall, pointing toward war maps as they grant him command of the assembled army. epic fantasy oil painting, warm amber and gold lighting, dramatic chiaroscuro, detailed plate armor and linework, painterly rendering in the style of 1990s-2000s symphonic power metal album art, dramatic sky, highly detailed, cinematic composition
 
 ### ch6 — O dragão Tharos / The Dragon Tharos
 *Álbum: Symphony of Enchanted Lands*
@@ -61,14 +79,14 @@ Os capítulos que **não** aparecem aqui já estavam corretos e não precisam se
 ### ds-ch4 — Rumo a Dar-Kunor / Toward Dar-Kunor
 *Álbum: Symphony of Enchanted Lands II - The Dark Secret*
 **Anexar do Codex:** Iras Algor (`assets/codex/iras_algor.jpg`), Dargor (`assets/codex/dargor.jpg`), Dar-Kunor (`assets/codex/dar_kunor.jpg`), Tarish (`assets/codex/tarish.jpg`)
-**O que mudou:** "an elf guide" é Tarish (grafado "Tharish" nesse trecho da letra, mesmo personagem).
+**O que mudou:** "an elf guide" é Tarish. *(Correção: o site chamava esse personagem de "Tharish" neste trecho — checamos `RhapsodySagas.md` e essa grafia não existe na fonte, é um erro de digitação nosso; o nome correto é sempre Tarish, já corrigido no site.)*
 **Prompt:**
 > A small band of travelers — a wizard, the old elf-king Tarish guiding the way, and a shadow-armored figure among them — fording a wide silver river through misty highlands, grey mountain peaks rising ahead under a pale winter sky. The dark mouth of a cave system looms at the base of the furthest peak. epic fantasy oil painting, cold blue and icy silver lighting, dramatic chiaroscuro, detailed gothic armor and linework, painterly rendering in the style of symphonic power metal album art, frozen dramatic sky, highly detailed, cinematic composition
 
 ### ds-ch6 — Nas Montanhas Cinzentas / In the Grey Mountains
 *Álbum: Symphony of Enchanted Lands II - The Dark Secret*
 **Anexar do Codex:** Dar-Kunor (`assets/codex/dar_kunor.jpg`), Algalord (`assets/codex/algalord.jpg`), Tarish (`assets/codex/tarish.jpg`)
-**O que mudou:** "An old elf" é Tarish.
+**O que mudou:** "An old elf" é Tarish (mesma correção de grafia do ds-ch4 acima).
 **Prompt:**
 > A group of travelers camped among wind-scoured grey peaks at night, gathered around a small fire beside a frozen marsh. The old elf-king Tarish kneels at the marsh's edge, tracing runes that reveal a hidden stone entrance beneath the ice. Above the camp, faint ghostly wings of invoked fallen angels spread across the aurora-lit sky, standing silent watch. epic fantasy oil painting, cold blue and icy silver lighting, dramatic chiaroscuro, detailed gothic armor and linework, painterly rendering in the style of symphonic power metal album art, frozen dramatic sky, highly detailed, cinematic composition
 
@@ -103,7 +121,7 @@ Os capítulos que **não** aparecem aqui já estavam corretos e não precisam se
 ---
 
 ## Opcional / menor impacto
-*A figura/lugar novo é uma menção de fundo — regerar é opcional.*
+*A figura/lugar novo é uma menção de fundo, ou o ajuste é uma nuance pequena — regerar é opcional.*
 
 ### ch10 — Descanso e a sombra de Dargor / A Rest, and Dargor's Shadow
 *Álbum: Dawn of Victory*
@@ -136,6 +154,6 @@ Os capítulos que **não** aparecem aqui já estavam corretos e não precisam se
 ### ds-ch16 — A profecia de Thanor / Thanor's Prophecy
 *Álbum: From Chaos to Eternity*
 **Anexar do Codex:** Thanor (`assets/codex/thanor.jpg`), Nekron (`assets/codex/nekron.jpg`), Khaas (`assets/codex/khaas.jpg`), Aelin e Mornir (`assets/codex/aelin_mornir.jpg`)
-**O que mudou:** o texto do capítulo narra duas linhas de tempo — a traição de Thanor nas guerras primordiais (já ilustrada) e a busca moderna pelas pedras Aelin/Mornir, com a morte de Khaas (não ilustrada). Considere uma composição dividida para cobrir as duas.
+**O que mudou:** o texto do capítulo narra duas linhas de tempo — a traição de Thanor nas guerras primordiais (já ilustrada) e a busca moderna pelas pedras Aelin/Mornir (não ilustrada). Considere uma composição dividida para cobrir as duas. **Correção de história:** o texto do site dizia que Khaas segurou a criatura "sozinho" — a narração de Iras em `RhapsodySagas.md` ("Aelin and Mornir") deixa claro que **Dargor lutou junto**, golpeando a criatura enquanto Khaas (já mortalmente ferido antes dessa luta, por outro motivo) a segurava com a força que lhe restava.
 **Prompt:**
-> Split vision: on one side, in the primordial war era, a black stone dragon, still whole and alive, whispers a secret location to a circle of angels beneath a battle sky, while a demonknight's rage cracks open the earth itself — chains of dark stone already beginning to bind the dragon's wings in punishment. On the other side, in the present, a shadow-armored warrior wrenches a glowing stone from an underground river while a wounded companion single-handedly holds back a monstrous creature behind him, giving his life for the moment. epic fantasy oil painting, cold blue and icy silver lighting, dramatic chiaroscuro, detailed gothic armor and linework, painterly rendering in the style of symphonic power metal album art, frozen dramatic sky, highly detailed, cinematic composition
+> Split vision: on one side, in the primordial war era, a black stone dragon, still whole and alive, whispers a secret location to a circle of angels beneath a battle sky, while a demonknight's rage cracks open the earth itself — chains of dark stone already beginning to bind the dragon's wings in punishment. On the other side, in the present, a mortally wounded companion holds back a monstrous creature in an underground river passage while a shadow-armored warrior strikes it down with his blade, then wrenches a glowing stone free from the water. epic fantasy oil painting, cold blue and icy silver lighting, dramatic chiaroscuro, detailed gothic armor and linework, painterly rendering in the style of symphonic power metal album art, frozen dramatic sky, highly detailed, cinematic composition

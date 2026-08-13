@@ -144,8 +144,8 @@ const CODEX = [
     imagem: "assets/codex/airin.jpg",
     mencoes: { pt: ["Airin"], en: ["Airin"] },
     descricao: {
-      pt: "Princesa de Ancelot amada por Arwald, capturada junto com ele e o Guerreiro de Gelo na armadilha de Akron em Hargor. É violentada pelos guerreiros do Rei Negro diante do Guerreiro e jogada viva num caldeirão de ácido — sua morte, ao lado da de Arwald, é o momento mais brutal da Saga da Espada Esmeralda e o estopim do juramento de vingança do herói.",
-      en: "A princess of Ancelot loved by Arwald, captured together with him and the Ice Warrior in Akron's trap at Hargor. She is raped by the Black King's warriors in front of the Warrior and thrown alive into a cauldron of acid — her death, alongside Arwald's, is the most brutal moment of the Emerald Sword Saga and the spark for the hero's vow of revenge."
+      pt: "Princesa de Ancelot amada por Arwald, capturada durante o cerco à cidade junto com uma dúzia de cavaleiros e levada para Hargor. Quando o Guerreiro de Gelo e Arwald vão negociar sua liberdade, caem na armadilha de Akron; ela é violentada pelos guerreiros do Rei Negro diante do Guerreiro e jogada viva num caldeirão de ácido — sua morte, ao lado da de Arwald, é o momento mais brutal da Saga da Espada Esmeralda e o estopim do juramento de vingança do herói.",
+      en: "A princess of Ancelot loved by Arwald, captured during the siege of the city along with a dozen knights and taken to Hargor. When the Ice Warrior and Arwald go to negotiate her freedom, they fall into Akron's trap; she is raped by the Black King's warriors in front of the Warrior and thrown alive into a cauldron of acid — her death, alongside Arwald's, is the most brutal moment of the Emerald Sword Saga and the spark for the hero's vow of revenge."
     },
     faixas: [{ album: "legendary_tales", faixa: 5 }, { album: "dawn_of_victory", faixa: 9 }]
   },
@@ -220,7 +220,7 @@ const CODEX = [
     saga: "cold",
     nome: { pt: "Tarish", en: "Tarish" },
     imagem: "assets/codex/tarish.jpg",
-    mencoes: { pt: ["Tarish", "Tharish"], en: ["Tarish", "Tharish"] },
+    mencoes: { pt: ["Tarish"], en: ["Tarish"] },
     descricao: {
       pt: "Velho rei-elfo das cavernas, guia a Ordem do Dragão Branco pelas passagens até Dar-Kunor. Revela-se espião infiltrado da Ordem Negra: faz Iras Algor refém em Har-Kuun, exigindo o Livro Branco em troca de sua vida, e consegue arrancar páginas do livro antes de ser morto por Dargor e Khaas.",
       en: "An old elf-king of the caverns who guides the White Dragon's Order through the passages to Dar-Kunor. He turns out to be a spy planted by the Black Order: he takes Iras Algor hostage at Har-Kuun, demanding the White Book in exchange for his life, and manages to tear pages from the book before being killed by Dargor and Khaas."

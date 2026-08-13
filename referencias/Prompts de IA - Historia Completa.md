@@ -35,9 +35,9 @@ ele estiver em cena ajuda a manter o rosto/armadura consistentes de imagem pra i
 
 ### ch3 — Ancelot em ruínas / Ancelot in Ruins
 *Álbum: Legendary Tales*
-**Anexar do Codex:** O Guerreiro de Gelo (`assets/codex/guerreiro_de_gelo.jpg`), Akron (`assets/codex/akron.jpg`, referência de estilo pros soldados dele)
-**Prompt:**
-> The warrior standing amid the smoking ruins of a once-grand city, broken towers and burning banners around him, kneeling by fallen townsfolk. In the distance, dark armored soldiers marked with a black king's sigil drag away two bound royal captives — a young prince and princess — toward the horizon. The warrior's fists are clenched in fury, sword drawn. epic fantasy oil painting, warm amber and gold lighting, dramatic chiaroscuro, detailed plate armor and linework, painterly rendering in the style of 1990s-2000s symphonic power metal album art, dramatic sky, highly detailed, cinematic composition
+**Anexar do Codex:** O Guerreiro de Gelo (`assets/codex/guerreiro_de_gelo.jpg`), Akron (`assets/codex/akron.jpg`, referência de estilo pros soldados dele), Airin (`assets/codex/airin.jpg`)
+**Prompt:** *(corrigido — só Airin é capturada aqui, junto com uma dúzia de cavaleiros; Arwald não é capturado neste ponto da história, veja ch11)*
+> The warrior standing amid the smoking ruins of a once-grand city, broken towers and burning banners around him, kneeling by fallen townsfolk. In the distance, dark armored soldiers marked with a black king's sigil drag away Airin, princess of Ancelot, bound alongside a dozen captured knights, toward the horizon. The warrior's fists are clenched in fury, sword drawn. epic fantasy oil painting, warm amber and gold lighting, dramatic chiaroscuro, detailed plate armor and linework, painterly rendering in the style of 1990s-2000s symphonic power metal album art, dramatic sky, highly detailed, cinematic composition
 
 ### ch4 — A terra dos imortais / The Land of Immortals
 *Álbum: Legendary Tales*
@@ -85,9 +85,9 @@ ele estiver em cena ajuda a manter o rosto/armadura consistentes de imagem pra i
 
 ### ch11 — A armadilha de Akron / Akron's Trap
 *Álbum: Dawn of Victory*
-**Anexar do Codex:** O Guerreiro de Gelo (`assets/codex/guerreiro_de_gelo.jpg`), Akron (`assets/codex/akron.jpg`), Hargor (`assets/codex/hargor.jpg`), A Espada Esmeralda (`assets/codex/espada_esmeralda.jpg`)
-**Prompt:**
-> At the black iron gates of a mountain fortress built of bone, the warrior kneels and offers the emerald sword across his open palms toward a shadowed throne where a dark king watches with a cruel smile. Around them, disguised soldiers close in from every side — the instant the trap springs shut. epic fantasy oil painting, warm amber and gold lighting, dramatic chiaroscuro, detailed plate armor and linework, painterly rendering in the style of 1990s-2000s symphonic power metal album art, dramatic sky, highly detailed, cinematic composition
+**Anexar do Codex:** O Guerreiro de Gelo (`assets/codex/guerreiro_de_gelo.jpg`), Arwald (`assets/codex/arwald.jpg`), Akron (`assets/codex/akron.jpg`), Hargor (`assets/codex/hargor.jpg`), A Espada Esmeralda (`assets/codex/espada_esmeralda.jpg`)
+**Prompt:** *(corrigido — é o Guerreiro e Arwald, juntos, indo negociar a troca; Airin já está cativa desde ch3)*
+> At the black iron gates of a mountain fortress built of bone, the warrior and his companion Arwald kneel together, offering the emerald sword across their open palms toward a shadowed throne where a dark king watches with a cruel smile. Around them, disguised soldiers close in from every side — the instant the trap springs shut. epic fantasy oil painting, warm amber and gold lighting, dramatic chiaroscuro, detailed plate armor and linework, painterly rendering in the style of 1990s-2000s symphonic power metal album art, dramatic sky, highly detailed, cinematic composition
 
 ### ch12 — A morte de Airin e Arwald / The Death of Airin and Arwald
 *Álbum: Dawn of Victory*
@@ -117,9 +117,9 @@ ele estiver em cena ajuda a manter o rosto/armadura consistentes de imagem pra i
 
 ### ch16 — O herói de Algalord / The Hero of Algalord
 *Álbum: Power of the Dragonflame*
-**Anexar do Codex:** O Guerreiro de Gelo (`assets/codex/guerreiro_de_gelo.jpg`), Algalord (`assets/codex/algalord.jpg`)
-**Prompt:**
-> The warrior riding through the grand gates of a coastal citadel, its white towers and banners rising behind him, greeted by cheering crowds despite grim news from fallen cities. He dismounts before a war council, already pointing toward maps and rallying soldiers, jaw set with resolve. epic fantasy oil painting, warm amber and gold lighting, dramatic chiaroscuro, detailed plate armor and linework, painterly rendering in the style of 1990s-2000s symphonic power metal album art, dramatic sky, highly detailed, cinematic composition
+**Anexar do Codex:** O Guerreiro de Gelo (`assets/codex/guerreiro_de_gelo.jpg`), Elgard (`assets/codex/elgard.jpg`), Aresius (`assets/codex/aresius.jpg`), Algalord (`assets/codex/algalord.jpg`)
+**Prompt:** *(corrigido — ele se recupera em Elgard primeiro, com Aresius curando sua mente; só meses depois o conselho de Algalord lhe dá o comando do exército)*
+> Split composition: on one side, the warrior arriving at the green hills of Elgard, gaunt and hollow-eyed, welcomed by townsfolk as the wizard Aresius lays healing hands on his head, chasing away ghostly visions; on the other side, months later, the warrior stands before the grand council of Algalord in a white-towered hall, pointing toward war maps as they grant him command of the assembled army. epic fantasy oil painting, warm amber and gold lighting, dramatic chiaroscuro, detailed plate armor and linework, painterly rendering in the style of 1990s-2000s symphonic power metal album art, dramatic sky, highly detailed, cinematic composition
 
 ### ch17 — O cerco a Algalord / The Siege of Algalord
 *Álbum: Power of the Dragonflame*
