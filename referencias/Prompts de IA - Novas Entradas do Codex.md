@@ -237,3 +237,17 @@ nele surgem gravadas na pele de Dargor, revelando-o como sua reencarnação.
 
 **Prompt:**
 > Extreme close-up of a muscled forearm and shoulder, dark battle-worn skin, with intricate glowing golden script in an elegant invented angelic alphabet spreading like living light across it, tendrils of radiance branching outward from the letters. The surrounding armor is cracked, light breaking through the cracks like dawn through storm clouds. epic fantasy oil painting, cold blue and icy silver base tone broken by radiant golden light, dramatic chiaroscuro, painterly rendering in the style of symphonic power metal album art, highly detailed, cinematic composition
+
+---
+
+### 20. O Sgral
+*(Adicionado depois, na revisão de precisão de 2026-08-16 — não fazia parte do levantamento original das 19 entradas acima, mas segue a mesma convenção.)*
+**Fonte:** *Dawn of Victory* — “The Last Winged Unicorn”, “The Mighty Ride of the Firelord”; prosa
+“Excerpt from Algalord Chronicles Part III”.
+**Detalhes do texto:** substância mágica corrosiva capaz de destruir até o aço mais resistente; Akron
+a usa para matar Airin em Hargor, forçando-a a mergulhar nela; Arwald sofre o mesmo destino, mas
+usa o próprio ácido esverdeado de sua morte, já com os ossos à mostra, para libertar as correntes
+do Guerreiro de Gelo com o último sopro de vida.
+
+**Prompt:**
+> A pool of glowing acid-green liquid filling an ancient stone basin in a torchlit dungeon, its surface bubbling with faint corrosive vapor that eats away at rusted iron chains draped over the rim, some links already dissolved to jagged, half-melted stumps. No figures present — focus entirely on the eerie, lethal beauty of the substance itself, its sickly glow reflecting off wet stone walls. epic fantasy oil painting, warm amber torchlight against sickly green corrosive glow, dramatic chiaroscuro, painterly rendering in the style of 1990s-2000s symphonic power metal album art, highly detailed, cinematic composition

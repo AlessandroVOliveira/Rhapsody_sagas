@@ -516,5 +516,18 @@ const CODEX = [
       en: "The holy alphabet of angels. At the climax of the Dark Secret Saga, prophetic words by Erian written in Irindal appear carved into Dargor's own skin, revealing that he is the angel-warrior's reincarnation and the one chosen to cross the Gate of the Ancient World."
     },
     faixas: [{ album: "chaos_to_eternity", faixa: 9 }]
+  },
+  {
+    id: "sgral",
+    categoria: "artefato",
+    saga: "warm",
+    nome: { pt: "O Sgral", en: "The Sgral" },
+    imagem: "assets/codex/sgral.jpg",
+    mencoes: { pt: ["Sgral"], en: ["Sgral"] },
+    descricao: {
+      pt: "Substância corrosiva mágica capaz de destruir até o aço mais resistente, usada por Akron como instrumento de tortura em Hargor. Airin é forçada a mergulhar nela até a morte diante do Guerreiro de Gelo; Arwald sofre o mesmo destino, mas usa o próprio ácido esverdeado, já com os ossos à mostra, para libertar as correntes do protagonista com o último sopro de vida.",
+      en: "A magical corrosive substance able to destroy even the strongest steel, used by Akron as an instrument of torture in Hargor. Airin is forced to sink into it until death in front of the Ice Warrior; Arwald suffers the same fate, but uses the green acid itself, his own bones already showing through, to free the protagonist's chains with his very last breath."
+    },
+    faixas: [{ album: "dawn_of_victory", faixa: 9 }, { album: "dawn_of_victory", faixa: 10 }]
   }
 ];
