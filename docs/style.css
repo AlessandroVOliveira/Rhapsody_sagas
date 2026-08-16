@@ -913,7 +913,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: 0.01em; }
 
 .about-content { display: flex; flex-direction: column; gap: 0.9rem; }
 .about-content p { margin: 0; color: var(--text-dim); font-size: 0.92rem; line-height: 1.65; }
-.about-content .about-reddit-link {
+.about-content .about-report-link {
   align-self: flex-start;
   color: var(--gold);
   text-decoration: none;
@@ -927,7 +927,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: 0.01em; }
   border-radius: 999px;
   transition: all 0.2s ease;
 }
-.about-content .about-reddit-link:hover {
+.about-content .about-report-link:hover {
   border-color: var(--border-strong);
   color: var(--ember-bright);
   box-shadow: 0 0 18px var(--glow-soft);

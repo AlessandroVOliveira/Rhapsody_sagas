@@ -45,7 +45,7 @@ const UI_STRINGS = {
     aboutP2: "Hoje, com acesso a ferramentas de IA, finalmente consegui fazer o que não conseguia sozinho: um lugar pra juntar tudo isso. Este site é um projeto pessoal de fã, feito com bastante ajuda de inteligência artificial — no código, na pesquisa e na criação de parte das imagens.",
     aboutP3: "A ideia também nasceu da falta de material visual oficial sobre esse mundo: os encartes dos álbuns descrevem lugares, personagens e criaturas com riqueza de detalhes narrativos, mas quase nunca em imagens. Por isso, boa parte da arte aqui teve que ser meio que reinventada a partir dessas descrições — é uma interpretação de fã, não material oficial da banda.",
     aboutP4: "Se você encontrar algum erro, imprecisão ou algo que não bate com a história oficial, me avisa! Vou corrigir assim que possível.",
-    aboutRedditLink: "Comentar na thread do Reddit ↗"
+    aboutReportLink: "Reportar no Instagram ↗"
   },
   en: {
     tabMap: "Interactive Map",
@@ -90,7 +90,7 @@ const UI_STRINGS = {
     aboutP2: "Today, with access to AI tools, I finally managed to do what I couldn't do alone: build a place to put it all together. This is a personal fan project, made with a lot of help from AI — for the code, the research, and part of the artwork.",
     aboutP3: "The idea also came from the lack of official visual material for this world: the album booklets describe places, characters, and creatures in rich narrative detail, but almost never in pictures. Because of that, a good chunk of the art here had to be reinvented, in a way, from those descriptions — it's a fan interpretation, not official band material.",
     aboutP4: "If you spot any error, inaccuracy, or anything that doesn't match the official story, please let me know! I'll fix it as soon as I can.",
-    aboutRedditLink: "Comment on the Reddit thread ↗"
+    aboutReportLink: "Report on Instagram ↗"
   }
 };
 

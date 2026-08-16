@@ -317,7 +317,7 @@
       <p>${t("aboutP2")}</p>
       <p>${t("aboutP3")}</p>
       <p>${t("aboutP4")}</p>
-      <a class="about-reddit-link" href="https://www.reddit.com/r/Rhapsody_Of_Fire/comments/1viadwz/i_built_an_interactive_map_for_rhapsody_of_fires/" target="_blank" rel="noopener">${t("aboutRedditLink")}</a>
+      <a class="about-report-link" href="https://www.instagram.com/aleh_velasques/" target="_blank" rel="noopener">${t("aboutReportLink")}</a>
     `;
     panelSongs.appendChild(wrap);
     openPanel();
