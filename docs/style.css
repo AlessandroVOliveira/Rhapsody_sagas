@@ -911,6 +911,29 @@ h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: 0.01em; }
 }
 .codex-detail-desc { margin: 0; color: var(--text-dim); font-size: 0.92rem; line-height: 1.65; }
 
+.about-content { display: flex; flex-direction: column; gap: 0.9rem; }
+.about-content p { margin: 0; color: var(--text-dim); font-size: 0.92rem; line-height: 1.65; }
+.about-content .about-reddit-link {
+  align-self: flex-start;
+  color: var(--gold);
+  text-decoration: none;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+.about-content .about-reddit-link:hover {
+  border-color: var(--border-strong);
+  color: var(--ember-bright);
+  box-shadow: 0 0 18px var(--glow-soft);
+  transform: translateY(-1px);
+}
+
 /* ===================== Rodapé ===================== */
 
 .footer {
@@ -922,7 +945,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: 0.01em; }
   background: linear-gradient(180deg, transparent, var(--glow-soft));
 }
 .footer p { max-width: 65ch; margin: 0 auto; }
-.donate-btn {
+.about-btn {
   display: inline-block;
   margin-top: 1.1rem;
   color: var(--gold);
@@ -935,9 +958,10 @@ h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: 0.01em; }
   background: var(--surface);
   padding: 0.5rem 1.2rem;
   border-radius: 999px;
+  cursor: pointer;
   transition: all 0.2s ease;
 }
-.donate-btn:hover {
+.about-btn:hover {
   border-color: var(--border-strong);
   color: var(--ember-bright);
   box-shadow: 0 0 18px var(--glow-soft);

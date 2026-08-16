@@ -12,10 +12,10 @@ const CODEX = [
     saga: "warm",
     nome: { pt: "O Guerreiro de Gelo", en: "The Ice Warrior" },
     imagem: "assets/codex/guerreiro_de_gelo.jpg",
-    mencoes: { pt: ["Guerreiro de Gelo", "Guerreiro"], en: ["Ice Warrior", "Warrior"] },
+    mencoes: { pt: ["Guerreiro de Gelo", "Guerreiro"], en: ["Ice Warrior", "Son of Ice", "Warrior"] },
     descricao: {
-      pt: "Protagonista de toda a Saga da Espada Esmeralda: um guerreiro de sangue nórdico, rei da aldeia de Loregard. Para atravessar os Portões de Marfim precisa ter um coração puro como gelo — daí seu epíteto. Parte em busca da lendária espada de esmeralda para libertar suas terras da guerra e das trevas, empunhando-a ao fim como arma sagrada contra Akron. Capturado na queda de Algalord, tem as duas pernas mutiladas por Akron e está prestes a ser lançado vivo aos pântanos de Acheros quando a rebelião de Dargor muda o destino da guerra — já moribundo, ainda encontra forças para arrastar o Rei Negro consigo para as águas escuras.",
-      en: "The protagonist of the entire Emerald Sword Saga: a warrior of Nordic blood, king of the village of Loregard. To pass through the Ivory Gates he must have a heart pure as ice — hence his epithet. He sets out in search of the legendary emerald sword to free his lands from war and darkness, wielding it as a holy weapon against Akron. Captured when Algalord falls, he has both legs mutilated by Akron and is about to be thrown alive into the marshes of Acheros when Dargor's rebellion changes the tide of war — already dying, he still finds the strength to drag the Black King down into the dark waters with him."
+      pt: "Protagonista de toda a Saga da Espada Esmeralda: um guerreiro de sangue nórdico, herói da aldeia de Loregard. Para atravessar os Portões de Marfim precisa ter um coração puro como gelo — daí seu epíteto. Parte em busca da lendária espada de esmeralda para libertar suas terras da guerra e das trevas, empunhando-a ao fim como arma sagrada contra Akron. Capturado na queda de Algalord, tem as duas pernas mutiladas por Akron e está prestes a ser lançado vivo aos pântanos de Acheros quando a rebelião de Dargor muda o destino da guerra — já moribundo, ainda encontra forças para arrastar o Rei Negro consigo para as águas escuras.",
+      en: "The protagonist of the entire Emerald Sword Saga: a warrior of Nordic blood, hero of the village of Loregard. To pass through the Ivory Gates he must have a heart pure as ice — hence his epithet. He sets out in search of the legendary emerald sword to free his lands from war and darkness, wielding it as a holy weapon against Akron. Captured when Algalord falls, he has both legs mutilated by Akron and is about to be thrown alive into the marshes of Acheros when Dargor's rebellion changes the tide of war — already dying, he still finds the strength to drag the Black King down into the dark waters with him."
     },
     faixas: [{ album: "legendary_tales", faixa: 2 }, { album: "symphony", faixa: 10 }, { album: "dawn_of_victory", faixa: 3 }]
   },
@@ -27,8 +27,8 @@ const CODEX = [
     imagem: "assets/codex/dargor.jpg",
     mencoes: { pt: ["Dargor"], en: ["Dargor"] },
     descricao: {
-      pt: "Príncipe das Terras Sombrias e Senhor das Sombras, Dargor é meio-demônio — filho adotivo do mago das trevas Vankar, mas com sangue humano correndo em suas veias. Introduzido como vilão em Dawn of Victory, ataca o Guerreiro de Gelo mesmo depois de ser poupado por ele, enganado pela mentira de Vankar de que o Guerreiro massacrara sua família; só na batalha final ouve a verdade sobre Akron e se volta contra o próprio senhor. Sua história se transforma no arco central de redenção da Dark Secret Saga: perde o fiel cavalo Pask-Ur em busca da pedra Aelin, e é escolhido justamente por conhecer tanto a escuridão quanto a luz para cruzar sozinho o Portão do Mundo Antigo — onde seu corpo humano morre, preso atrás do portal que se fecha, e o espírito do anjo Erian se funde à sua alma, dando origem a um novo deus da Luz Cósmica sobre Algalord.",
-      en: "Prince of the Darklands and Shadowlord, Dargor is half-demon — the adopted son of the dark wizard Vankar, but with human blood running through his veins. Introduced as a villain in Dawn of Victory, he attacks the Ice Warrior even after being spared by him, deceived by Vankar's lie that the Warrior had massacred his family; only in the final battle does he hear the truth about Akron and turn against his own lord. His story becomes the central redemption arc of the Dark Secret Saga: he loses his faithful horse Pask-Ur in the search for the Aelin stone, and is chosen — precisely for having known both darkness and light — to cross the Gate of the Ancient World alone, where his human body dies, trapped behind the portal as it closes, and the angel Erian's spirit merges with his soul, giving birth to a new God of Cosmic Light over Algalord."
+      pt: "Príncipe das Terras Sombrias e Senhor das Sombras, Dargor é meio-demônio — filho adotivo do mago das trevas Vankar, mas com sangue humano correndo em suas veias. Introduzido como vilão em Dawn of Victory, ataca o Guerreiro de Gelo mesmo depois de ser poupado por ele, enganado pela mentira de Vankar de que o Guerreiro massacrara sua família; só na batalha final ouve a verdade sobre Akron e se volta contra o próprio senhor. Sua história se transforma no arco central de redenção da Dark Secret Saga: perde o fiel cavalo Pask-Ur em busca da pedra Aelin, e é escolhido justamente por conhecer tanto a escuridão quanto a luz para cruzar sozinho o Portão do Mundo Antigo — onde seu corpo humano morre, preso atrás do portal que se fecha, e o espírito do anjo Erian se funde à sua alma, dando origem a um novo deus da Luz Cósmica.",
+      en: "Prince of the Darklands and Shadowlord, Dargor is half-demon — the adopted son of the dark wizard Vankar, but with human blood running through his veins. Introduced as a villain in Dawn of Victory, he attacks the Ice Warrior even after being spared by him, deceived by Vankar's lie that the Warrior had massacred his family; only in the final battle does he hear the truth about Akron and turn against his own lord. His story becomes the central redemption arc of the Dark Secret Saga: he loses his faithful horse Pask-Ur in the search for the Aelin stone, and is chosen — precisely for having known both darkness and light — to cross the Gate of the Ancient World alone, where his human body dies, trapped behind the portal as it closes, and the angel Erian's spirit merges with his soul, giving birth to a new God of Cosmic Light."
     },
     faixas: [{ album: "dawn_of_victory", faixa: 5 }, { album: "dragonflame", faixa: 9 }, { album: "dark_secret", faixa: 1 }, { album: "chaos_to_eternity", faixa: 9 }]
   },
@@ -40,8 +40,8 @@ const CODEX = [
     imagem: "assets/codex/akron.jpg",
     mencoes: { pt: ["Akron"], en: ["Akron"] },
     descricao: {
-      pt: "O Rei Negro, “filho do Inferno, traidor da Luz” — também chamado de Rex Tremende, “rei terrível” — principal antagonista da Saga da Espada Esmeralda. Comanda legiões de mortos-vivos e ressuscita a Rainha dos Horizontes Sombrios para reforçar seu exército. No fim, tem o olho direito perfurado pela própria espada esmeralda nas mãos do Guerreiro de Gelo; sua queda vem nos pântanos, afogado e devorado por serpentes do abismo junto ao Guerreiro, num duelo final que também o vitima.",
-      en: "The Black King, “Son of Hell, betrayer of Light” — also called Rex Tremende, “dreadful king” — the main antagonist of the Emerald Sword Saga. He commands legions of the undead and resurrects the Queen of the Dark Horizons to strengthen his army. In the end, his right eye is pierced by the emerald sword itself in the Ice Warrior's hands; his downfall comes in the marshes, drowned and devoured by serpents of the abyss alongside the Warrior, in a final duel that claims them both."
+      pt: "Principal antagonista da Saga da Espada Esmeralda, Akron comanda legiões de mortos-vivos e ressuscita a Rainha dos Horizontes Sombrios para reforçar seu exército. No fim, tem o olho direito perfurado pela própria espada esmeralda nas mãos do Guerreiro de Gelo; sua queda vem nos pântanos, afogado e devorado por serpentes do abismo junto ao Guerreiro, num duelo final que também o vitima.",
+      en: "The main antagonist of the Emerald Sword Saga, Akron commands legions of the undead and resurrects the Queen of the Dark Horizons to strengthen his army. In the end, his right eye is pierced by the emerald sword itself in the Ice Warrior's hands; his downfall comes in the marshes, drowned and devoured by serpents of the abyss alongside the Warrior, in a final duel that claims them both."
     },
     faixas: [{ album: "dawn_of_victory", faixa: 6 }, { album: "rain_of_flames", faixa: 1 }, { album: "rain_of_flames", faixa: 3 }]
   },
@@ -53,8 +53,8 @@ const CODEX = [
     imagem: "assets/codex/nekron.jpg",
     mencoes: { pt: ["Nekron"], en: ["Nekron"] },
     descricao: {
-      pt: "O Cavaleiro-Demônio, último e mais poderoso dos três filhos malignos de Kron. Mestre da Antiga Ordem, escreveu os sete Livros Negros com sangue de anjos. Morto há cinco mil anos, seu espírito continua à espreita além dos Portões do Inferno, aguardando a chance de se ressuscitar através do segredo guardado no sétimo livro.",
-      en: "The Demonknight, the last and mightiest of Kron's three evil sons. Master of the Ancient Order, he wrote the seven Black Books with the blood of angels. Killed five thousand years ago, his spirit still lurks beyond the Gates of Hell, waiting for the chance to resurrect through the secret held in the seventh book."
+      pt: "O Cavaleiro-Demônio, último dos três filhos malignos de Kron. Mestre da Antiga Ordem, escreveu os sete Livros Negros com sangue de anjos. Morto há cinco mil anos, seu espírito continua à espreita além dos Portões do Inferno, aguardando a chance de se ressuscitar através do segredo guardado no sétimo livro.",
+      en: "The Demonknight, the last of Kron's three evil sons. Master of the Ancient Order, he wrote the seven Black Books with the blood of angels. Killed five thousand years ago, his spirit still lurks beyond the Gates of Hell, waiting for the chance to resurrect through the secret held in the seventh book."
     },
     faixas: [{ album: "dark_secret", faixa: 1 }, { album: "dark_secret", faixa: 2 }, { album: "triumph_or_agony", faixa: 10 }]
   },
@@ -127,7 +127,7 @@ const CODEX = [
     id: "tharos",
     categoria: "personagem",
     saga: "warm",
-    nome: { pt: "Tharos", en: "Tharos" },
+    nome: { pt: "Tharos, o Dragão Poderoso", en: "Tharos, the Mighty Dragon" },
     imagem: "assets/codex/tharos.jpg",
     mencoes: { pt: ["Tharos"], en: ["Tharos"] },
     descricao: {
@@ -144,8 +144,8 @@ const CODEX = [
     imagem: "assets/codex/airin.jpg",
     mencoes: { pt: ["Airin"], en: ["Airin"] },
     descricao: {
-      pt: "Princesa de Ancelot amada por Arwald, capturada durante o cerco à cidade junto com uma dúzia de cavaleiros e levada para Hargor. Quando o Guerreiro de Gelo e Arwald vão negociar sua liberdade, caem na armadilha de Akron; ela é violentada pelos guerreiros do Rei Negro diante do Guerreiro e jogada viva num caldeirão de ácido — sua morte, ao lado da de Arwald, é o momento mais brutal da Saga da Espada Esmeralda e o estopim do juramento de vingança do herói.",
-      en: "A princess of Ancelot loved by Arwald, captured during the siege of the city along with a dozen knights and taken to Hargor. When the Ice Warrior and Arwald go to negotiate her freedom, they fall into Akron's trap; she is raped by the Black King's warriors in front of the Warrior and thrown alive into a cauldron of acid — her death, alongside Arwald's, is the most brutal moment of the Emerald Sword Saga and the spark for the hero's vow of revenge."
+      pt: "Princesa de Ancelot amada por Arwald, capturada durante o cerco à cidade junto com uma dúzia de cavaleiros e levada para Hargor. Quando o Guerreiro de Gelo e Arwald vão negociar sua liberdade, caem na armadilha de Akron; ela é violentada pelos guerreiros do Rei Negro diante do Guerreiro e jogada viva no Sgral, uma substância que corrói até o aço mais resistente — sua morte, ao lado da de Arwald, é o momento mais brutal da Saga da Espada Esmeralda e o estopim do juramento de vingança do herói.",
+      en: "A princess of Ancelot loved by Arwald, captured during the siege of the city along with a dozen knights and taken to Hargor. When the Ice Warrior and Arwald go to negotiate her freedom, they fall into Akron's trap; she is raped by the Black King's warriors in front of the Warrior and forced alive into the Sgral, a substance that corrodes even the strongest steel — her death, alongside Arwald's, is the most brutal moment of the Emerald Sword Saga and the spark for the hero's vow of revenge."
     },
     faixas: [{ album: "legendary_tales", faixa: 5 }, { album: "dawn_of_victory", faixa: 9 }]
   },
@@ -157,8 +157,8 @@ const CODEX = [
     imagem: "assets/codex/arwald.jpg",
     mencoes: { pt: ["Arwald"], en: ["Arwald"] },
     descricao: {
-      pt: "Guerreiro de Ancelot a quem o Guerreiro de Gelo confia suas tropas no início da saga; amado de Airin, celebra o retorno do herói com a espada esmeralda e o acompanha na marcha rumo a Hargor. Capturado na armadilha de Akron, sofre o mesmo destino cruel de Airin no caldeirão de ácido, mas com o último sopro de vida consegue jogar o ácido nas correntes do Guerreiro — libertando-o antes de morrer.",
-      en: "A warrior of Ancelot entrusted with the Ice Warrior's troops at the saga's start; Airin's beloved, he hails the hero's return with the emerald sword and marches with him toward Hargor. Captured in Akron's trap, he suffers the same cruel fate as Airin in the cauldron of acid, but with his very last breath manages to throw the acid onto the Warrior's chains — freeing him before he dies."
+      pt: "Guerreiro de Ancelot a quem o Guerreiro de Gelo confia suas tropas no início da saga; amado de Airin, celebra o retorno do herói com a espada esmeralda e o acompanha na marcha rumo a Hargor. Capturado na armadilha de Akron, sofre o mesmo destino cruel de Airin no Sgral corrosivo, mas com o último sopro de vida consegue jogar o ácido nas correntes do Guerreiro — libertando-o antes de morrer.",
+      en: "A warrior of Ancelot entrusted with the Ice Warrior's troops at the saga's start; Airin's beloved, he hails the hero's return with the emerald sword and marches with him toward Hargor. Captured in Akron's trap, he suffers the same cruel fate as Airin in the corrosive Sgral, but with his very last breath manages to throw the acid onto the Warrior's chains — freeing him before he dies."
     },
     faixas: [{ album: "legendary_tales", faixa: 5 }, { album: "dawn_of_victory", faixa: 9 }, { album: "dawn_of_victory", faixa: 10 }]
   },
@@ -170,8 +170,8 @@ const CODEX = [
     imagem: "assets/codex/aresius.jpg",
     mencoes: { pt: ["Aresius"], en: ["Aresius"] },
     descricao: {
-      pt: "Mago de Elgard que guia à distância o Guerreiro de Gelo e narra boa parte da saga em primeira pessoa nas “Crônicas de Algalord”. Eterno inimigo de Vankar, cura a mente do Guerreiro após o trauma da morte de Airin e Arwald. Décadas depois, já um velho sábio, é ele quem reconhece o nome Har-Kuun para a Ordem do Dragão Branco na Dark Secret Saga.",
-      en: "A wizard of Elgard who guides the Ice Warrior from afar and narrates much of the saga in first person through the “Algalord Chronicles.” The eternal enemy of Vankar, he heals the Warrior's mind after the trauma of Airin and Arwald's deaths. Decades later, now an old sage, he's the one who recognizes the name Har-Kuun for the White Dragon's Order in the Dark Secret Saga."
+      pt: "Mago de Elgard que guia à distância o Guerreiro de Gelo e narra boa parte da saga em primeira pessoa nas “Crônicas de Algalord”. Eterno inimigo de Vankar, cura a mente do Guerreiro após o trauma da morte de Airin e Arwald. Morre em paz algum tempo depois, mas décadas mais tarde é uma menção que ele fizera de passagem ao nome Har-Kuun, lembrada por Iras Algor, que ajuda a Ordem do Dragão Branco a reconhecer a antiga fortaleza na Dark Secret Saga.",
+      en: "A wizard of Elgard who guides the Ice Warrior from afar and narrates much of the saga in first person through the “Algalord Chronicles.” The eternal enemy of Vankar, he heals the Warrior's mind after the trauma of Airin and Arwald's deaths. He passes away in peace sometime after, but decades later it's a fleeting mention he once made of the name Har-Kuun, recalled by Iras Algor, that helps the White Dragon's Order recognize the ancient fortress in the Dark Secret Saga."
     },
     faixas: [{ album: "symphony", faixa: 3 }, { album: "dawn_of_victory", faixa: 4 }, { album: "frozen_tears", faixa: 9 }]
   },
@@ -209,8 +209,8 @@ const CODEX = [
     imagem: "assets/codex/lothen.jpg",
     mencoes: { pt: ["Lothen"], en: ["Lothen"] },
     descricao: {
-      pt: "Princesa do Reino das Cachoeiras Ancestrais e uma das cinco figuras escolhidas para formar a Ordem do Dragão Branco. Acompanha o grupo por toda a busca pelo Livro Branco, testemunhando tanto a traição de Tarish quanto o despertar de Thanor na batalha final em sua própria terra natal.",
-      en: "Princess of the Realm of the Ancient Waterfalls and one of the five figures chosen to form the White Dragon's Order. She travels with the group throughout the search for the White Book, witnessing both Tarish's betrayal and Thanor's awakening in the final battle on her own home soil."
+      pt: "Princesa do Reino das Cachoeiras Ancestrais e uma das cinco figuras escolhidas pela Ordem do Dragão Branco para a missão em busca do Sétimo Livro Negro. Acompanha o grupo por toda a busca pelo Livro Branco, testemunhando tanto a traição de Tarish quanto o despertar de Thanor na batalha final em sua própria terra natal.",
+      en: "Princess of the Realm of the Ancient Waterfalls and one of the five heroes chosen by the White Dragon's Order for the quest for the Seventh Black Book. She travels with the group throughout the search for the White Book, witnessing both Tarish's betrayal and Thanor's awakening in the final battle on her own home soil."
     },
     faixas: [{ album: "dark_secret", faixa: 6 }, { album: "chaos_to_eternity", faixa: 9 }]
   },
@@ -263,8 +263,8 @@ const CODEX = [
     imagem: "assets/codex/algalord.jpg",
     mencoes: { pt: ["Algalord"], en: ["Algalord"] },
     descricao: {
-      pt: "A cidade-cidadela sagrada das Terras Encantadas, guardiã do segredo da espada esmeralda, citada do início ao fim da saga. Sobrevive ao cerco de Akron e, depois da guerra, ganha a gárgula esculpida em seus muros como novo símbolo — e é também onde nasce o novo Deus da Luz Cósmica ao fim da Dark Secret Saga.",
-      en: "The sacred citadel-city of the Enchanted Lands, guardian of the emerald sword's secret, mentioned from the saga's beginning to its end. It survives Akron's siege and, after the war, gains the carved gargoyle on its walls as a new symbol — and is also where the new God of Cosmic Light is born at the close of the Dark Secret Saga."
+      pt: "A cidade-cidadela sagrada das Terras Encantadas, guardiã do segredo da espada esmeralda, citada do início ao fim da saga. Cai nas mãos das forças de Akron antes de ser libertada na batalha final da saga e, depois da guerra, ganha a gárgula esculpida em seus muros como novo símbolo — e é uma das cidades que celebram a vitória da Ordem do Dragão Branco ao fim da Dark Secret Saga.",
+      en: "The sacred citadel-city of the Enchanted Lands, guardian of the emerald sword's secret, mentioned from the saga's beginning to its end. It falls to Akron's forces before being liberated in the saga's final battle, and afterward gains the carved gargoyle on its walls as a new symbol — and is among the cities that later celebrate the White Dragon's Order's victory at the close of the Dark Secret Saga."
     },
     faixas: [{ album: "dragonflame", faixa: 1 }, { album: "dragonflame", faixa: 3 }, { album: "dragonflame", faixa: 11 }]
   },
@@ -315,8 +315,8 @@ const CODEX = [
     imagem: "assets/codex/portoes_marfim.jpg",
     mencoes: { pt: ["Portões de Marfim", "portões de marfim"], en: ["Ivory Gates", "ivory gates"] },
     descricao: {
-      pt: "Portal mágico escondido nas Terras do Caos, marcado por dois portões esculpidos com runas sagradas. Além deles ergue-se a Torre Sombria do Abismo, cuja câmara mais alta guarda a espada esmeralda sob a vigília de um guardião ancestral.",
-      en: "A magical portal hidden in the Lands of Chaos, marked by two gates carved with holy runes. Beyond them rises the Dark Tower of the Abyss, whose highest chamber holds the emerald sword under the watch of an ancestral guardian."
+      pt: "Portal mágico de marfim escondido nas Terras do Caos. Além dele ergue-se a Torre Sombria do Abismo, cuja câmara mais alta guarda a espada esmeralda sob a vigília de um guardião ancestral.",
+      en: "A magical portal of ivory hidden in the Lands of Chaos. Beyond it rises the Dark Tower of Abyss, whose highest chamber holds the emerald sword under the watch of an ancestral guardian."
     },
     faixas: [{ album: "symphony", faixa: 7 }, { album: "symphony", faixa: 8 }]
   },
@@ -354,8 +354,8 @@ const CODEX = [
     imagem: "assets/codex/loregard.jpg",
     mencoes: { pt: ["Loregard"], en: ["Loregard"] },
     descricao: {
-      pt: "Aldeia natal do Guerreiro de Gelo, da qual ele é rei. É de lá que um mensageiro o chama ao conselho para receber a missão da espada de esmeralda — e é como “o homem de Loregard” que ele será celebrado em toda a saga, mesmo décadas depois, na Dark Secret Saga.",
-      en: "The Ice Warrior's home village, where he is king. A messenger rides there to summon him before the council for the quest of the emerald sword — and it's as “the man from Loregard” that he is celebrated throughout the saga, even decades later, in the Dark Secret Saga."
+      pt: "Aldeia natal do Guerreiro de Gelo. É de lá que um mensageiro o chama ao conselho para receber a missão da espada de esmeralda — e é como “o homem de Loregard” que ele será celebrado em toda a saga, mesmo décadas depois, na Dark Secret Saga.",
+      en: "The Ice Warrior's home village. A messenger rides there to summon him before the council for the quest of the emerald sword — and it's as “the man from Loregard” that he is celebrated throughout the saga, even decades later, in the Dark Secret Saga."
     },
     faixas: [{ album: "legendary_tales", faixa: 2 }, { album: "triumph_or_agony", faixa: 5 }]
   },
@@ -365,10 +365,10 @@ const CODEX = [
     saga: "cold",
     nome: { pt: "O Reino das Cachoeiras Sagradas", en: "The Realm of the Sacred Waterfalls" },
     imagem: "assets/codex/reino_cachoeiras.jpg",
-    mencoes: { pt: ["Reino das Cachoeiras Sagradas"], en: ["Realm of the Sacred Waterfalls"] },
+    mencoes: { pt: ["Reino das Cachoeiras Sagradas"], en: ["Realm of the Sacred Waterfalls", "Waterfalls' Kingdom"] },
     descricao: {
-      pt: "Reino das lendárias cachoeiras ancestrais, terra natal da heroína Lothen e palco da batalha final da Dark Secret Saga. É no pico de Arinen, sua montanha mais alta, que os exércitos do mundo inteiro se reúnem no dia do último eclipse total do século para enfrentar os sete demônios de Nekron.",
-      en: "The realm of the legendary ancient waterfalls, homeland of the heroine Lothen and the setting for the Dark Secret Saga's final battle. It's on the peak of Arinen, its highest mountain, that armies from across the world gather on the day of the century's last total eclipse to face Nekron's seven demons."
+      pt: "Reino das lendárias cachoeiras ancestrais, terra natal da heroína Lothen. É no pico de Arinen, sua montanha mais alta, que os exércitos de todo o Mundo Conhecido se reúnem no dia do último eclipse total do século e vencem uma batalha decisiva contra o Exército das Trevas — enquanto, bem longe, em Har-Kuun, esse mesmo eclipse desperta os sete demônios de Nekron para a verdadeira batalha final da saga.",
+      en: "The realm of the legendary ancient waterfalls, homeland of the heroine Lothen. It's on the peak of Arinen, its highest mountain, that armies from across the Known World gather on the day of the century's last total eclipse and win a decisive battle against the Army of Darkness — while, far off at Har-Kuun, that same eclipse awakens Nekron's seven demons for the saga's true final battle."
     },
     faixas: [{ album: "chaos_to_eternity", faixa: 6 }, { album: "chaos_to_eternity", faixa: 9 }]
   },
@@ -380,8 +380,8 @@ const CODEX = [
     imagem: "assets/codex/elnor_thorald.jpg",
     mencoes: { pt: ["Elnor e Thorald", "Elnor", "Thorald"], en: ["Elnor and Thorald", "Elnor", "Thorald"] },
     descricao: {
-      pt: "Cidades-irmãs das Terras Encantadas, antigas aliadas de Ancelot e Elgard nas Guerras dos Anos das Trevas. Destruídas pelas forças de Akron enquanto o Guerreiro de Gelo está preso em Hargor, sua queda é lamentada por um Anjo Sombrio e abre caminho para o cerco final a Algalord.",
-      en: "Sister cities of the Enchanted Lands, old allies of Ancelot and Elgard in the Wars of the Years of Darkness. Destroyed by Akron's forces while the Ice Warrior is held captive at Hargor, their fall is mourned by a Dark Angel and clears the way for the final siege of Algalord."
+      pt: "Cidades-irmãs das Terras Encantadas — Eric, rei de Elnor, tinha assento no Conselho dos Reis ao lado de Harold III de Algalord e Argon IV de Elgard. Destruídas pelas forças de Akron — já empunhando a espada esmeralda capturada — enquanto o Guerreiro de Gelo se recupera em Elgard do calvário sofrido em Hargor, sua queda é lamentada por um Anjo Sombrio e abre caminho para o cerco final a Algalord.",
+      en: "Sister cities of the Enchanted Lands — Elnor's king Eric sat on the Council of Kings alongside Algalord's Harold III and Elgard's Argon IV. Destroyed by Akron's forces — now wielding the captured emerald sword — while the Ice Warrior recovers in Elgard from his ordeal at Hargor, their fall is mourned by a Dark Angel and clears the way for the final siege of Algalord."
     },
     faixas: [{ album: "rain_of_flames", faixa: 5 }, { album: "rain_of_flames", faixa: 6 }]
   },

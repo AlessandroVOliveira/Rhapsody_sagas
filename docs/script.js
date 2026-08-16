@@ -6,6 +6,7 @@
   const panelHint = document.getElementById("panel-hint");
   const panelSongs = document.getElementById("panel-songs");
   const panelClose = document.getElementById("panel-close");
+  const aboutBtn = document.getElementById("about-btn");
   const albumFilter = document.getElementById("album-filter");
   const offmapSongs = document.getElementById("offmap-songs");
   const sectionTabs = document.getElementById("section-tabs");
@@ -42,6 +43,10 @@
 
   function t(key) {
     return UI_STRINGS[currentLang][key] || UI_STRINGS.pt[key] || key;
+  }
+
+  function streamLinkLabel(url) {
+    return url.includes("spotify.com") ? t("spotifyLink") : t("ytMusicLink");
   }
 
   function findSong(albumId, faixa) {
@@ -301,6 +306,24 @@
   }
   panelClose.addEventListener("click", closePanel);
 
+  function openPanelWithAbout() {
+    panelTitle.textContent = t("aboutTitle");
+    panelHint.style.display = "none";
+    panelSongs.innerHTML = "";
+    const wrap = document.createElement("div");
+    wrap.className = "about-content";
+    wrap.innerHTML = `
+      <p>${t("aboutP1")}</p>
+      <p>${t("aboutP2")}</p>
+      <p>${t("aboutP3")}</p>
+      <p>${t("aboutP4")}</p>
+      <a class="about-reddit-link" href="https://www.reddit.com/r/Rhapsody_Of_Fire/comments/1viadwz/i_built_an_interactive_map_for_rhapsody_of_fires/" target="_blank" rel="noopener">${t("aboutRedditLink")}</a>
+    `;
+    panelSongs.appendChild(wrap);
+    openPanel();
+  }
+  aboutBtn.addEventListener("click", openPanelWithAbout);
+
   function renderPanel(locationId) {
     const loc = LOCATIONS.find((l) => l.id === locationId);
     const songs = (songsByLocation[locationId] || []).filter(songMatchesFilter);
@@ -337,7 +360,7 @@
         <p>${song.resumo[currentLang]}</p>
         <div class="song-links">
           <a href="${song.letraUrl}" target="_blank" rel="noopener">${t("lyricsLink")}</a>
-          <a href="${album.spotify}" target="_blank" rel="noopener">${t("spotifyLink")}</a>
+          <a href="${album.spotify}" target="_blank" rel="noopener">${streamLinkLabel(album.spotify)}</a>
         </div>
       </div>`;
     return card;
@@ -431,7 +454,7 @@
               <h3>${album.nome}</h3>
               <div class="disco-meta">${album.ano} · ${tracks.length} ${t("tracksWord")}</div>
             </div>
-            <div class="song-links"><a href="${album.spotify}" target="_blank" rel="noopener">${t("spotifyLink")}</a></div>
+            <div class="song-links"><a href="${album.spotify}" target="_blank" rel="noopener">${streamLinkLabel(album.spotify)}</a></div>
           </div>
           <ul class="track-list"></ul>
         `;

@@ -35,10 +35,17 @@ const UI_STRINGS = {
     codexAppearsIn: "Aparece em",
     lyricsLink: "Letra completa ↗",
     spotifyLink: "Ouvir no Spotify ↗",
+    ytMusicLink: "Ouvir no YouTube Music ↗",
     trackWord: "faixa",
     tracksWord: "faixas",
     footer: "Site pessoal de fã — sem afiliação com Rhapsody of Fire. Letras completas disponíveis via link externo (Letras.com); resumos de localização são paráfrases próprias.",
-    donateLink: "Apoie este projeto ↗"
+    aboutBtn: "Sobre",
+    aboutTitle: "Sobre o projeto",
+    aboutP1: "Comecei a ouvir Rhapsody lá em 2004. Desde então, sempre quis um lugar que reunisse a história completa daquele mundo — as Terras Encantadas, a Espada Esmeralda, o Segredo Sombrio — tudo junto, num só lugar. Mas eu não tinha acesso a esse tipo de informação na época: onde eu vivo, nunca encontrei um álbum da banda pra comprar, nem um pôster, nem sequer uma camiseta. Rhapsody sempre foi uma banda que amei à distância, quase em segredo.",
+    aboutP2: "Hoje, com acesso a ferramentas de IA, finalmente consegui fazer o que não conseguia sozinho: um lugar pra juntar tudo isso. Este site é um projeto pessoal de fã, feito com bastante ajuda de inteligência artificial — no código, na pesquisa e na criação de parte das imagens.",
+    aboutP3: "A ideia também nasceu da falta de material visual oficial sobre esse mundo: os encartes dos álbuns descrevem lugares, personagens e criaturas com riqueza de detalhes narrativos, mas quase nunca em imagens. Por isso, boa parte da arte aqui teve que ser meio que reinventada a partir dessas descrições — é uma interpretação de fã, não material oficial da banda.",
+    aboutP4: "Se você encontrar algum erro, imprecisão ou algo que não bate com a história oficial, me avisa! Vou corrigir assim que possível.",
+    aboutRedditLink: "Comentar na thread do Reddit ↗"
   },
   en: {
     tabMap: "Interactive Map",
@@ -73,10 +80,17 @@ const UI_STRINGS = {
     codexAppearsIn: "Appears in",
     lyricsLink: "Full lyrics ↗",
     spotifyLink: "Listen on Spotify ↗",
+    ytMusicLink: "Listen on YouTube Music ↗",
     trackWord: "track",
     tracksWord: "tracks",
     footer: "Personal fan site — not affiliated with Rhapsody of Fire. Full lyrics available via external link (Letras.com); location summaries are original paraphrases.",
-    donateLink: "Support this project ↗"
+    aboutBtn: "About",
+    aboutTitle: "About this project",
+    aboutP1: "I started listening to Rhapsody back in 2004. Ever since, I always wanted a place that gathered the complete history of that world — the Enchanted Lands, the Emerald Sword, the Dark Secret — all together in one place. But I didn't have access to that kind of information back then: where I live, I never found an album of theirs to buy, not a poster, not even a t-shirt. Rhapsody was always a band I loved from a distance, almost in secret.",
+    aboutP2: "Today, with access to AI tools, I finally managed to do what I couldn't do alone: build a place to put it all together. This is a personal fan project, made with a lot of help from AI — for the code, the research, and part of the artwork.",
+    aboutP3: "The idea also came from the lack of official visual material for this world: the album booklets describe places, characters, and creatures in rich narrative detail, but almost never in pictures. Because of that, a good chunk of the art here had to be reinvented, in a way, from those descriptions — it's a fan interpretation, not official band material.",
+    aboutP4: "If you spot any error, inaccuracy, or anything that doesn't match the official story, please let me know! I'll fix it as soon as I can.",
+    aboutRedditLink: "Comment on the Reddit thread ↗"
   }
 };
 
@@ -223,7 +237,7 @@ const TIMELINE = [
       { ano: { pt: "Ano 5090 dos Anjos", en: "Angels' Year 5090" },
         texto: { pt: "Elnor e Thorald caem; o exército de Akron marcha até a sagrada Cidade dos Deuses.", en: "Elnor, Thorald fall; Akron's army marches to the holy Town of the Gods." } },
       { ano: { pt: "Ano 5091 dos Anjos", en: "Angels' Year 5091" },
-        texto: { pt: "A Guerra Sagrada das Gárgulas; Akron é derrotado; o Guerreiro de Gelo é morto.", en: "Gargoyle's Holy War; Akron is defeated; the Warrior of Ice is killed." } },
+        texto: { pt: "A Guerra Sagrada das Gárgulas; Akron é derrotado; o Guerreiro de Gelo é morto.", en: "Gargoyle's Holy War; Akron is defeated; the Ice Warrior is killed." } },
       { ano: { pt: "Ano 5096 dos Anjos", en: "Angels' Year 5096" },
         texto: { pt: "A Ordem do Dragão Branco é criada.", en: "The White Dragon's Order is created." } }
     ]
