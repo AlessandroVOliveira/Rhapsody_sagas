@@ -38,4 +38,4 @@ from here to eternity
 
 ## Localização na saga
 
-Chegada à terra dos imortais, situada entre as colinas de Elgard, perto das antigas ruínas de Kron. O Guerreiro precisa encontrar as três chaves da sabedoria para abrir os portões de marfim; a letra já adianta que, para obter a segunda chave, será preciso atravessar um “mar de sangue” onde a sede de Tharos “nunca tem fim” — uma pista sobre o dragão que só será apresentado no álbum seguinte.
+O Guerreiro chega à verde Elgard, é recebido com honras e encontra o mago Aresius, um dos guardiões do segredo dos Portões de Marfim; no dia seguinte Aresius o levará ao empoeirado Argon's Glade, onde a busca pelas três Chaves da Sabedoria começa. A letra adianta as provas que virão: encarar o espelho do próprio pecado, a artimanha do velho anão entre as colinas de Elgard, perto das antigas Ruínas de Kron, e o “mar de sangue” onde a sede de Tharos nunca tem fim — pista sobre o dragão que só aparece no álbum seguinte. A “Terra dos Imortais” do título não é um lugar a que ele chega: é o Paraíso dos Heróis, os “vales onde os verdadeiros heróis cavalgam, além dos Portões de Marfim”, que será dele quando sua hora chegar.

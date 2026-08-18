@@ -45,12 +45,19 @@ PRESERVED_SUFFIX = (
 )
 
 SONG_BLOCK_RE = re.compile(
-    r'\{\s*album:\s*"(?P<album>\w+)",\s*faixa:\s*(?P<faixa>\d+),.*?'
+    r'\{\s*album:\s*"(?P<album>\w+)",\s*faixa:\s*(?P<faixa>\d+),\s*'
+    r'titulo:\s*"(?P<titulo>(?:[^"\\]|\\.)*)",.*?'
     r'resumo:\s*\{\s*pt:\s*"(?P<pt>(?:[^"\\]|\\.)*)"',
     re.DOTALL,
 )
 
 HEADING_RE = re.compile(r'^## Localização na saga *$', re.MULTILINE)
+
+
+def normalize_title(text):
+    """Reduz um título a letras e dígitos minúsculos, para comparar nome de arquivo
+    com o campo `titulo` do .js sem tropeçar em pontuação, acento ou caixa."""
+    return re.sub(r"[^a-z0-9]", "", text.lower())
 
 
 def load_summaries():
@@ -60,10 +67,11 @@ def load_summaries():
         for m in SONG_BLOCK_RE.finditer(text):
             key = (m.group("album"), int(m.group("faixa")))
             pt = m.group("pt").replace('\\"', '"')
-            if key in summaries and summaries[key] != pt:
+            titulo = m.group("titulo").replace('\\"', '"')
+            if key in summaries and summaries[key][0] != pt:
                 print(f"AVISO: {key} tem dois resumos diferentes em {js_path.name}; usando o primeiro.")
                 continue
-            summaries.setdefault(key, pt)
+            summaries.setdefault(key, (pt, titulo))
     return summaries
 
 
@@ -74,25 +82,37 @@ def iter_track_files():
             print(f"AVISO: pasta não encontrada: {folder_name}")
             continue
         for md_path in sorted(folder.glob("*.md")):
-            match = re.match(r"(\d+)\s*-\s*", md_path.name)
+            # Faixas bônus de edição especial não fazem parte da tracklist oficial:
+            # vivem em EXTRAS no .js e não têm resumo por faixa para sincronizar.
+            if md_path.name.lower().startswith("bonus"):
+                continue
+            match = re.match(r"(\d+)\s*-\s*(?P<titulo>.+)\.md$", md_path.name)
             if not match:
                 print(f"AVISO: nome de arquivo sem número de faixa: {md_path}")
                 continue
-            faixa = int(match.group(1))
-            yield album_id, faixa, md_path
+            yield album_id, int(match.group(1)), match.group("titulo"), md_path
 
 
 def sync(check_only: bool):
     summaries = load_summaries()
-    changed, unchanged, missing = [], [], []
+    changed, unchanged, missing, mismatched = [], [], [], []
 
-    for album_id, faixa, md_path in iter_track_files():
+    for album_id, faixa, file_title, md_path in iter_track_files():
         key = (album_id, faixa)
         if key not in summaries:
             missing.append(md_path)
             continue
 
-        new_pt = summaries[key]
+        new_pt, js_title = summaries[key]
+
+        # Trava de segurança: se o número da faixa no nome do arquivo e o título não
+        # baterem com a mesma faixa no .js, a numeração saiu de sincronia (foi o que
+        # aconteceu ao remover uma faixa bônus da tracklist). Escrever aqui gravaria o
+        # resumo da música errada, então o certo é parar e avisar.
+        if normalize_title(file_title) != normalize_title(js_title):
+            mismatched.append((md_path, js_title))
+            continue
+
         text = md_path.read_text(encoding="utf-8")
         m = HEADING_RE.search(text)
         if not m:
@@ -123,7 +143,14 @@ def sync(check_only: bool):
         print(f"\nSem entrada correspondente em docs/data-*.js ({len(missing)}):")
         for p in missing:
             print(f"  - {p.relative_to(ROOT)}")
+    if mismatched:
+        print(f"\nERRO — número de faixa aponta para outra música ({len(mismatched)}):")
+        for p, js_title in mismatched:
+            print(f"  - {p.relative_to(ROOT)} → no .js essa faixa é \"{js_title}\"")
+        print("  Renomeie o .md (ou corrija a tracklist) antes de sincronizar.")
+
+    return 1 if mismatched else 0
 
 
 if __name__ == "__main__":
-    sync(check_only="--check" in sys.argv)
+    sys.exit(sync(check_only="--check" in sys.argv))

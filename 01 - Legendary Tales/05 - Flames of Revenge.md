@@ -37,4 +37,4 @@ In the deadly raging flames of revenge
 
 ## Localização na saga
 
-O Guerreiro chega a Ancelot e encontra a cidade destruída; durante o cerco, Airin foi capturada junto com uma dúzia de cavaleiros pelos guerreiros de Akron, lorde das trevas, e levada para Hargor. Furioso, ele jura vingança.
+O Guerreiro chega a Ancelot e encontra a cidade devastada — as vítimas são incontáveis. Alguém chora por uma “princesa” não identificada pela letra; furioso com a tragédia, ele jura vingança e cavalga rumo a Elgard. (A captura de Airin, que muitos associam a esta cena, na verdade só é revelada mais tarde, no cerco narrado em Dawn of Victory.)

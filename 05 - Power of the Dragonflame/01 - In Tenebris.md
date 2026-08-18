@@ -23,4 +23,4 @@ Tenebra... libera me!
 
 ## Localização na saga
 
-Abertura instrumental sombria que antecede a batalha final da saga.
+Abertura cantada em latim e inglês (não é instrumental): uma voz invoca a Treva e pede para abrir o portal escuro e atravessar as criptas das Terras Fantasmas, desafiando os demônios a levá-la até seu rei. São exatamente essas criptas que, na prosa das Crônicas Parte IV, foram usadas para ressuscitar a Rainha dos Horizontes Sombrios com o poder da espada roubada.

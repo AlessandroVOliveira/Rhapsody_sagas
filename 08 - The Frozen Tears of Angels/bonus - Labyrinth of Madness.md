@@ -1,7 +1,7 @@
 # Labyrinth of Madness
 
 **Álbum:** The Frozen Tears of Angels (2010)
-**Faixa:** 10
+**Faixa bônus** — fora da tracklist oficial de 9 faixas; inserida logo após a faixa-título.
 
 ## Letra
 

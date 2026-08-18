@@ -20,4 +20,4 @@ Cruentus rex
 
 ## Localização na saga
 
-Abertura instrumental que invoca a fúria e a tensão do conflito que está por vir, dando o tom épico ao início da saga.
+Abertura cantada em latim (não é instrumental): um brado de guerra contra o “rei das Trevas”, jurando vingança sagrada do início ao fim contra os discípulos do Mal. Na prosa do capítulo, o Conselho dos Reis reunido em Algalord — Harold III de Algalord, Argon IV de Elgard e Eric de Elnor — refaz a Aliança das Terras Encantadas e decide invocar o antigo segredo da Espada Esmeralda; um mensageiro cavalga até a distante Loregard para convocar o Guerreiro.

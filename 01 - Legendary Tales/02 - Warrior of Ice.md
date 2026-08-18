@@ -94,4 +94,4 @@ My land must be free!
 
 ## Localização na saga
 
-Apresenta o protagonista, o Guerreiro de Gelo, da aldeia de Loregard, que decide partir em busca da espada de esmeralda para trazer paz às suas terras, dominadas pela guerra e pelas trevas.
+Apresenta o protagonista, o Guerreiro de Gelo, da aldeia de Loregard, convocado pelo Conselho dos Reis para a busca da espada de esmeralda. A letra é a cavalgada: ele desafia os demônios do Abismo, lembra do ancião que previu a volta das trevas e clama por sua amada Algalord. No caminho passa por Irengard — “marchem para o Inferno, irmãos de Irengard... deixem seus castelos” —, onde o velho rei Arius lhe entrega o comando de parte das tropas, e segue até Algalord, onde a Santa Aliança se reúne outra vez.

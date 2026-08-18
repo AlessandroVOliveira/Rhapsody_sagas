@@ -1,7 +1,7 @@
 # Gargoyles, Angels of Darkness
 
 **Álbum:** Power of the Dragonflame (2002)
-**Faixa:** 11
+**Faixa:** 10
 
 ## Letra
 

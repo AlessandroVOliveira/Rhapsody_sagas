@@ -36,9 +36,7 @@ Inclui um site estático com mapa interativo, a história completa capítulo a c
 ├── 09 - The Cold Embrace of Fear (EP)/
 ├── 10 - From Chaos to Eternity/
 ├── referencias/                          # material-fonte já usado para montar o site
-│   ├── RhapsodySagas.md                  # compêndio com letras, capítulos e apêndices das duas sagas
-│   ├── Resumo da saga.txt                # sinopse geral da Emerald Sword Saga
-│   ├── Resumo da saga - The Dark Secret.txt
+│   ├── RhapsodySagas.md                  # fonte canônica única: letras, capítulos e apêndices das duas sagas
 │   ├── Localidades do Mapa - Known World.md
 │   ├── contexto.md                       # brief original do projeto
 │   └── mapas/
@@ -46,7 +44,9 @@ Inclui um site estático com mapa interativo, a história completa capítulo a c
 │       └── Known_World.png               # mapa-múndi usado pela Dark Secret Saga no site
 ├── Prompts de IA - Historia Completa.md  # prompts de imagem por capítulo da História Completa (com referências do Codex)
 ├── scripts/
-│   └── resize_story_images.py            # redimensiona/comprime as imagens dos capítulos antes de entrar em docs/assets
+│   ├── resize_story_images.py            # redimensiona/comprime as imagens dos capítulos antes de entrar em docs/assets
+│   ├── sync_track_summaries.py           # regenera "## Localização na saga" dos .md a partir de docs/data-*.js (fonte única)
+│   └── check_data_integrity.js           # valida referências de faixa/local e as tracklists; sai != 0 se achar problema
 └── docs/                                 # o site (publicado via GitHub Pages)
     ├── index.html
     ├── style.css

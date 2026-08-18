@@ -1,7 +1,7 @@
 # Rise From the Sea of Flames
 
 **Álbum:** Power of the Dragonflame (2002)
-**Faixa:** 10 (faixa bônus da edição limitada)
+**Faixa bônus** das edições limitadas — fora da tracklist oficial de 10 faixas; originalmente inserida logo antes de “Gargoyles, Angels of Darkness”.
 
 ## Letra
 

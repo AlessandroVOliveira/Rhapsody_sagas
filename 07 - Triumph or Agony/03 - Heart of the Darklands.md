@@ -53,4 +53,4 @@ Valde rosi cita
 
 ## Localização na saga
 
-Um flashback: no Ano dos Dragões 9000, após vencer a sexta guerra, Nekron conquistou as Terras Sombrias e construiu sua cidade sobre Hargor, tornando-a o coração das trevas.
+Um flashback: no Ano dos Dragões 9000, após vencer a sexta guerra, Nekron conquistou as Terras Sombrias e iniciou seu reinado. Hargor é essa cidade — “uma cidade inteira erguida sobre uma rocha tão grande quanto uma montanha”, com portais feitos de ossos de anjos — e logo se tornou o coração das Terras Sombrias.

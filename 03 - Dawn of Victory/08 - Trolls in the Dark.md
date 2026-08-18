@@ -9,4 +9,4 @@ Letra completa (fonte externa, direitos dos autores originais): [Trolls in the D
 
 ## Localização na saga
 
-O Guerreiro é mantido em cativeiro, cercado por criaturas sombrias a serviço de Akron.
+Interlúdio instrumental, sem prosa associada no compêndio da saga — cai entre a marcha até Hargor e o momento mais brutal da saga, a morte de Airin e Arwald.

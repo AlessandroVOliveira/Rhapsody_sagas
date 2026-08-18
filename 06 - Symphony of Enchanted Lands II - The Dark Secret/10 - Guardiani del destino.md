@@ -59,4 +59,4 @@ Or sono e saranno i veri eroi
 
 ## Localização na saga
 
-Em italiano: os guardiões escolhidos em Elgard seguem rumo ao Monte Erinor/Hargor, uma antiga terra de temor, decididos a defender o mundo como os verdadeiros heróis que são, mesmo sabendo que podem morrer.
+Em italiano: os guardiões escolhidos em Elgard sobem o Monte Erinor — “única via para chegar lá, onde o ar tem cheiro de morte”. Do alto, entre lama e pântanos, avistam Hargor revelando sua irrealidade: muralhas e torres imensas, a antiga terra de temor que guarda o Mal primordial. Decidem seguir mesmo sabendo que podem morrer.
