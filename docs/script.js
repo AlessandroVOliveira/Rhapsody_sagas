@@ -33,6 +33,12 @@
   LOCATIONS.forEach((l) => (LOCATIONS_BY_ID[l.id] = l));
   let songsByLocation = {};
 
+  // song.local pode ser um id, uma lista de ids (faixa que se passa em mais de um lugar) ou null/undefined.
+  function songLocations(song) {
+    if (!song.local) return [];
+    return Array.isArray(song.local) ? song.local : [song.local];
+  }
+
   let activeAlbum = "all";
   let activeLocation = null;
   let activeCodexCategoria = "all";
@@ -56,8 +62,9 @@
   function buildLocationIndex(songs) {
     const index = {};
     songs.forEach((s) => {
-      if (!s.local) return;
-      (index[s.local] = index[s.local] || []).push(s);
+      songLocations(s).forEach((locId) => {
+        (index[locId] = index[locId] || []).push(s);
+      });
     });
     return index;
   }
@@ -368,7 +375,7 @@
 
   // ---- Faixas sem localização ----
   function renderOffmap() {
-    const songs = SONGS.filter((s) => !s.local && songMatchesFilter(s));
+    const songs = SONGS.filter((s) => songLocations(s).length === 0 && songMatchesFilter(s));
     offmapSongs.innerHTML = "";
     songs
       .sort((a, b) => ALBUMS[a.album].ano - ALBUMS[b.album].ano || a.faixa - b.faixa)
@@ -460,13 +467,17 @@
         `;
         const list = block.querySelector(".track-list");
         tracks.forEach((song) => {
-          const loc = song.local ? LOCATIONS_BY_ID[song.local] : null;
+          const locNames = songLocations(song)
+            .map((id) => LOCATIONS_BY_ID[id])
+            .filter(Boolean)
+            .map((l) => l.nome)
+            .join(" / ");
           const row = document.createElement("li");
           row.className = "track-row";
           row.innerHTML = `
             <span class="track-num">${song.faixa}.</span>
             <span class="track-title">${song.titulo}</span>
-            ${loc ? `<span class="track-loc">${loc.nome}</span>` : ""}
+            ${locNames ? `<span class="track-loc">${locNames}</span>` : ""}
           `;
           row.addEventListener("click", () => openPanelWithSongs(song.titulo, [song]));
           list.appendChild(row);

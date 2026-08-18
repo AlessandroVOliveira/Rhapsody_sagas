@@ -38,4 +38,4 @@ from here to eternity
 
 ## Localização na saga
 
-Chegada à terra dos imortais, situada entre as colinas de Elgard, perto das antigas ruínas de Kron. O Guerreiro precisa encontrar as três chaves da sabedoria para abrir os portões de marfim; a letra já adianta que, para obter a segunda chave, será preciso atravessar um "mar de sangue" onde a sede de Tharos "nunca tem fim" — uma pista sobre o dragão que só será apresentado no álbum seguinte.
+Chegada à terra dos imortais, situada entre as colinas de Elgard, perto das antigas ruínas de Kron. O Guerreiro precisa encontrar as três chaves da sabedoria para abrir os portões de marfim; a letra já adianta que, para obter a segunda chave, será preciso atravessar um “mar de sangue” onde a sede de Tharos “nunca tem fim” — uma pista sobre o dragão que só será apresentado no álbum seguinte.

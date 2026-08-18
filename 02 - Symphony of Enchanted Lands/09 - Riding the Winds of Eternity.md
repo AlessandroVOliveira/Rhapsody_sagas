@@ -24,4 +24,4 @@ I'll fight you forever nightmares sons
 
 ## Localização na saga
 
-Já na fortaleza, o Guerreiro sobe ao alto de uma torre enquanto Tharos combate os demônios que cercam o local.
+Na fortaleza, o Guerreiro sobe a torre enquanto Tharos combate os demônios do lado de fora; lá dentro, ele encontra e toca a espada de esmeralda, despertando seu guardião ancestral. Tharos se arremessa contra o monstro, dando ao Guerreiro tempo de derrubá-lo, e, quando raios de sol rompem a torre em ruínas, os dois fogem voando.

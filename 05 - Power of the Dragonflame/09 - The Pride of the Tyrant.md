@@ -51,4 +51,4 @@ We'll use it to defend our throne
 
 ## Localização na saga
 
-O momento-chave da virada: o Guerreiro se dirige diretamente a Dargor ("Dargor, não acredite nele... você ainda pode salvar sua alma; Akron é o bastardo, foi ele quem massacrou a todos"), convencendo-o a finalmente se voltar contra o tirano que serve.
+O momento-chave da virada: o Guerreiro se dirige diretamente a Dargor (“Dargor, não acredite nele... você ainda pode salvar sua alma; Akron é o bastardo, foi ele quem massacrou a todos”), convencendo-o a finalmente se voltar contra o tirano que serve.

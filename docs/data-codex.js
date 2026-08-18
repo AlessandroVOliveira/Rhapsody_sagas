@@ -422,7 +422,7 @@ const CODEX = [
       pt: "Região desértica conquistada pelo Exército das Trevas séculos antes das duas sagas. É entre suas ruínas empoeiradas que a pedra Aelin, um dos antigos olhos de Thanor, é encontrada — e é em suas criptas que ficam os portais do Caos, selados para sempre pelas gárgulas de Algalord depois da guerra.",
       en: "A desert region conquered by the Army of Darkness centuries before both sagas. It's among its dusty ruins that the Aelin stone, one of Thanor's ancient eyes, is found — and in its crypts lie the portals of Chaos, sealed forever by Algalord's gargoyles after the war."
     },
-    faixas: [{ album: "dragonflame", faixa: 11 }, { album: "chaos_to_eternity", faixa: 4 }]
+    faixas: [{ album: "rain_of_flames", faixa: 1 }, { album: "rain_of_flames", faixa: 3 }, { album: "rain_of_flames", faixa: 6 }, { album: "dragonflame", faixa: 1 }, { album: "dragonflame", faixa: 11 }, { album: "chaos_to_eternity", faixa: 4 }]
   },
 
   // ===== Artefatos =====

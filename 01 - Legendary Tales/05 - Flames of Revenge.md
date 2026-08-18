@@ -37,4 +37,4 @@ In the deadly raging flames of revenge
 
 ## Localização na saga
 
-O Guerreiro chega a Ancelot e encontra a cidade destruída; descobre que o príncipe Arwald e a princesa Airin foram capturados pelos guerreiros de Akron, lorde das trevas, e jura vingança.
+O Guerreiro chega a Ancelot e encontra a cidade destruída; durante o cerco, Airin foi capturada junto com uma dúzia de cavaleiros pelos guerreiros de Akron, lorde das trevas, e levada para Hargor. Furioso, ele jura vingança.

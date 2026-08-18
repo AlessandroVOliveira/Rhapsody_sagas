@@ -44,4 +44,4 @@ There's evil there to fight
 
 ## Localização na saga
 
-Guiados pelo elfo Tharish, os heróis atravessam Dragonland por dez dias; o rio os leva pelas ruínas de Urien, antigo lar místico dos deuses agora destruído pela última guerra, até as quedas de Erloria e as montanhas cinzentas.
+Os heróis atravessam Dragonland por dez dias; o rio os leva pelas ruínas de Urien, antigo lar místico dos deuses agora destruído pela última guerra, até as quedas de Erloria e as montanhas cinzentas.

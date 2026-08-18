@@ -140,4 +140,4 @@ Reign of terror!
 
 ## Localização na saga
 
-Um hino litúrgico sombrio (ecoando o "Dies Irae") sobre o livro que será aberto, as sete guerras, as sete torres, os sete pecados necessários para o retorno de Nekron — uma prece para impedir sua ressurreição.
+Um hino litúrgico sombrio (ecoando o “Dies Irae”) sobre o livro que será aberto, as sete guerras, as sete torres, os sete pecados necessários para o retorno de Nekron — uma prece para impedir sua ressurreição.

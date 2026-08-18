@@ -42,4 +42,4 @@ Magic and steelgods lead us to a new dawn
 
 ## Localização na saga
 
-Não é instrumental: a letra descreve guerreiros, elfos e trolls se reunindo nas ruínas de Kazar, perto de Ancelot, convocados por Arwald para saudar o "escolhido" que se aproxima portando a espada de esmeralda — o prenúncio da batalha por Ancelot.
+Não é instrumental: a letra descreve guerreiros, elfos e trolls se reunindo nas ruínas de Kazar, perto de Ancelot, convocados por Arwald para saudar o “escolhido” que se aproxima portando a espada de esmeralda — o prenúncio da batalha por Ancelot.

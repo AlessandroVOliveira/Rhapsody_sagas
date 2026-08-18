@@ -59,4 +59,4 @@ Unholy fight
 
 ## Localização na saga
 
-Um momento de descanso: o Guerreiro, Arwald e o mago Aresius riem e conversam na Vila dos Anões, na colina de Gandor. A letra termina anunciando que "chegou a hora de cavalgar" rumo a uma nova batalha — "a marcha do mestre da espada".
+Um momento de descanso: o Guerreiro, Arwald e o mago Aresius riem e conversam na Vila dos Anões, na colina de Gandor (região aproximada, próxima às Montanhas Cinzentas). A letra termina anunciando que “chegou a hora de cavalgar” rumo a uma nova batalha — “a marcha do mestre da espada”.

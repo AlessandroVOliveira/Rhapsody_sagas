@@ -46,4 +46,4 @@ Tam! Mox!
 
 ## Localização na saga
 
-Instrumental/cântico com nomes élficos e invocações em latim — o grupo entra nas cavernas geladas e retorcidas de Dar-Kunor, a "casa do inferno".
+Instrumental/cântico com nomes élficos e invocações em latim — o grupo entra nas cavernas geladas e retorcidas de Dar-Kunor.

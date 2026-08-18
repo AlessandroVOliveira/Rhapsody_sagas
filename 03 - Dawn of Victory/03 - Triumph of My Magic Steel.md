@@ -65,4 +65,4 @@ Led by hundred of mighty and proudly fallen brave lords
 
 ## Localização na saga
 
-Celebração da vitória sobre Dargor em Ancelot, atribuída ao poder mágico da espada de esmeralda e à coragem do exército; a letra confirma o protagonista como "o homem de Loregard" erguido diante de todos.
+Celebração da vitória sobre Dargor em Ancelot, atribuída ao poder mágico da espada de esmeralda e à coragem do exército; a letra confirma o protagonista como “o homem de Loregard” erguido diante de todos.

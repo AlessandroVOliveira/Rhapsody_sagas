@@ -77,4 +77,4 @@ Force!
 
 ## Localização na saga
 
-Arwald e Aresius partem com o Guerreiro ("o guerreiro nórdico") rumo a Hargor, fortaleza de Dargor, jurando que Algalord não cairá. É durante essa marcha — segundo o resumo da saga, ao aceitar trocar a espada pela liberdade dos amigos capturados — que o grupo cai na armadilha de Akron.
+Arwald e Aresius partem com o Guerreiro (“o guerreiro nórdico”) rumo a Hargor, fortaleza de Dargor, jurando que Algalord não cairá. É nessa marcha que o Guerreiro e Arwald vão ao encontro de Akron para trocar a espada pela liberdade de Airin e dos cavaleiros capturados — mas caem na armadilha do Rei Negro.

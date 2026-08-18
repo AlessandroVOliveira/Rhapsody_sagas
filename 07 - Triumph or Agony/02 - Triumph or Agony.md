@@ -58,4 +58,4 @@ Lux aeterna
 
 ## Localização na saga
 
-Diante das masmorras infernais esculpidas há 200 anos em pedra amaldiçoada, os heróis encaram seu destino: triunfo ou agonia, nas profundezas das guerras do submundo.
+Diante das antigas masmorras infernais esculpidas em pedra amaldiçoada, os heróis encaram seu destino: triunfo ou agonia, nas profundezas das guerras do submundo.

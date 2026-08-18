@@ -38,4 +38,4 @@ beyond the gates of infinity
 
 ## Localização na saga
 
-Vencendo o duelo, o Guerreiro poupa a vida de Tharos e o liberta do feitiço; o dragão se torna seu aliado.
+Numa terra pantanosa e castigada pelo vento, os mortos se erguem de criptas antigas e quase dominam o Guerreiro — até que Tharos, o dragão que ele já havia libertado da maldição, vem em seu socorro e se oferece para levá-lo voando rumo à espada.

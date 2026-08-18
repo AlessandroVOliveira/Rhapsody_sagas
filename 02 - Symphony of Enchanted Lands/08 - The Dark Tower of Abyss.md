@@ -38,4 +38,4 @@ There where chaos rules
 
 ## Localização na saga
 
-De posse das três chaves, o Guerreiro e Tharos abrem os portões de marfim e seguem rumo à fortaleza onde está a espada de esmeralda.
+Tharos guia o caminho até o que ele chama de Fortaleza do Abismo, uma fortaleza gótica onde a profecia diz que a espada de esmeralda está escondida na torre mais alta, guardada por um guardião ancestral — mas um enxame de demônios alados os ataca quando se aproximam.

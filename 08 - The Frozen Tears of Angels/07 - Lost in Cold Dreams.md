@@ -72,4 +72,4 @@ I'M LOST...
 
 ## Localização na saga
 
-Perdidos em sonhos frios e tristes, os heróis lamentam a inocência roubada, clamando pelas "lágrimas dos anjos" para curar suas feridas.
+Perdidos em sonhos frios e tristes, os heróis lamentam a inocência roubada, clamando pelas “lágrimas dos anjos” para curar suas feridas.

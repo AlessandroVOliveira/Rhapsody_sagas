@@ -68,4 +68,4 @@ On the way to Ainor
 
 ## Localização na saga
 
-Deixando para trás o último verde, o grupo atravessa as planícies cinzentas rumo a Ainor, jurando guerra eterna aos senhores do inferno; Dargor — "nascido meio-demônio, meio-homem" — sente os anjos chamando seu nome.
+Deixando para trás o último verde, o grupo atravessa as planícies cinzentas rumo a Ainor, jurando guerra eterna aos senhores do inferno; Dargor — “nascido meio-demônio, meio-homem” — sente os anjos chamando seu nome.

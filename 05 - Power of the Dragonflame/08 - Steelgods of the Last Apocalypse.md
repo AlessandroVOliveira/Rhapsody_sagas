@@ -47,4 +47,4 @@ Last apocalypse!
 
 ## Localização na saga
 
-O protagonista está preso — "desta cinzenta prisão eu olho para você, minha cidade perdida" — observando Algalord ser destruída, mas jura que seu espírito jamais cairá, mesmo que façam o que quiserem com seus ossos.
+O protagonista está preso — “desta cinzenta prisão eu olho para você, minha cidade perdida” — observando Algalord ser destruída, mas jura que seu espírito jamais cairá, mesmo que façam o que quiserem com seus ossos.

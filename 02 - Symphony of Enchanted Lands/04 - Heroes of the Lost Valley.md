@@ -20,4 +20,4 @@ Their pride now rides with you
 
 ## Localização na saga
 
-Travessia dos vales perdidos e cachoeiras a caminho da segunda chave, guardada por Tharos.
+Já além dos Portões de Marfim, o Guerreiro atravessa um reino de vales e cachoeiras, onde ouve as vozes espectrais de heróis do passado cuja própria busca pela espada terminou em tragédia — seus espíritos agora cavalgam com ele.

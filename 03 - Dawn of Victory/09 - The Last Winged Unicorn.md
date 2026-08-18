@@ -68,4 +68,4 @@ Rising to the throne!
 
 ## Localização na saga
 
-O momento mais brutal da saga: o Guerreiro descobre que seus amigos foram mortos; Airin é violentada pelos guerreiros de Akron diante dele e jogada num caldeirão de ácido, e Arwald sofre o mesmo destino, mas consegue jogar ácido nas correntes do protagonista antes de morrer, libertando-o.
+O momento mais brutal da saga: o Guerreiro descobre que seus amigos foram mortos; Airin é violentada pelos guerreiros de Akron diante dele e jogada no Sgral corrosivo, e Arwald sofre o mesmo destino, mas consegue jogar ácido nas correntes do protagonista antes de morrer, libertando-o.

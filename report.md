@@ -424,3 +424,53 @@ Em ordem de impacto:
 3. **Instrumental não ganha enredo.** Diz-se onde cai na sequência, e só.
 4. **Arte oficial (capas, mapas, títulos) manda.** Se a arte gerada contradiz a capa, quem muda é a arte gerada.
 5. **Uma fonte de dados só.** Nada de manter o mesmo texto em dois arquivos.
+
+---
+
+# Parte J — Registro de execução
+
+Acompanhamento do Plano de correção (Parte I), atualizado a cada passo concluído.
+
+## ✅ Passo 1 — Eliminar a duplicação .md/.js (A1)
+
+Criado `scripts/sync_track_summaries.py`: lê `docs/data-emerald-sword.js` e `docs/data-dark-secret.js` (fonte única) e regenera a seção `## Localização na saga` dos 97 `.md` de faixa a partir do campo `resumo.pt`. Suporta `--check` (dry-run).
+
+- 56 dos 97 `.md` corrigidos na primeira execução; a nota de rodapé exclusiva de *Rain of a Thousand Flames* ("Nota: este álbum é um spin-off...") foi preservada por não ter equivalente no `.js` e não ser um erro factual.
+- Rodar `python scripts/sync_track_summaries.py` sempre que `docs/data-*.js` mudar (foi executado de novo depois dos Passos 3 e 4 para reabsorver os resumos que mudaram nesses passos).
+
+## ✅ Passo 2 — Reescrever a sequência de SoEL (A2)
+
+Reescritos `ch5`–`ch8` em `docs/data-emerald-sword.js` (STORY):
+- `ch5` "A primeira chave" — Espelho das Sombras/Argon's Glade, prosa pura (sem faixa vinculada), com citação de Aresius.
+- `ch6` "O dragão Tharos" — duelo nos Pântanos do Caos, mesmo tratamento (prosa + citação).
+- `ch7` "A terceira chave e os Portões de Marfim" — altar do Ikaren + abertura dos Portões → `symphony` #2 e #3.
+- `ch8` "A conquista da espada" — tudo além dos Portões até a espada em punho e a morte de Tharos → `symphony` #4 a #10.
+
+As 4 imagens de capítulo já existentes (`ch5.jpg`–`ch8.jpg`) foram reaproveitadas sem gerar arte nova — elas já retratavam as cenas certas (espelho, duelo, portões, guardião); só a legenda estava errada.
+
+## ✅ Passo 3 — Marcador das Terras Fantasmas (D1)
+
+Adicionado `ghostlands` em `LOCATIONS` (`docs/data-common.js`), calibrado por medição direta do rótulo no `map-known-world.jpg` (x≈72,7%, y≈74%; bate com a medição do relatório). `enchanted: null` (fora do recorte pintado das Terras Encantadas).
+
+Religadas: `rain_of_flames` #1, #3, #6; `dragonflame` #1; `chaos_to_eternity` #4 (já existia, mas com `local: null`). Atualizada também a entrada de Codex "As Terras Fantasmas", que só linkava 2 das 6 faixas reais.
+
+## ✅ Passo 4 — Reabrir os `local:` faixa a faixa (Parte B)
+
+Pré-requisito: suporte a **múltiplos locais por faixa** em `docs/script.js` (`songLocations()` normaliza `local` como string, array ou `null`; usado em `buildLocationIndex`, na seção "faixas sem localização" e na Discografia). Testado no navegador sem erros de console.
+
+Correções aplicadas (lista completa faixa a faixa fica nas Partes B1/B2 acima; aqui só o que mudou de fato):
+- **Legendary Tales:** *Warrior of Ice* → Loregard/Irengard/Algalord; *Rage of the Winter* → Algalord/Forest of Unicorns; *Echoes of Tragedy*, *Lord of the Thunder*, *Legendary Tales* → Elgard.
+- **Symphony of Enchanted Lands:** *Emerald Sword* e *Wisdom of the Kings* → Lands of Chaos; faixas 4–10 (além dos Portões) → sem local no mapa.
+- **Dawn of Victory:** *Village of Dwarves* e *The Bloody Rage of the Titans* → sem local; *Dargor, Shadowlord* → Darklands.
+- **Rain of a Thousand Flames:** *Tears of a Dying Angel* deixou de ser duplicada (agora uma faixa com dois locais).
+- **Power of the Dragonflame:** *Knightrider of Doom* e *Power of the Dragonflame* → Elnor/Thorald; *March of the Swordmaster*, *When Demons Awake*, *Lamento Eroico* → sem local (antes todas "Algalord" em bloco).
+- **Symphony II — The Dark Secret:** *Erian's Mystical Rhymes* e *The Last Angels' Call* → Elgard; *Dragonland's Rivers* → Dragonland+Urien; *Sacred Power of Raging Winds* → Grey Mountains (e corrigido "o demônio Vankar" → "o velho mago Vankar", que também estava errado num capítulo da História Completa).
+- **Triumph or Agony:** *Triumph or Agony* e *Bloody Red Dungeons* → Dar-Kunor; *The Myth of the Holy Sword* → Darklands; *The Mystic Prophecy of the Demonknight* → Dar-Kunor+Hargor.
+- **The Frozen Tears of Angels:** faixa-título → Ainor (não Har-Kuun); *Labyrinth of Madness* → sem local, resumo reescrito para admitir que a fonte não confirma a ligação.
+- **From Chaos to Eternity:** *Aeons of Raging Darkness* → sem local (removida a afirmação errada sobre onde Etherus se sacrifica); *Heroes of the Waterfalls' Kingdom* → Waterfalls Kingdom + Har-Kuun, resumo ajustado para deixar clara a mudança de cenário no meio da faixa.
+
+Ficaram de fora deste passo, por serem correções de **texto** e não de `local:` (entram nos Passos 7/9): a confusão Hargor/Dargor em "Holy Thunderforce" e no Codex, a atribuição da morte de Tarish a "Dargor e Khaas", e os resumos vagos de *The Frozen Tears of Angels* (faixas 2–4, 6–7).
+
+## ⏳ Ainda não iniciados
+
+Passos 5 (recalibrar mapas, separar Urien/Urienor, marcar locais não oficiais), 6 (corrigir prompts de IA e arte do Tharos), 7 (resumos vagos/inventados), 8 (lacunas da História Completa) e 9 (Codex).

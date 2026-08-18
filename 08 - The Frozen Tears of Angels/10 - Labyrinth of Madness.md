@@ -9,4 +9,4 @@ Letra completa (fonte externa, direitos dos autores originais): [Labyrinth of Ma
 
 ## Localização na saga
 
-Encerramento instrumental que mergulha na loucura enquanto o grupo se aproxima de Har-Kuun.
+Encerramento instrumental do álbum. O compêndio da saga admite não ter certeza se esta faixa se liga a algum evento específico da história.

@@ -72,4 +72,4 @@ Yeah!
 
 ## Localização na saga
 
-O velho rei élfico Tharish conhece a entrada oculta de Dar-Kunor pelas cavernas; após dois dias na natureza selvagem, o grupo alcança um pântano negro — Tharish mergulha no rio gelado e encontra as cavernas de seus ancestrais élficos. O rei Uriel avisa que talvez não voltem vivos.
+O velho rei élfico Tarish conhece a entrada oculta de Dar-Kunor pelas cavernas; após dois dias na natureza selvagem, o grupo alcança um pântano negro — Tarish mergulha no rio gelado e encontra as cavernas de seus ancestrais élficos. O rei Uriel avisa que talvez não voltem vivos.

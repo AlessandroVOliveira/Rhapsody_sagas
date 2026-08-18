@@ -49,4 +49,4 @@ When, when demons awake
 
 ## Localização na saga
 
-A letra confirma: é a espada de esmeralda, agora nas mãos de Akron, que desperta novamente a Rainha e invoca uma legião de mortos-vivos e vampiros contra Algalord. O "guerreiro nórdico" se declara caçador dos mortos e clama por seus irmãos Gárgulas.
+A letra confirma: é a espada de esmeralda, agora nas mãos de Akron, que desperta novamente a Rainha e invoca uma legião de mortos-vivos e vampiros contra Algalord. O “guerreiro nórdico” se declara caçador dos mortos e clama por seus irmãos Gárgulas.

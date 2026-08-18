@@ -53,4 +53,4 @@ We call our dragonlord
 
 ## Localização na saga
 
-Faixa-título: a letra confirma que Elnor e Thorald já foram destruídas ("Deus está morto em Thorald e na canção de Elnor") — consequência direta dos eventos de "Rain of a Thousand Flames". Em meio às ruínas, o povo invoca o poder do "senhor dragão" para a batalha que se aproxima.
+Faixa-título: a letra confirma que Elnor e Thorald já foram destruídas (“Deus está morto em Thorald e na canção de Elnor”) — consequência direta dos eventos de “Rain of a Thousand Flames”. Em meio às ruínas, o povo invoca o poder do “senhor dragão” para a batalha que se aproxima.

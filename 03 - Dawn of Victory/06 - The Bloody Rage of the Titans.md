@@ -47,4 +47,4 @@ Is the titans' bloody rage!
 
 ## Localização na saga
 
-A letra é um hino à beleza das terras encantadas (unicórnios, vales, águias) interrompido por um alerta de guerra: "dragões e demônios, cuidado — é a fúria dos titãs". Funciona como a virada de tom entre o descanso na Vila dos Anões e a marcha rumo ao confronto com as forças de Akron.
+A letra é um hino à beleza das terras encantadas (unicórnios, vales, águias) interrompido por um alerta de guerra: “dragões e demônios, cuidado — é a fúria dos titãs”. Funciona como a virada de tom entre o descanso na Vila dos Anões e a marcha rumo ao confronto com as forças de Akron.

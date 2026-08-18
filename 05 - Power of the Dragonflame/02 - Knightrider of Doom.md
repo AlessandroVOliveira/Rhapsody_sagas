@@ -55,4 +55,4 @@ Of Doom!
 
 ## Localização na saga
 
-O Guerreiro ("guerreiro nórdico") lava a alma e se entrega ao "espírito da vingança", tornando-se o "cavaleiro da perdição" — negando sua sabedoria em nome da fúria, disposto a tudo para enfrentar Akron.
+O Guerreiro (“guerreiro nórdico”) lava a alma e se entrega ao “espírito da vingança”, tornando-se o “cavaleiro da perdição” — negando sua sabedoria em nome da fúria, disposto a tudo para enfrentar Akron.

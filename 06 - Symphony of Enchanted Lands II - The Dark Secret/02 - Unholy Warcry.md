@@ -84,4 +84,4 @@ World!
 
 ## Localização na saga
 
-Um alerta: o sétimo livro negro está escondido nas cavernas esquecidas de Dar-Kunor, cercadas pelas Terras Sombrias perto de Hargor. Só um ser vivo consegue atravessar aquelas terras e encontrá-lo — Dargor, chamado de "o demônio da noite", escolhido pelo destino para essa missão.
+Um alerta: o sétimo livro negro está escondido nas cavernas esquecidas de Dar-Kunor, cercadas pelas Terras Sombrias perto de Hargor. Só um ser vivo consegue atravessar aquelas terras e encontrá-lo — Dargor, chamado de “o demônio da noite”, escolhido pelo destino para essa missão.

@@ -86,4 +86,4 @@ Vankar lives for vengeance
 
 ## Localização na saga
 
-Perto de Hargor, ventos sagrados protegem os heróis das forças da Ordem Negra. Em uma visão, Dargor confronta seu pai, o demônio Vankar, que o chama de traidor e o lembra de sua natureza meio-demoníaca — Dargor o rejeita, jurando lutar contra ele para sempre.
+Ainda a caminho de Hargor pelas Montanhas Cinzentas, ventos sagrados protegem os heróis das forças da Ordem Negra. Em uma visão, Dargor confronta seu pai adotivo, o velho mago das trevas Vankar, que o chama de traidor e o lembra de sua natureza meio-demoníaca — Dargor o rejeita, jurando lutar contra ele para sempre.

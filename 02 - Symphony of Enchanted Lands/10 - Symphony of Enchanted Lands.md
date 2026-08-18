@@ -71,4 +71,4 @@ Forever!
 
 ## Localização na saga
 
-Faixa-título e clímax do álbum: o Guerreiro encontra a espada e duela com seu guardião, um guerreiro de Akron. Quando está prestes a receber um golpe fatal, Tharos intervém e é atingido em seu lugar, conseguindo revidar a tempo e matar o guardião, mas morre em seguida. A espada de esmeralda finalmente está em posse do Guerreiro, agora furioso e determinado a se vingar.
+Faixa-título: durante o voo de volta, o Guerreiro percebe que Tharos foi ferido de morte no confronto com o guardião, e o dragão moribundo abre as asas para um último voo antes de partir para morrer em sua terra natal, Dragonland. O Guerreiro agradece por finalmente ter a espada de esmeralda em mãos, e então jura vingança contra Akron — “Filho do Inferno, traidor da Luz, Rei das Trevas” — enquanto os ventos o levam de volta às Terras Encantadas.

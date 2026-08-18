@@ -105,4 +105,4 @@ The elvish wars
 
 ## Localização na saga
 
-Tarish e Iras relembram, descansando na neve: essa região, outrora chamada Irith, era verde e bela, lar dos elfos, até a sexta guerra ser perdida e a terra murchar nas Terras Sombrias de hoje.
+Descansando na neve, Iras relembra: essa região, outrora chamada Irith, era verde e bela, lar dos elfos, até a sexta guerra ser perdida e a terra murchar nas Terras Sombrias de hoje.

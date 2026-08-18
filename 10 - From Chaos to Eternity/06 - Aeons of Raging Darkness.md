@@ -99,4 +99,4 @@ I will free you!
 
 ## Localização na saga
 
-Um grito de vingança e salvação contra as forças do inferno — o ápice emocional antes da batalha final no Reino das Cachoeiras Sagradas, onde Etherus se sacrificará contra Koras.
+Um grito de vingança e salvação contra as forças do inferno, no ápice emocional que antecede a batalha final. A letra não diz quem é a mulher lembrada pelo narrador, nem amarra a cena a um lugar específico do mapa.

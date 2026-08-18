@@ -44,4 +44,4 @@ Avoiding acts of war
 
 ## Localização na saga
 
-O Guerreiro atravessa a floresta dos unicórnios em sua rota até a terra dos imortais.
+O Guerreiro atravessa a floresta dos unicórnios em sua rota até Ancelot.

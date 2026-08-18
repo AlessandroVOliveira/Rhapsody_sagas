@@ -23,4 +23,4 @@ Running fast, chased by the Naroth, they face the avalanche
 
 ## Localização na saga
 
-Perto da "porta do inferno", o grupo é perseguido por criaturas uivantes chamadas Naroth e quase soterrado por uma avalanche no gélido Passo de Nair-Kaan; todos sobrevivem.
+Perto da “porta do inferno”, o grupo é perseguido por criaturas uivantes chamadas Naroth e quase soterrado por uma avalanche no gélido Passo de Nair-Kaan; todos sobrevivem.

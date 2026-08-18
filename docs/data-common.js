@@ -14,7 +14,7 @@ const UI_STRINGS = {
     panelEmptyAlbum: "Nenhuma música deste álbum se passa aqui.",
     panelEmptyGeneric: "Nenhuma música encontrada.",
     offmapTitle: "Faixas sem localização definida no mapa",
-    offmapDesc: "Aberturas instrumentais, interlúdios e momentos de transição/reflexão que as letras não amarram a um ponto específico do mapa.",
+    offmapDesc: "Aberturas instrumentais, interlúdios, passagens além dos Portões de Marfim (num reino que não existe em nenhum dos mapas oficiais) e momentos de transição/reflexão que as letras não amarram a um ponto específico do mapa.",
     historyTitle: "A História Completa",
     historyDesc: "A jornada narrada através dos álbuns, capítulo a capítulo. Clique nas faixas de cada capítulo para ver o resumo, a letra e o link do Spotify.",
     discographyTitle: "Discografia completa",
@@ -59,7 +59,7 @@ const UI_STRINGS = {
     panelEmptyAlbum: "No song from this album takes place here.",
     panelEmptyGeneric: "No songs found.",
     offmapTitle: "Tracks without a defined map location",
-    offmapDesc: "Instrumental openings, interludes, and transitional/reflective moments that the lyrics don't tie to a specific point on the map.",
+    offmapDesc: "Instrumental openings, interludes, passages beyond the Ivory Gates (in a realm that isn't on either official map), and transitional/reflective moments that the lyrics don't tie to a specific point on the map.",
     historyTitle: "The Full Story",
     historyDesc: "The journey told across the albums, chapter by chapter. Click a chapter's tracks to see the summary, lyrics link and Spotify link.",
     discographyTitle: "Full Discography",
@@ -140,6 +140,7 @@ const LOCATIONS = [
   { id: "white_mountains", nome: "White Mountains", pos: { enchanted: null, known_world: { x: 47.5, y: 24 } } },
   { id: "har_kuun", nome: "Har-Kuun", pos: { enchanted: null, known_world: { x: 46.5, y: 21 } } },
   { id: "waterfalls_kingdom", nome: "Kingdom of the Ancient Waterfalls", pos: { enchanted: null, known_world: { x: 79, y: 24 } } },
+  { id: "ghostlands", nome: "Ghostlands", pos: { enchanted: null, known_world: { x: 72.7, y: 74 } } },
   // Locais citados nas letras mas sem rótulo em nenhum dos dois mapas oficiais — posicionados por
   // referência ao texto (ver resumo das faixas que os citam) em vez de calibração visual direta.
   { id: "urien", nome: "Urien", pos: { enchanted: { x: 34.83, y: 23.1 }, known_world: { x: 36.75, y: 44.15 } } },

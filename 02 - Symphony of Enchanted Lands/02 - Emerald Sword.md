@@ -76,4 +76,4 @@ The emerald sword
 
 ## Localização na saga
 
-O Guerreiro enfrenta seus medos mais profundos no espelho das sombras e conquista a primeira chave da sabedoria.
+O Guerreiro chega ao altar onde repousa o místico Ikaren: a luz do sol atinge os olhos de três dragões de pedra e, guiada por espelhos escondidos, revela o caminho para a última chave da sabedoria que falta para alcançar a espada de esmeralda.

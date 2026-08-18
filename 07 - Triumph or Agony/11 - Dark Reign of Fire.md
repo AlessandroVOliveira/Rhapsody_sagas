@@ -91,4 +91,4 @@ Aai'ron
 
 ## Localização na saga
 
-Fugindo pelo rio até Fenor e depois Orin, o grupo é acolhido pelo rei Hanos, aliado da Ordem. O rei Uriel avisa que abrir o livro negro trará consequências além de qualquer pesadelo. Antes de partirem de novo, Eloin se despede de Tarish, desejando sorte na jornada.
+Fugindo pelo rio até Fenor e depois Orin, o grupo é acolhido pelo rei Hanos, aliado da Ordem. O rei Uriel avisa que abrir o livro negro trará consequências além de qualquer pesadelo. Antes de partirem de novo, Eloin se despede do grupo, desejando sorte na jornada.

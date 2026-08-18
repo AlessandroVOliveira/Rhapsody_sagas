@@ -48,4 +48,4 @@ I deny hell's flames
 
 ## Localização na saga
 
-Dargor relembra uma voz que um dia lhe disse que ele escolheu a luz; livre de um "feitiço maligno", ele se declara "filho da dor", renascido e disposto a negar as chamas do inferno.
+Dargor relembra uma voz que um dia lhe disse que ele escolheu a luz; livre de um “feitiço maligno”, ele se declara “filho da dor”, renascido e disposto a negar as chamas do inferno.

@@ -60,4 +60,4 @@ The call!
 
 ## Localização na saga
 
-O grupo atravessa um mar gelado, agarrado à esperança de um renascimento do mundo, aguardando o chamado dos céus.
+Uma visão de espelhos e uma mente pecadora perdida no medo, agarrada a um mar de nova esperança que não teme seu renascimento, aguardando o chamado dos céus.

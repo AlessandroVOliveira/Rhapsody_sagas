@@ -88,4 +88,4 @@ Ex posthumus incarnatus
 
 ## Localização na saga
 
-Um momento de transcendência cósmica, de pertencimento além da própria morte — um prenúncio do destino final de Dargor.
+Um momento de transcendência cósmica, de pertencimento além da própria morte.

@@ -58,4 +58,4 @@ She needs! Your help!
 
 ## Localização na saga
 
-Na floresta de Elgard, alguém invoca a memória dos heróis da Saga da Espada Esmeralda — Airin "a Rosa", Arwald "a Rocha", o Guerreiro de Gelo e o mago Aresius — pedindo que seu espírito ajude a enfrentar a nova ameaça.
+Na floresta de Elgard, alguém invoca a memória dos heróis da Saga da Espada Esmeralda — Airin “a Rosa”, Arwald “a Rocha”, o Guerreiro de Gelo e o mago Aresius — saudando-os como amigos jamais esquecidos, cujo fogo ainda arde em cada coração.

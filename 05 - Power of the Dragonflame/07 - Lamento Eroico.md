@@ -35,4 +35,4 @@ Sorte... Consuma la realta!
 
 ## Localização na saga
 
-Lamento poético em italiano: o Guerreiro reflete sobre destino e sacrifício, pedindo para se tornar um "guardião celeste" mesmo além da morte — um interlúdio introspectivo antes do clímax final.
+Lamento poético em italiano: o Guerreiro reflete sobre destino e sacrifício, pedindo para se tornar um “guardião celeste” mesmo além da morte — um interlúdio introspectivo antes do clímax final.

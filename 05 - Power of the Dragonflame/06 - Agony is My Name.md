@@ -63,4 +63,4 @@ AND THEY WILL FACE THE PROPHECY
 
 ## Localização na saga
 
-Em meio às vilas em chamas, o Guerreiro revive em pensamento Airin, Arwald e Tharos, e jura que Algalord clama por vingança sagrada — "agonia é o meu nome".
+Em meio às vilas em chamas, o Guerreiro revive em pensamento Airin, Arwald e Tharos, e jura que Algalord clama por vingança sagrada — “agonia é o meu nome”.

@@ -46,4 +46,4 @@ The wizard's dream
 
 ## Localização na saga
 
-Em um sonho ligado à antiga história de Erian, anjos chamam dos perdidos Reinos de Cristal; a própria Elgard clama por uma nova esperança para evitar sua queda.
+Em um sonho ligado à antiga história de Erian, anjos chamam dos perdidos Reinos de Cristal; a própria Elgard clama por uma nova esperança para evitar nossa queda.

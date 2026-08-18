@@ -34,4 +34,4 @@ To far horizons I will fly
 
 ## Localização na saga
 
-Tharos ajuda o Guerreiro a encontrar a terceira chave, escondida numa caverna distante.
+Voando juntos sobre vales verdejantes e céus virgens, o Guerreiro se perde na emoção da jornada ao lado de Tharos — um voo incrível que os aproxima cada vez mais do objetivo.

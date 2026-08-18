@@ -34,4 +34,4 @@ the unreal calm before Elnor's end...
 
 ## Localização na saga
 
-"A calma irreal antes do fim de Elnor": rituais de terror sacodem a terra dos fantasmas enquanto ondas violentas anunciam a chegada das forças convocadas por Akron para destruir a cidade. Nota: este álbum é um spin-off — conta uma história paralela sobre as atrocidades cometidas pelas tropas de Akron enquanto estão de posse da espada de esmeralda, e não é essencial ao fio principal da saga. A atribuição de cada faixa a um evento específico é menos documentada que nos demais álbuns; trate como interpretação.
+“A calma irreal antes do fim de Elnor”: rituais de terror sacodem a terra dos fantasmas enquanto ondas violentas anunciam a chegada das forças convocadas por Akron para destruir a cidade. Nota: este álbum é um spin-off — conta uma história paralela sobre as atrocidades cometidas pelas tropas de Akron enquanto estão de posse da espada de esmeralda, e não é essencial ao fio principal da saga. A atribuição de cada faixa a um evento específico é menos documentada que nos demais álbuns; trate como interpretação.

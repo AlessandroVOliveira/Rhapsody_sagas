@@ -52,4 +52,4 @@ Now reigns the Shadowlord
 
 ## Localização na saga
 
-Faixa de caracterização de Dargor, mais do que uma batalha: a letra revela que ele foi adotado por Vankar, um velho mago do mal, que corrompeu sua mente. Apesar de servir Akron como Senhor das Sombras da Montanha Negra, é descrito como alguém de "poder e glória, mas do lado errado" — plantando a semente da redenção que vem em "Power of the Dragonflame".
+Faixa de caracterização de Dargor, mais do que uma batalha: a letra revela que ele foi adotado por Vankar, um velho mago do mal, que corrompeu sua mente. Apesar de servir Akron como Senhor das Sombras da Montanha Negra, é descrito como alguém de “poder e glória, mas do lado errado” — plantando a semente da redenção que vem em “Power of the Dragonflame”.

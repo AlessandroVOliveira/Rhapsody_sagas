@@ -38,4 +38,4 @@ fly and forever lead my holy steel
 
 ## Localização na saga
 
-O Guerreiro encontra o dragão Tharos, que estava sob um feitiço sombrio, e trava batalha contra ele para conseguir a segunda chave.
+Atravessando um deserto coberto pelos crânios de incontáveis heróis que morreram em busca da espada antes dele, o Guerreiro ouve seu lamento e sente seus espíritos cavalgando ao seu lado, ciente de que Akron se aproxima e que Algalord depende do seu sucesso.

@@ -117,4 +117,4 @@ Har-Kuun
 
 ## Localização na saga
 
-O personagem Loin revela a verdade: há 3000 anos, os senhores das Terras Sombrias derrotaram o exército das Planícies Nórdicas e roubaram o livro de Erian do salão de Ainor — os discípulos da Ordem Negra o esconderam desde então na fortaleza gelada de Har-Kuun. O narrador, atormentado e "congelado", sente-se condenado, mas guiado pelos anjos a enfrentar aquilo que um dia foi.
+O personagem Eloin revela a verdade: há 3000 anos, os senhores das Terras Sombrias derrotaram o exército das Planícies Nórdicas e roubaram o livro de Erian do salão de Ainor — os discípulos da Ordem Negra o esconderam desde então na fortaleza gelada de Har-Kuun. O narrador, atormentado e “congelado”, sente-se condenado, mas guiado pelos anjos a enfrentar aquilo que um dia foi.

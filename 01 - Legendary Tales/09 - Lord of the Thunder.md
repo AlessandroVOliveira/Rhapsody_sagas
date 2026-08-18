@@ -57,4 +57,4 @@ Riding forever alive and proud
 
 ## Localização na saga
 
-O Guerreiro conversa com o Deus do Trovão, buscando orientação e força para prosseguir em sua jornada.
+O Guerreiro conversa com o Senhor do Trovão, buscando orientação e força para prosseguir em sua jornada.

@@ -35,4 +35,4 @@ The wisdom of the kings
 
 ## Localização na saga
 
-O Guerreiro remove as pedras que escondem uma caverna e enfrenta dois demônios adormecidos; a letra nomeia explicitamente o mago Aresius, que o adverte ("Become aware! All can hide the hell") e o orienta a seguir para a espada mágica, guiado pela sabedoria dos antigos reis.
+O Guerreiro remove as pedras que escondem uma passagem secreta e chega a um salão antigo, onde dois demônios adormecidos despertam diante dele; a letra nomeia explicitamente o mago Aresius, que o adverte (“Become aware! All can hide the hell”). Com as três chaves completas, ele abre os lendários Portões de Marfim, e a busca pela própria espada de esmeralda finalmente começa.

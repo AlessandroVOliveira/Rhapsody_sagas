@@ -27,4 +27,4 @@ Et audivi Sanctum!
 
 ## Localização na saga
 
-O rei Uriel revela as palavras sagradas de Erian: há muito tempo, Thanor, o dragão negro, se voltou contra Nekron e contou aos anjos onde ele se escondia — a fúria de Nekron ao descobrir essa traição "rachou a Terra".
+O rei Uriel revela as palavras sagradas de Erian: há muito tempo, Thanor, o dragão negro, se voltou contra Nekron e contou aos anjos onde ele se escondia — a fúria de Nekron ao descobrir essa traição “rachou a Terra”.

@@ -43,4 +43,4 @@ FOR THE RUIN OF THE KING
 
 ## Localização na saga
 
-Faixa bônus presente na edição limitada do álbum: visões trágicas da torre dos dragões sendo destruída e habitantes se atirando dos muros para escapar da Rainha; um cavaleiro sombrio "batizado em fogo" clama para se erguer e liderar o ataque final contra o inimigo. Não é considerada parte essencial do enredo principal da saga.
+Faixa bônus presente na edição limitada do álbum: visões trágicas da torre dos dragões sendo destruída e habitantes se atirando dos muros para escapar da Rainha; um cavaleiro sombrio “batizado em fogo” clama para se erguer e liderar o ataque final contra o inimigo.

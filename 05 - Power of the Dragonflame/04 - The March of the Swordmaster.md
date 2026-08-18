@@ -94,4 +94,4 @@ Ride! Die! Sacrifice!
 
 ## Localização na saga
 
-O rei das trevas está se movendo em direção a Algalord, e precisa ser detido: o exército marcha para interceptá-lo, enquanto ao longe os exércitos do submundo encontram sua "antiga rainha" (a Rainha dos Horizontes Sombrios) nas profundezas do abismo.
+O rei das trevas está se movendo em direção a Algalord, e precisa ser detido: o exército marcha para interceptá-lo, enquanto ao longe os exércitos do submundo encontram sua “antiga rainha” (a Rainha dos Horizontes Sombrios) nas profundezas do abismo.

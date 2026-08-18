@@ -50,4 +50,4 @@ Ancor perduta
 
 ## Localização na saga
 
-Uma alma perdida e traída, presa entre mundos, ainda em busca de um caminho (em italiano) — ecoando a luta interior de Dargor pouco antes do fim.
+Uma alma perdida e traída, presa entre mundos, ainda em busca de um caminho (em italiano).

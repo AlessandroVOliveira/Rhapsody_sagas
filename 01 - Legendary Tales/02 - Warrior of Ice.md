@@ -94,4 +94,4 @@ My land must be free!
 
 ## Localização na saga
 
-Apresenta o protagonista, o Guerreiro de Gelo, rei da aldeia de Loregard, que decide partir em busca da espada de esmeralda para trazer paz às suas terras, dominadas pela guerra e pelas trevas.
+Apresenta o protagonista, o Guerreiro de Gelo, da aldeia de Loregard, que decide partir em busca da espada de esmeralda para trazer paz às suas terras, dominadas pela guerra e pelas trevas.
