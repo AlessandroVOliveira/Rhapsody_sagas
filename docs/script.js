@@ -7,6 +7,7 @@
   const panelSongs = document.getElementById("panel-songs");
   const panelClose = document.getElementById("panel-close");
   const aboutBtn = document.getElementById("about-btn");
+  const creditsBtn = document.getElementById("credits-btn");
   const albumFilter = document.getElementById("album-filter");
   const offmapSongs = document.getElementById("offmap-songs");
   const sectionTabs = document.getElementById("section-tabs");
@@ -330,6 +331,31 @@
     openPanel();
   }
   aboutBtn.addEventListener("click", openPanelWithAbout);
+
+  function openPanelWithCredits() {
+    panelTitle.textContent = t("creditsTitle");
+    panelHint.style.display = "none";
+    panelSongs.innerHTML = "";
+    const wrap = document.createElement("div");
+    wrap.className = "about-content";
+    const entries = ART_CREDITS.map(
+      (c) => `
+      <div class="credit-entry">
+        <p class="credit-artist">${c.artist}</p>
+        <p class="credit-albums">${c.albums.join(" · ")}</p>
+        <a class="about-report-link" href="${c.url}" target="_blank" rel="noopener">${t("creditsSourceLink")}</a>
+      </div>`
+    ).join("");
+    wrap.innerHTML = `
+      <p>${t("creditsIntro")}</p>
+      ${entries}
+      <p>${t("creditsMapsNote")}</p>
+      <p>${t("creditsAiNote")}</p>
+    `;
+    panelSongs.appendChild(wrap);
+    openPanel();
+  }
+  creditsBtn.addEventListener("click", openPanelWithCredits);
 
   function renderPanel(locationId) {
     const loc = LOCATIONS.find((l) => l.id === locationId);
